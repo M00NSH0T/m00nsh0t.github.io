@@ -28,11 +28,11 @@ lang: en-us # used in HTML lang attributes
 # on landing page
 # - set the greeting only if you want to display the first green section
 greeting:
-  title: _Your greeting_  
-  text: _Your detailed greeting text_
+  title: Check me out on YouTube and Gitub Today 
+  text: I was trained as an engineer, and raised as an inventor. I've spent most of my professional career in various consulting roles... from working on complex wargame style software simulations for the U.S. Naval Sea Systems Command to helping NYSERDA, National Grid, and ConEd run their energy efficiency programs. For the last year and a half, I've been developing a machine learning system to manage my stock portfolio, and now I've decided to switch gears a bit and put out a YouTube series applying a lot of the knowledge I've picked up along the course of my career to solving various big "moonshot" problems.
 # - displayed at the bottom
-closing-head: _Your closing_
-closing-para: _Your detailed closing_
+closing-head: Work with me
+closing-para: As I wrap up my stock trading system, I'm starting to think about what to do with myself next. If you have an interesting project that could use my expertise, I'd love to hear about it.
 
 # on all pages (and the first three you list display with greeting, if included)
 social:
