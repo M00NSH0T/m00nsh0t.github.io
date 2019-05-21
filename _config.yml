@@ -11,10 +11,10 @@
 # (Using that method instead of site.owner, in case your posts get cloned with your repo.)
 
 # Site settings
-title: _Kyle Archie_
-description: _Showing the world how to use the engineering design process to solve cool problems using the latest modern technology_
+title: Kyle Archie
+description: Showing the world how to use the engineering design process to solve cool problems using the latest modern technology
 owner:
-  name: _Kyle Archie_ # or company name
+  name: Kyle Archie # or company name
   url: "http://kylearchie.com" # your URL
 first_published: 2019 # if migrating another site, the year of your first publish
                       # Must be a 4-digit integer year (math is used on it)
