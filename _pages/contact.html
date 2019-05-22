@@ -14,9 +14,6 @@ background-image: caustic_light.jpg
 	Message: <textarea name="message" placeholder="Type your message"></textarea>
 	<input type="submit" value="Send">
 	<input type="hidden" name="_subject" value="contact_me form submission">
-    <input type="hidden" name="success"
-           value="{{ '/contact-success' | prepend: site.baseurl | prepend: site.url }}" />
-    <input type="hidden" name="failure"
-           value="{{ '/contact-failure' | prepend: site.baseurl | prepend: site.url }}" />
+	<input type="hidden" name="_next" value="{{ '/contact-success' | prepend: site.baseurl | prepend: site.url }}" />
   </form>
 </section>
