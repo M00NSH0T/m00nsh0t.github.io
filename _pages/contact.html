@@ -12,6 +12,8 @@ background-image: caustic_light.jpg
 	Name: <input type="text" name="Name" placeholder="Your name">
 	Email: <input type="email" name="_replyto" placeholder="Your email">
 	Message: <textarea name="message" placeholder="Type your message">	</textarea>
+	<input type="submit" value="Send">
+	<input type="hidden" name="_subject" value="contact_me form submission">
     <input type="hidden" name="success"
            value="{{ '/contact-success' | prepend: site.baseurl | prepend: site.url }}" />
     <input type="hidden" name="failure"
