@@ -11,7 +11,7 @@ background-image: caustic_light.jpg
   <form id="sendemail" action="https://formspree.io/kyle@kylearchie.com" method="POST">
 	Name: <input type="text" name="Name" placeholder="Your name">
 	Email: <input type="email" name="_replyto" placeholder="Your email">
-	Message: <textarea name="message" placeholder="Type your message">	
+	Message: <textarea name="message" placeholder="Type your message">	</textarea>
     <input type="hidden" name="success"
            value="{{ '/contact-success' | prepend: site.baseurl | prepend: site.url }}" />
     <input type="hidden" name="failure"
