@@ -12,13 +12,13 @@
 
 # Site settings
 title: Kyle Archie
-description: Showing the world how to use the engineering design process to solve tough problems using the latest modern technology
+description: Showing the world how to use the engineering design process and the latest modern technology to solve tough problems
 owner:
   name: Kyle Archie # or company name
   url: "http://kylearchie.com" # your URL
-first_published: 2019 # if migrating another site, the year of your first publish
+#first_published: 2019 # if migrating another site, the year of your first publish
                       # Must be a 4-digit integer year (math is used on it)
-url: "http://example.com" # the base hostname & protocol for this site
+#url: "http://example.com" # the base hostname & protocol for this site
 baseurl: "" # the subpath of your site, e.g. /blog
             # Note you'll have to move your robots.txt to the root if you want it used.
             # And list multiple sitemaps if there are other subdirectories you want indexed
