@@ -15,7 +15,15 @@ So that's what this series is all about... applying the engineering design proce
 {% include post_picwrap.html pos="left" src="/images/Slide9.JPG" %}
 The series will follow the steps of the engineering design process. The result will likely be that some episodes will be longer than others, but I think this approach as a whole will convey the intent of the series better.
 
-### Episode 1
-
+## Episode 1: Introduction
 {% include post_youtube.html id="GDVal32IUxk" %}
+
+## Episode 2: Problem Definition
+{% include post_youtube.html id="XOtu9fX_Sw8" %}
+
+## Episode 3: Concept Generation
+{% include post_youtube.html id="BdIfuKNIyFk" %}
+
+## Episode 4: Selecting Our Best Idea
+{% include post_youtube.html id="qhQqmGt_Z7E" %}
 
