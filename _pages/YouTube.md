@@ -8,32 +8,14 @@ background-image: youtube.jpg
 
 <hr />
 
-Welcome to the Moonshot Channel. This is the first in a series about using Machine Learning (ML) to forecast hurricanes. Just keep in mind, my background and education are in engineering, not video production, so the first videos I put up here might be a bit… rough. I will try my best to make them a bit more interesting than just watching me write code or standing in front of a camera talking, but please forgive the overall cheesiness. I may have gone a bit too far at times!
+Far too many tutorials on using Machine Learning out there make it seem like your whole job is just taking a nice pre-processed dataset that you were simply given and running it through the latest algorithm of the week. The reality of a true machine learning "engineer" however, is much dirtier, so to speak. Before a line of code ever gets written, there's a whole lot of work that has to get done, and a methodology we follow. Graduates of any of the top engineering schools all get this jammed down our throats through our whole college careers. It's called the "core engineering design process," and it applies to all disciplines of engineering, from mechanical and chemical to electrical and computer. Following this is how we figure out what precise problem needs to be solved, define our design requirements, research existing solutions to figure out what's been done and how we might be able to improve it or apply it in a different way, and then design a solution that will actually solve the problem. Randomly grabbing a dataset and trying a million things with it might get you a usable solution as well (and on the surface sounds like it fits the old "fail fast and fail often" philosophy of silicon valley startups), but following the engineering design process will ensure that you maintain a bigger picture strategy that will likely bring you to a more creative and interesting solution that works far better in the end. And ultimately, this is what many of those silicon valley tech startups are actually doing, at least the successful one. There's a lot of work that has to get done to set up the design/build phase, but once that whappens, we build prototype after prototype... iterating and honing in on the a final design until our performance metrics reach the desired levels. This process more than anything else is the reason why our technology has seen such a drastic increase in the rate of improvement over the past hundred years.
 
-This series is targeted mostly towards those interested in becoming an engineer, rather than those looking for a series that teaches specific machine learning techniques and algorithms. Subsequent series may not even use ML and instead get into robotics, 3D printing, CAD, etc. Machine Learning is just where I’m starting here because I’ve been very interested in it for the last few years and am just coming out of a project where I used it quite extensively on another Big Data problem. This is by no means a substitute for a formal engineering education, but instead should be seen as an introduction to what engineering is.  If you’re in high school and looking for a window into a possible career route, hopefully this will help.
+So that's what this series is all about... applying the engineering design process to solve big problems with the coolest new tools. And we're starting off with hurricanes. If you're interested in getting your hands dirty with me as we apply this process to the problem of forecasting hurricanes using machine learning, strap in and subscribe. 
 
-I hope you find it useful. I’ll be linking to my Github site in subsequent videos as soon as I get into the code writing portion. 
-
+{% include post_picwrap.html pos="left" src="/images/slide9.jpg" %}
+The series will follow the steps of the engineering design process. The result will likely be that some episodes will be longer than others, but I think this approach as a whole will convey the intent of the series better.
 
 ### Episode 1
 
 {% include post_youtube.html id="GDVal32IUxk" %}
-Laborum et in in cillum quis ut mollit id sit dolor nostrud. Occaecat mollit
-in adipisicing magna nostrud sunt nulla consectetur cupidatat tempor dolore
-magna. Est ad sit eu tempor aute sunt sunt excepteur cupidatat sed irure ut et
-elit veniam. Lorem ipsum tempor quis ea in minim labore nisi aute ea sed irure
-nisi occaecat est magna occaecat occaecat. Nostrud sed est ullamco enim ut
-proident dolor et in consequat aliquip in ex eu ad. Incididunt sit sit dolore
-dolore ut excepteur sunt laboris ut ullamco velit. Veniam tempor dolor magna
-in nulla elit dolor ea et commodo in. Laboris eu adipisicing nostrud commodo
-commodo ea laborum non minim cupidatat. Lorem ipsum non laborum anim ex labore
-commodo commodo eu aliqua est ea consequat do aute ex amet incididunt
-consectetur enim. Consequat consectetur occaecat cillum tempor occaecat sunt
-ea laboris exercitation excepteur.
 
-In addition to 'left' and 'right', there is also a `pos` value of 'fit' You
-can use this value when you want the image to fit 100% of the width of the
-containing block (such as a paragraph), but you still want it to shrink on
-smaller screens. Also, with this 'fit' value, if you don't want the image
-to scale larger than a certain size (such as the width of the actual image),
-then you can add a max parameter with a value in pixels.
