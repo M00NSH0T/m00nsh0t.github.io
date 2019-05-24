@@ -8,13 +8,14 @@ background-image: youtube.jpg
 
 <hr />
 
-You can use the following includes in the body of your posts as shortcuts
-for blocks of code that you might otherwise use repetitively. These are
-also helpful if you or I decide to change the method that the content is
-presented; we'd need only change the include file.
+Welcome to the Moonshot Channel. This is the first in a series about using Machine Learning (ML) to forecast hurricanes. Just keep in mind, my background and education are in engineering, not video production, so the first videos I put up here might be a bit… rough. I will try my best to make them a bit more interesting than just watching me write code or standing in front of a camera talking, but please forgive the overall cheesiness. I may have gone a bit too far at times!
+
+This series is targeted mostly towards those interested in becoming an engineer, rather than those looking for a series that teaches specific machine learning techniques and algorithms. Subsequent series may not even use ML and instead get into robotics, 3D printing, CAD, etc. Machine Learning is just where I’m starting here because I’ve been very interested in it for the last few years and am just coming out of a project where I used it quite extensively on another Big Data problem. This is by no means a substitute for a formal engineering education, but instead should be seen as an introduction to what engineering is.  If you’re in high school and looking for a window into a possible career route, hopefully this will help.
+
+I hope you find it useful. I’ll be linking to my Github site in subsequent videos as soon as I get into the code writing portion. 
 
 
-### YouTube
+### Episode 1
 
 {% include post_youtube.html id="GDVal32IUxk" %}
 Laborum et in in cillum quis ut mollit id sit dolor nostrud. Occaecat mollit
