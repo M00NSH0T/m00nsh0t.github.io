@@ -6,7 +6,7 @@ options: [minihead]
 categories:
   - topics
   - user-guide
-background-image: flickr-froderik.jpg
+background-image: youtube.jpg
 ---
 
 <hr />
