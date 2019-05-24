@@ -12,7 +12,7 @@ Far too many tutorials on using Machine Learning out there make it seem like you
 
 So that's what this series is all about... applying the engineering design process to solve big problems with the coolest new tools. And we're starting off with hurricanes. If you're interested in getting your hands dirty with me as we apply this process to the problem of forecasting hurricanes using machine learning, strap in and subscribe. 
 
-{% include post_picwrap.html pos="left" src="/images/slide9.jpg" %}
+{% include post_picwrap.html pos="left" src="/images/Slide9.JPG" %}
 The series will follow the steps of the engineering design process. The result will likely be that some episodes will be longer than others, but I think this approach as a whole will convey the intent of the series better.
 
 ### Episode 1
