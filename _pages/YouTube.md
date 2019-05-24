@@ -2,6 +2,7 @@
 title: YouTube series
 excerpt: My series on predicting hurricanes using Machine Learning
 permalink: /youtube/
+image: youtube.jpg
 background-image: youtube.jpg
 ---
 
