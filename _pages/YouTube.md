@@ -19,7 +19,7 @@ presented; we'd need only change the include file.
 
 ### YouTube
 
-{% include post_youtube.html id="GDVal32IUxk&t" %}
+{% include post_youtube.html id="GDVal32IUxk" %}
 Laborum et in in cillum quis ut mollit id sit dolor nostrud. Occaecat mollit
 in adipisicing magna nostrud sunt nulla consectetur cupidatat tempor dolore
 magna. Est ad sit eu tempor aute sunt sunt excepteur cupidatat sed irure ut et
