@@ -2,7 +2,7 @@
 key: 4
 title: About me
 permalink: /aboutme/
-excerpt: More information.
+excerpt: How I got here, for those interested.
 image: bw_headshot.jpg
 background-image: banner.jpg
 ---
