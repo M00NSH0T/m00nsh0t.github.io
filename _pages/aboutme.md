@@ -4,7 +4,7 @@ title: About me
 permalink: /aboutme/
 excerpt: More information.
 image: pic02.jpg
-background-image: pic02.jpg
+background-image: banner.jpg
 ---
 
 <hr />
