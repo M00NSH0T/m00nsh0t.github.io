@@ -28,7 +28,7 @@ lang: en-us # used in HTML lang attributes
 # on landing page
 # - set the greeting only if you want to display the first green section
 greeting:
-  title: Check me out on YouTube and Gitub Today 
+  title: Check me out on YouTube and GitHub Today 
   text: I was raised as an inventor and trained as an engineer at Cornell. I've spent most of my professional career in various consulting roles... from designing nuclear submarines and working on complex wargame style software simulations for the U.S. Navy to helping state governments and major utilities around the country leverage new technologies to save energy. For the last year and a half, I've been developing a machine learning system to manage my personal stock portfolio, and now I've decided to switch gears a bit and put out a YouTube series applying a lot of the knowledge I've picked up along the course of my career to solving various big "moonshot" problems.
 # - displayed at the bottom
 closing-head: Work with me
