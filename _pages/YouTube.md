@@ -26,6 +26,11 @@ The series will follow the steps of the engineering design process. The result w
 ## Episode 3: Concept Generation
 {% include post_youtube.html id="BdIfuKNIyFk" %}
 
-## Episode 4: Selecting Our Best Idea
+## Episode 4: Selecting Our Best Idea (1/2)
 {% include post_youtube.html id="qhQqmGt_Z7E" %}
 
+## Episode 5: Selecting Our Best Idea (2/2)
+{% include post_youtube.html id="d9SurPxW2u8" %}
+
+## Episode 6: Preliminary Design
+{% include post_youtube.html id="xE7zi2oLnek" %}
