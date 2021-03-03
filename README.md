@@ -1,6 +1,13 @@
-# arkadianriver.com
+# kylearchie.com
 
-My personal web site, using the awesome design of http://html5up.net/spectral by
+
+My personal web site, forked from Arkadian River. 
+
+Here's the readme from his original version, which I modified for my own use under MIT License.
+
+
+-----------------------------------------------------------------
+It uses the awesome design of http://html5up.net/spectral by
 the talented [@ajlkn](http://twitter.com/ajlkn).
 
 I morphed that design into this Jekyll [theme](#theme-note) for blog and portfolio entries.
