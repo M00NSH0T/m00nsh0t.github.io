@@ -1,7 +1,7 @@
 # kylearchie.com
 
 
-My personal web site, forked from Arkadian River. 
+My personal web site, forked from Gary Faircloth aka ArkadianRiver. 
 
 Here's the readme from his original version, which I modified for my own use under MIT License.
 
