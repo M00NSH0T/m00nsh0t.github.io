@@ -2,7 +2,7 @@
 title: Hurricane Track Prediction
 excerpt: This project focuses on the problem of predicting the track of hurricanes using machine learning.
 permalink: /hurricanes/
-image: youtube.jpg
+image: hurricanes.jpg
 background-image: hurricanes.jpg
 ---
 
