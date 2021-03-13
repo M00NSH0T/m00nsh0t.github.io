@@ -34,7 +34,7 @@ If I can bring in enough historic data, I will also explore the use of LSTM / GR
 
 
 <hr />
-## Original Series Description
+Original Series Description
 <hr />
 
 
