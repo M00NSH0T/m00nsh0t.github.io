@@ -1,9 +1,9 @@
 ---
-title: YouTube series
-excerpt: This first season focuses on the problem of predicting the track of hurricanes using machine learning. I plan to bring additional technologies into future seasons, such as 3d printing and robotics. Check it out.
-permalink: /youtube/
+title: Hurricane Track Prediction
+excerpt: This project focuses on the problem of predicting the track of hurricanes using machine learning.
+permalink: /hurricanes/
 image: youtube.jpg
-background-image: youtube.jpg
+background-image: hurricanes.jpg
 ---
 
 <hr />
