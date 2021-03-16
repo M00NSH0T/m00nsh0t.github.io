@@ -1,7 +1,7 @@
 ---
 key: 4
 title: About me
-permalink: /aboutme/
+permalink: /9_aboutme/
 excerpt: Decades in a blur.
 image: bw_headshot.jpg
 background-image: banner.jpg
