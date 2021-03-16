@@ -2,7 +2,7 @@
 key: 4
 title: About me
 permalink: /aboutme/
-excerpt: An honest telling of my story, with both the good and the bad, for those interested.
+excerpt: Decades in a blur.
 image: bw_headshot.jpg
 background-image: banner.jpg
 ---
