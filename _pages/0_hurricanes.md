@@ -11,17 +11,16 @@ background-image: hurricanes.jpg
 
 2/28/2021 Update: I have recently returned to this project to make use of NOAA's Big Data Project's offerings on both AWS and GCP, which weren't available when I started the series. Please check out the "2021 update" folder and included code / notebooks, located [here](https://github.com/M00NSH0T/Hurricanes/tree/master/2021%20update). This is probably the best place to look if you're trying to get a quick sense of how I work, but for a more extended view into the way I break broblems down and go about solving them, you should check out my YouTube series and the associated code. Much of this predates my big switch over to using Jupyter Lab / PyCharm, and I need to update much of it for TensorFlow 2.0 still, but there's also a lot I go into here regarding the work we all have to do before we every write a line of code, such as doing research into data, what others are currently doing to solve the problem, brainstorming of new approaches, and planning of what experiemental prototypes to spend our time building. This previous work also goes into building a SQL Database, encoding massive datasets with a multidimensional autoencoder, and uses a couple very different model types types to solve the problem in different ways, such as an LSTM and a GAN.
 
-As a quick recap from the original series, here's the original problem we're trying to solve:
-	"Government agencies need a hurricane prediction system with less average error (nautical miles) at 48 hours in the future than the current state of the art models provide because they need to decide on actions to take to mitigate damage and to save lives, and taking these actions can be costly, so they will only do so if they’re reasonably sure they are necessary."
+As a quick recap from the original series, here's the summarized version of the original problem we're trying to solve:
+
+* Build a hurricane prediction system with less average error (nautical miles) at 48 hours in the future than the current state of the art models (55.3 n mi).
 
 And here are our original design requirements:
 * System must output, at a minimum, the latitude and longitude coordinate of the predicted location of the storm 48 hours from timestamp of associated input data. 
 * System must store track data over evaluation period for ensuring minimum performance spec is met.
-* System must be trainable on my existing hardware.
+* System must be trainable on my existing hardware. 
 * Training time must be under 5 days on existing hardware.
 * Data sources must fit within budget and be readily accessible. 
-
-
 
 Regarding my new approach, you'll find all my work in Jupyter notebooks, which are numbered in the order you should view them in. However, the first notebook is quite long as it contains everything from preprocessing to visualizing predicted hurricane tracks for the basline model, so you may need to click the link to reload it a couple times to get it to display in GitHub. Also, I don't spend nearly as much time here going into the brainstorming and other steps I typically use to solve a problem, though those did occur behind the scenes. For that kind of detail, please check out the original YouTube series I put together. Even though that predates TensorFlow 2.0 and the NOAA Big Data Program, I still intend to roll much of that into my next iteration here.
  
