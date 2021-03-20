@@ -13,7 +13,7 @@ background-image: hurricanes.jpg
 
 As a quick recap from the original series, here's the summarized version of the original problem we're trying to solve:
 
-* Build a hurricane prediction system with less average error (nautical miles) at 48 hours in the future than the current state of the art models (55.3 n mi).
+* Build a hurricane prediction system with less average error (nautical miles) at 48 hours in the future than the current state of the art models (55.3 n mi). (https://www.nhc.noaa.gov/verification/pdfs/OFCL_5-yr_averages.pdf)
 
 And here are our original design requirements:
 * System must output, at a minimum, the latitude and longitude coordinate of the predicted location of the storm 48 hours from timestamp of associated input data. 
