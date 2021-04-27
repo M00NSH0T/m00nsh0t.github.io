@@ -21,6 +21,6 @@ So back to these COVID-19 survivors. Losing their sense of taste is clearly not 
 
 This project aims to find the optimal list of ingredients necessary to create the perfect meal for people who can't taste. It doesn't matter if the ingredients make sense to a chef, just as long as they solve the equation and meet the dietary constraints of a typical adult.
 
-Check it out at: https://github.com/M00NSH0T/Matrix_Porridge
+Check it out by [clicking here.](https://github.com/M00NSH0T/Matrix_Porridge)
 
 
