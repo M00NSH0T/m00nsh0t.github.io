@@ -1,10 +1,10 @@
 ---
 key: 1
-title: Hurricane Track Prediction
+title: Slokie LLC
 excerpt: This is the culmination of several smaller projects I've been working on for the past few years. I layer multiple computer vision and machine learning algorithms on top of each other to build personalized children's books.
 permalink: /slokie/
-image: nightlight-logo.png
-background-image: reading_overlay_v2.jpg.jpg
+image: nightlight-logo-small.png
+background-image: reading_overlay_v2.jpg
 ---
 
 <hr />
