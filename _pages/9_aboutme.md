@@ -54,6 +54,11 @@ I started working on a three new projects during the pandemic. First, was a hurr
 
 My second project entailed a martial arts phone app that uses human pose estimation to help coaches and students get the most out of online zoom classes. I built this using Google's MediaPipe library. I found that the z-coordinate of the detected joints in images from this library were far [too inaccurate to be useful](https://github.com/google/mediapipe/issues/1611). I still have confidence in this project, but needed to wait for some updates to the core tech to come out for it to become market ready. Google has put out some fixes, and I intend to revisit this project shortly.
 
-My third project was to build a platform that can generate personalized children's books using real pictures of your kid, automatically. My daughter loves stories that include her, so it seemed like an obvious product. Once I did a quick search, I found that indeed, there were many companies making personalized children's books. But, as far as I could tell, none of them used photos for anything other than a random one-off picture. I decided to change that. Check out [Slokie.com](https://slokie.com).
+My third project was to build a platform that can generate personalized children's books using real pictures of your kid, automatically. My daughter loves stories that include her, so it seemed like an obvious product. Once I did a quick search, I found that indeed, there were many companies making personalized children's books. But, as far as I could tell, none of them used photos for anything other than a random one-off picture. I decided to change that.
+
+{% include post_picwrap.html pos="left" src="/images/nightlight-logo black-social.jpg" %}
+In 2021, I started working on Slokie full-time. I wrote two books, hired an artist to create the background art, learned how to use cloudless architecture to host a scalable machine learning powered system, built and deployed said system, experimented with multiple printing vendors APIs and finished products, and incorporated [Slokie LLC](https://slokie.com). The store is currently live and taking orders, though it is almost entirely automated. I still manually approve orders while I gain confidence that I've caught all the edge cases, and so now I'm starting to explore options for a new project while I revisit some of my old ones and decide what's next.
+
+If you a project that you think I'd be a good fit for, then please [reach out](https://slokie.com/pages/contact).
 
 
