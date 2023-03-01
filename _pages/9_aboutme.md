@@ -8,7 +8,7 @@ background-image: banner.jpg
 ---
 
 <hr />
-# My name is Kyle Archie. I’m an inventor and an engineer who uses a multidisciplinary approach to solve tough problems, though my specialty is grounded in machine learning.
+My name is Kyle Archie. I’m an inventor and an engineer who uses a multidisciplinary approach to solve tough problems, though my specialty is grounded in machine learning.
 <hr />
 
 # Education
