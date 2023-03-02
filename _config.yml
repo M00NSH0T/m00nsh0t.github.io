@@ -29,10 +29,10 @@ lang: en-us # used in HTML lang attributes
 # - set the greeting only if you want to display the first green section
 greeting:
   title: Check me out on GitHub Today 
-  text: I was raised as an inventor and trained as an engineer at Cornell. I've spent most of my professional career in various consulting roles... from designing nuclear submarines and working on complex wargame style software simulations for the U.S. Navy to helping state governments and major utilities around the country leverage new technologies to save energy. For the past few years, I've been developing a machine learning system to manage my personal stock portfolio. I'm currently looking for my next big move. I've included a demo portfolio project below on predicting the track of hurricanes. Please check it out.
+  text: I was raised as an inventor and trained as an engineer at Cornell. I've spent most of my professional career in various consulting roles... from designing nuclear submarines and working on complex wargame style software simulations for the U.S. Navy to helping state governments and major utilities around the country leverage new technologies to save energy. For the past few years, I've been working on my personalized children's book platform, Slokie. I'm currently looking for my next big move. I've included a couple portfolio projects below. Please check them out.
 # - displayed at the bottom
 closing-head: Work with me
-closing-para: As I wrap up my stock trading system, I'm starting to think about what to do with myself next. If you have an interesting project that could use my expertise, please contact me via LinkedIn, or fill out the contact form.
+closing-para: Now that Slokie is up and running (and mostly automated), I'm starting to think about what to do with myself next. If you have an interesting project that could use my expertise, please contact me via LinkedIn, or fill out the contact form.
 
 # on all pages (and the first three you list display with greeting, if included)
 social:
