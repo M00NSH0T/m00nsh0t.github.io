@@ -24,7 +24,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
             # And list multiple sitemaps if there are other subdirectories you want indexed
             # besides this blog.
 lang: en-us # used in HTML lang attributes
-
+google-analytics: G-YH200QF0H4
 # on landing page
 # - set the greeting only if you want to display the first green section
 greeting:
