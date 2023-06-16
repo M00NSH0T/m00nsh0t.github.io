@@ -27,5 +27,5 @@ In 2023, ChatGPT took the world by storm. Its ability to take well crafted instr
 
 After a month or two of work, I figured out how I can leverage the best aspects of both my older Matrix Porridge project along with ChatGPT to create something really functional. As anyone who's watched the original Iron Chef series can attest, there are limits to what you can do with certain ingredients, especially if you are forced to combine them with a specific list of others in a single meal. But, if you instead focus on creating a full day's worth of snacks, main courses and side dishes, the disparate list of ingredients that I can generate from my classical optimization approach becomes much more usable.
 
-So, I build a backend database on GCP that contains tens of thousands of locally optimized ingredient lists, and then created a couple APIs that a web app that I built can use to create optimized meal plans. [Check it out here!](https://slokie.com/pages/slokie-ai-meal-planner)
+So, I build a backend database on GCP that contains tens of thousands of locally optimized ingredient lists, and then created a couple APIs that a web app that I built can use to create optimized meal plans. [Check it out here!](https://slokie.com/pages/the-slokie-chef)
 
