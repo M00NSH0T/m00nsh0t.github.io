@@ -21,7 +21,7 @@ My 2020 goal fo the project aimed to find the optimal list of ingredients necess
 
 You can see where that project ended on my GitHub page by [clicking here.](https://github.com/M00NSH0T/Matrix_Porridge)
 
-##Enter ChatGPT
+## Enter ChatGPT
 
 In 2023, ChatGPT took the world by storm. Its ability to take well crafted instructions and respond back with everything from rhyming poems to fairly well-written code was a huge leap forward for Machine Learning. Specific to this project, however, I came to realize that ChatGPT might have been the 'missing ingredient' to my Matrix Porridge project. If I gave ChatGPT a list of ingredients, could it craft a meal that actually made sense and tasted good? I started experimenting and realized that there were certainly limits, but there was some real potential here.
 
