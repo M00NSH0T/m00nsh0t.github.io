@@ -4,7 +4,7 @@ title: Hurricane Track Prediction
 excerpt: This project focuses on the problem of predicting the track of hurricanes using satellite imagery data accessed via AWS. I implement a Tensorflow multi-input, mixed type model (imagery plus numeric data) using the tf.data API to do automated feature engineering on the data pipeline.
 permalink: /hurricanes/
 image: hurricanes.jpg
-background-image: hurricanes.jpg
+background-image: hurricanes-top.jpg
 ---
 
 <hr />
