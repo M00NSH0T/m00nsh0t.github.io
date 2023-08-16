@@ -4,7 +4,7 @@ title: Slokie LLC
 excerpt: This is the culmination of several smaller projects I've been working on for the past few years. I layer multiple computer vision and machine learning algorithms on top of each other to build personalized children's books.
 permalink: /slokie/
 image: nightlight-logo.jpg
-background-image: slokie2.jpg
+background-image: slokie-tall.png
 ---
 
 <hr />
