@@ -3,8 +3,8 @@ key: 1
 title: Slokie LLC
 excerpt: This is the culmination of several smaller projects I've been working on for the past few years. I layer multiple computer vision and machine learning algorithms on top of each other to build personalized children's books.
 permalink: /slokie/
-image: nightlight-logo black-social.jpg.
-background-image: reading_overlay_v2.jpg
+image: nightlight-logo.jpg
+background-image: slokie1.jpg
 ---
 
 <hr />
