@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title | escape }} — {{ site.title | escape }}</title>
+  <meta name="description" content="{{ page.excerpt | strip_html | escape }}">
+  <link rel="canonical" href="{{ page.url | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="icon" href="{{ '/images/favicon.ico' | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ '/css/personal.css' | prepend: site.baseurl }}">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header wrap">
+    <a class="wordmark" href="{{ '/' | prepend: site.baseurl }}" aria-label="Kyle Archie home">Kyle Archie<span aria-hidden="true">.</span></a>
+    <nav aria-label="Main navigation">
+      <a href="{{ '/#work' | prepend: site.baseurl }}">Current work</a>
+      <a href="{{ page.url | prepend: site.baseurl }}" aria-current="page">About</a>
+      <a href="{{ '/#contact' | prepend: site.baseurl }}">Get in touch <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+  <main id="main" class="profile-main wrap">
+    <header class="profile-intro">
+      <div>
+        <p class="eyebrow">ABOUT KYLE</p>
+        <h1>From the big picture<br>to the working details.</h1>
+        <p class="intro">Engineer, entrepreneur, and technical leader. I work where software, people, and physical systems meet.</p>
+      </div>
+      <img class="profile-portrait" src="{{ '/images/kyle-archie-navy.png' | prepend: site.baseurl }}" width="1024" height="1536" alt="Kyle Archie smiling against a navy background">
+    </header>
+    <article class="profile-content" aria-label="Background and experience">
+      {{ content }}
+    </article>
+    <div class="profile-contact"><p>Have a project in mind?</p><a class="button" href="mailto:kyle@kylearchie.com">Let’s talk <span aria-hidden="true">↗</span></a></div>
+  </main>
+  <footer class="site-footer wrap"><a class="wordmark" href="{{ '/' | prepend: site.baseurl }}">Kyle Archie<span>.</span></a><p>© {{ site.time | date: '%Y' }} Kyle Archie</p><a href="#main">Back to top ↑</a></footer>
+</body>
+</html>

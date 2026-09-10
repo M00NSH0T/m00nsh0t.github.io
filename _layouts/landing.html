@@ -1,138 +1,70 @@
 <!DOCTYPE html>
-{% include topcomment.html %}
-<html lang="{{ site.lang }}">
-
-  {% include head.html %}
-
-  <body class="landing">
-
-    <!-- Page Wrapper -->
-    <div id="page-wrapper">
-
-      {% include header.html %}
-
-        <!-- Banner -->
-          <section id="banner">
-            <div class="inner">
-              <h1>{{ site.title }}</h1>
-              <p>{{ site.description }}</p>
-              <!--
-              <ul class="actions">
-                <li><a href="#" class="button special">Activate</a></li>
-              </ul>
-              -->
-            </div>{%
-            if site.greeting %}
-            <a href="#greeting" class="more scrolly">Continue</a>{%
-            else %}
-            <a href="#landing_pages" class="more scrolly">Continue</a>{%
-            endif %}
-          </section>
-          {%
-          if site.greeting %}
-        <!-- One -->
-          <section id="greeting" class="wrapper style1 special">
-            <div class="inner">
-              <header class="major">
-                <h2>{% if site.greeting.title %}{{ site.greeting.title }}{% else %}{{ site.title }}{% endif %}</h2>
-                <p>{% if site.greeting.text %}{{ site.greeting.text | markdownify }}{% else %}{{ site.description | markdownify }}{% endif %}</p>
-              </header>
-              <ul class="icons major">{%
-              for socloc in site.social limit:3 %}{%
-                if socloc[1] %}{%
-                  if socloc[0] == 'email' %}
-                <li><a target="_blank" href="{%
-                    if socloc[1] contains '@' %}mailto:{{ socloc[1] }}{%
-                    else %}{{ socloc[1] }}{%
-                    endif %}" class="icon fa-envelope major style1"
-                       ><span class="label">E-mail</span></a></li>{%
-                  else %}
-                <li><a target="_blank" href="{{ socloc[1] }}" class="icon fa-{{ socloc[0] }} major style{% cycle 1, 2, 3 %}"
-                       ><span class="label">{{ socloc[0] }}</span></a></li>{%
-                  endif %}{%
-                endif %}{%
-              endfor %}
-              </ul>
-            </div>
-          </section>{%
-          endif %}
-
-        <!-- Two -->
-          <section id="landing_pages" class="wrapper alt style2">{%
-            assign sorted_pages = site.pages | sort:"id" %}{%
-            for my_page in sorted_pages %}{%
-              if my_page.title %}{%
-                unless my_page.options contains 'nolanding' %}
-            <section class="spotlight">
-              <div class="image">
-                <a href="{{ my_page.url | prepend:site.baseurl }}">
-                <img src="{{ site.baseurl }}/images/{% if my_page.image %}{{ my_page.image }}{% else %}banner.jpg{% endif %}"
-                     alt="{% if my_page.image_alt %}{{ my_page.image_alt }}{% else %}Image for {{ my_page.title | escape }}{% endif %}" />
-                </a>
-              </div>
-              <div class="content-wrap">
-              <a href="{{ my_page.url | prepend:site.baseurl }}">
-              <div class="content">
-                <h2>{{ my_page.title }}</h2>
-                <p>{{ my_page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}</p>
-              </div>
-              </a></div>
-            </section>{%
-                endunless %}{%
-              endif %}{%
-            endfor %}
-          </section>
-
-        <!-- Three -->{%
-      if site.tags.featured %}
-          <section id="landing_features" class="wrapper style3 special">
-            <div class="inner">
-              <header class="major">
-                <h2>{{ site.features-title }}</h2>
-                <!-- <p>Blog posts with decent content</p> -->
-              </header>
-              <ul class="features">{%
-                for my_post in site.posts %}{%
-                  if my_post.tags contains 'featured' %}{%
-                    assign i = i | plus:1 %}
-                <li class="icon fa-{% if my_post.icon %}{{ my_post.icon }}{% else %}heart-o{% endif %}"><!-- featured:{{ i }} -->
-                  <a href="{{ my_post.url | prepend:site.baseurl }}">
-                  <div class="container">
-                  <h3>{{ my_post.title }}</h3>
-                  <p>{{ my_post.data}}<br />{{ my_post.excerpt | strip_html | truncatewords: 16 }}</p>
-                  </div>
-                  </a>
-                </li>{%
-                    if i == 8 %}{%
-                      break %}{%
-                    endif %}{%
-                  endif %}{%
-                endfor %}
-              </ul>
-            </div>
-          </section>{%
-      endif %}
-
-        <!-- CTA -->
-          <section id="cta" class="wrapper style4">
-            <div class="inner">
-              <header>
-                <h2>{{ site.closing-head }}</h2>
-                <p>{{ site.closing-para }}</p>
-              </header>
-              <ul class="actions vertical">
-                <!-- <li><a href="#" class="button fit special">Activate</a></li> -->
-                <li><a href="{{ '/contact/' | prepend: site.baseurl }}" class="button fit special">Contact</a></li>
-              </ul>
-            </div>
-          </section>
-
-      {% include footer.html %}
-
-      {% include scripts.html %}
-
-    </div>
-
-  </body>
-
+<html lang="{{ site.lang | default: 'en' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kyle Archie — Engineer &amp; Builder</title>
+  <meta name="description" content="I'm Kyle Archie, an engineer and builder. My current focus is relaunching Slokie around school bus operations, with more projects to come.">
+  <link rel="canonical" href="{{ '/' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="icon" href="{{ '/images/favicon.ico' | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ '/css/personal.css' | prepend: site.baseurl }}">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header wrap">
+    <a class="wordmark" href="{{ '/' | prepend: site.baseurl }}" aria-label="Kyle Archie home">Kyle Archie<span aria-hidden="true">.</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#work">Current work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Get in touch <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero wrap" aria-labelledby="intro-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Engineer. Inventor. Builder.</p>
+        <h1 id="intro-title">Big-picture thinking.<br><em>Real-world work.</em></h1>
+        <p class="intro">I’m Kyle Archie. I build software, lead technical teams, and use engineering to make complex operations work better.</p>
+        <p class="hero-focus">Right now, that means a new chapter for <a href="#work">Slokie</a>, focused on school bus operations.</p>
+        <a class="button" href="#work">Explore what I’m building <span aria-hidden="true">↘</span></a>
+      </div>
+      <figure class="portrait">
+        <img src="{{ '/images/kyle-archie-navy.png' | prepend: site.baseurl }}" alt="Kyle Archie smiling, wearing a navy suit against a dark navy background" width="1024" height="1536" fetchpriority="high">
+        <figcaption>Kyle Archie <span>Engineering &amp; entrepreneurship</span></figcaption>
+      </figure>
+    </section>
+    <section id="work" class="work-section" aria-labelledby="work-title">
+      <div class="wrap work-grid">
+        <div class="section-label"><span class="index">01 / CURRENT FOCUS</span><p>A new chapter.</p><a class="slokie-mark" href="https://slokie.com" aria-label="Visit Slokie"><img src="{{ '/images/slokie-bus.png' | prepend: site.baseurl }}" width="2138" height="2138" alt="Slokie school bus logo" loading="lazy"></a></div>
+        <div class="slokie">
+          <div class="project-heading"><h2 id="work-title">Slokie<span>.</span></h2><span class="badge">Relaunch in the works</span></div>
+          <h3>Starting with school bus operations.</h3>
+          <p>I’m preparing to relaunch Slokie with a focus on school bus operations. My background in transportation planning, resource allocation, and software development gives me a practical foundation for this next chapter.</p>
+          <p>This is my focus today. Over time, I’ll share other projects here as they take shape.</p>
+          <a class="text-link" href="https://slokie.com">Visit Slokie.com <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="about-section wrap" aria-labelledby="about-title">
+      <div class="section-label"><span class="index">02 / BACKGROUND</span><p>Different disciplines.<br>A common thread.</p><div class="background-marks"><figure><img src="{{ '/images/cornell.jpg' | prepend: site.baseurl }}" width="320" height="213" alt="Cornell University" loading="lazy"><figcaption>Engineering education</figcaption></figure><figure><img src="{{ '/images/clearesult.png' | prepend: site.baseurl }}" width="556" height="91" alt="CLEAResult" loading="lazy"><figcaption>Energy &amp; program operations</figcaption></figure></div></div>
+      <div class="about-copy">
+        <h2 id="about-title">Understand the system.<br>Build something useful.</h2>
+        <p>I was raised as an inventor and trained as an engineer at Cornell. My background spans operations research leadership at the NYC Department of Correction, statewide energy programs, naval simulations, and building my own machine learning products.</p>
+        <p>I’ve led multidisciplinary teams and stayed close to the engineering: writing software, building models, and working through the constraints that determine whether an idea will work in practice.</p>
+        <a class="text-link" href="{{ '/9_aboutme/' | prepend: site.baseurl }}">More about my background <span aria-hidden="true">↗</span></a>
+        <div class="experience" aria-label="Areas of experience"><span>Operations research</span><span>Systems engineering &amp; AI</span><span>Technical leadership</span></div>
+      </div>
+    </section>
+    <section class="archive-section wrap" aria-labelledby="archive-title">
+      <div class="archive-header"><div><span class="index">03 / EXPLORATIONS</span><h2 id="archive-title">A few things along the way.</h2></div><p>Past projects, code, and ideas.</p></div>
+      <div class="project-gallery">
+        <a class="project-card" href="{{ '/1_hurricanes/' | prepend: site.baseurl }}"><div class="project-art storm-art"><img src="{{ '/images/centered_2017152N14262_20171523.png' | prepend: site.baseurl }}" alt="Satellite imagery over a map from my hurricane forecasting project" width="230" height="231" loading="lazy"></div><div class="project-card-copy"><span class="index">MACHINE LEARNING</span><h3>Hurricane forecasting <span aria-hidden="true">↗</span></h3><p>Exploring storm-track prediction with satellite imagery and neural networks.</p></div></a>
+        <a class="project-card" href="{{ '/youtube/' | prepend: site.baseurl }}"><div class="project-art engineering-art"><img src="{{ '/images/slide9.jpg' | prepend: site.baseurl }}" alt="The engineering design process, illustrated in my video series" width="1280" height="720" loading="lazy"></div><div class="project-card-copy"><span class="index">ENGINEERING &amp; VIDEO</span><h3>From idea to prototype <span aria-hidden="true">↗</span></h3><p>A video series following the engineering process, from problem definition through testing.</p></div></a>
+        <a class="project-card" href="{{ site.social.github }}"><div class="project-art model-art"><img src="{{ '/images/baseline_model.png' | prepend: site.baseurl }}" alt="Architecture diagram of my multi-input forecasting model" width="2111" height="1087" loading="lazy"></div><div class="project-card-copy"><span class="index">CODE &amp; EXPERIMENTS</span><h3>Under the hood <span aria-hidden="true">↗</span></h3><p>Code, notebooks, and models from my projects, shared on GitHub.</p></div></a>
+      </div>
+    </section>
+    <section id="contact" class="contact-section" aria-labelledby="contact-title"><div class="wrap contact-inner"><div><span class="index">LET’S CONNECT</span><h2 id="contact-title">Good work starts<br>with a conversation.</h2><p>Interested in Slokie, school bus operations, or a project we might work on together? I’d like to hear from you.</p></div><div class="contact-actions"><a class="button" href="mailto:kyle@kylearchie.com">Email me <span aria-hidden="true">↗</span></a><a class="text-link" href="{{ site.social.linkedin-square }}">Connect on LinkedIn <span aria-hidden="true">↗</span></a></div></div></section>
+  </main>
+  <footer class="site-footer wrap"><a class="wordmark" href="{{ '/' | prepend: site.baseurl }}">Kyle Archie<span>.</span></a><p>© {{ site.time | date: '%Y' }} Kyle Archie</p><a href="#main">Back to top ↑</a></footer>
+</body>
 </html>

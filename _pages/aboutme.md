@@ -1,13 +1,93 @@
 ---
+layout: profile
 key: 4
 title: About me
-permalink: /aboutme/
-excerpt: An honest telling of my story, with both the good and the bad, for those interested.
-image: bw_headshot.jpg
-background-image: banner.jpg
+permalink: /9_aboutme/
+excerpt: Kyle Archie’s background in operations research, technical leadership, machine learning, energy, and systems engineering.
+image: kyle-archie-navy.png
 ---
 
-<hr />
+I’ve spent my career moving between hands-on engineering and the responsibility of making an operation run. That has meant building simulation models for the Navy, running an energy consulting business, managing statewide utility programs, developing AI products, and leading operations research for New York City.
+
+I enjoy the whole process: figuring out what needs to change, building a useful model of the problem, writing the software, and working with the people who will use it.
+
+## What I’m building next
+
+I’m preparing to relaunch [Slokie](https://slokie.com) with a focus on **school bus operations**. It brings together interests that have followed me across several roles: transportation planning, scheduling, resource allocation, and the practical use of software to improve daily work.
+
+Slokie has been a home for my entrepreneurial projects before. This next chapter starts with school buses, while this site will remain a place to share other work as it develops.
+
+## Experience that shapes my work
+
+### Operations research in public service
+
+**NYC Department of Correction · Assistant Commissioner of Operations Research**
+
+In this role, I’ve led a team of data scientists, computer scientists, and operations researchers working on safety, logistics, and resource allocation. The work combines predictive modeling, optimization, and simulation with the realities of a large, continuously operating public agency.
+
+Projects have included transportation planning, population forecasting, and modeling service-delivery processes. I’ve also worked with Columbia University on research partnerships that apply engineering methods to operational problems. Leading this work means explaining technical choices clearly, understanding constraints, and helping people put new approaches into practice.
+
+<figure class="career-mark"><img src="{{ '/images/slokie-original.png' | prepend: site.baseurl }}" width="1200" height="1200" alt="Original Slokie fingerprint logo" loading="lazy"></figure>
+
+### Building and testing AI products
+
+**Slokie, LLC · Founder & Machine Learning Engineer · 2017–2023**
+
+I designed, built, and deployed Slokie’s software using Python and a serverless architecture on Google Cloud. The work ranged from personalized media and meal-planning products to experiments in reinforcement learning for portfolio management, computer vision for martial arts coaching, and hurricane forecasting.
+
+Running the business meant taking responsibility for the product as a whole: system design, programming, deployment, marketing, and operations. It also meant testing ideas and deciding which ones deserved more work.
+
+<figure class="career-mark wordmark-image"><img src="{{ '/images/clearesult.png' | prepend: site.baseurl }}" width="556" height="91" alt="CLEAResult" loading="lazy"></figure>
+
+### Energy programs, from the field to policy
+
+**CLEAResult / Conservation Services Group · 2010–2017**
+
+Across technical field management, program operations, and senior consulting roles, I worked with utilities and government agencies on energy efficiency programs. My responsibilities included directing programs with an annual budget of approximately $13 million and managing teams across field operations, customer service, and technology.
+
+I built forecasting and analysis tools to assess program changes, developed routing tools for inspection scheduling, and advised on the Pratt Center’s EnergyFit NYC pilot. I also contributed to the national HPXML working group on data exchange between energy modeling tools and programs.
+
+<figure class="career-mark"><img src="{{ '/images/varna.jpg' | prepend: site.baseurl }}" width="295" height="224" alt="Varna Energy Solutions" loading="lazy"></figure>
+
+### Starting a business on the ground
+
+**Varna Energy Solutions · Founder & Energy Consultant · 2007–2010**
+
+I founded an energy consulting and contracting business, using diagnostic testing and building models to help homeowners identify cost-effective improvements. I managed employees and contractors, and built web-based tools to share field information and support contractor bidding. It was a direct education in the relationship between a technical recommendation and the work needed to deliver it.
+
+### A foundation in physical systems
+
+**VisiTech · Systems Engineer · 2005–2007**
+
+At VisiTech, I supported a U.S. Navy simulation program through requirements analysis, systems modeling, and a three-dimensional environmental model built in MATLAB. Earlier, at Electric Boat, I worked on submarine structural analysis and software to support the engineering team.
+
+That foundation still shapes how I approach software: define the requirements, understand the interactions, and evaluate how the whole system behaves.
+
+<figure class="career-photo"><img src="{{ '/images/lpd17.jpg' | prepend: site.baseurl }}" width="1280" height="914" alt="LPD-17 naval ship at sea" loading="lazy"><figcaption>Earlier work: naval simulation and environmental modeling.</figcaption></figure>
+
+## How I approach a problem
+
+- **Start with the operation.** Understand the people, decisions, constraints, and desired outcome before choosing a tool.
+- **Make the tradeoffs explicit.** Use models, prototypes, and evidence to compare options and test assumptions.
+- **Stay close to the work.** I lead technical teams and continue to write code, build models, and work through implementation details.
+
+My tools include Python, SQL, TensorFlow, and Google Cloud, alongside optimization, simulation, forecasting, and computer vision. The choice depends on the problem.
+
+## Education
+
+<figure class="career-mark"><img src="{{ '/images/cornell.jpg' | prepend: site.baseurl }}" width="320" height="213" alt="Cornell University" loading="lazy"></figure>
+
+**Cornell University**
+
+Master of Engineering in Mechanical Engineering, with a minor in Systems Engineering, 2005. Bachelor of Science in Mechanical Engineering, with a concentration in Aerospace, 2003.
+
+At Cornell, I also led the mechanical team for the Autonomous Underwater Vehicle project—an experience that brought design, fabrication, teamwork, and real deadlines together.
+
+<details class="earlier-story" markdown="1">
+<summary>Earlier reflections: the longer story</summary>
+
+*The following personal essay was written during an earlier chapter of my work, before my public-service role and the upcoming Slokie relaunch. References to “today” reflect that period.*
+
 My name is Kyle Archie. I’m an inventor and an engineer who uses a multidisciplinary approach to solve tough problems. How did I get here?
 
 {% include post_picwrap.html pos="left" src="/images/cornell.jpg" %}
@@ -45,30 +125,11 @@ Now, in the years since I’d shuttered Varna, Machine Learning had really taken
 
 So I gobbled up everything I could, started applying these algorithms to my own set of problems, and quickly, as I think most people who learn about machine learning’s ability to control complex tasks do, started thinking about how I could use this to manage my stock portfolio. Well, my first stop was my good friend who’d been successfully trading stocks since college. I picked his brain, learned about news sentiment analysis, and built my own custom OpenAI environment for stock trading based both on some of the concepts he’d taught me, and concepts like momentum trading and value investing that I’d learned on via  [Investopia](https://www.investopedia.com/), yet another awesome web resource. 
 
-{% include post_picwrap.html pos="right" src="/images/sloane.jpg" %}
-It was around this time that two major, world changing events happened in my life. First, my daughter was born. Suddenly, I started feeling a need to stop living for myself, and start doing things to give her the best future I could. I also wanted to be a role model for her. My whole outlook changed.
+I quickly fell down the rabbit hole and spent countless hours both learning the latest machine learning algorithms, and then applying them to the problem of managing a stock portfolio. By late 2017, I'd made a lot of progress getting a stock recommender working, but I realized that if I really wanted to make this successful, I would need to work this problem full-time. So, I left my senior consulting job with CLEAResult, and dedicated myself to building a fully automated trading platform that intakes thousands of datapoints every minute and automatically uses those to rebalance a diverse stock portfolio. I now have this running live.
 
-{% include post_picwrap.html pos="left" src="/images/mom.jpg" %}
-Then, the other major event happened. My mother died. She never told me, but when I was in college, she’d been diagnosed with breast cancer, and had undergone surgery. My mother was always trying to protect me from things she thought would hurt me, which was both frustrating and endearing. She had been such a huge part of my life and certainly the main reason why I had been such a good student as a kid. I remember her helping me study for countless tests, and making sure that after dinner, I always sat down to do my homework. And she always pushed the arts on me… pushing me to learn the violin at a young age, which I was far from happy about initially, but which would eventually culminate in me becoming first chair of my high school orchestra and obtaining my earliest states of meditation in life, which I’m certain helped me to develop cognitive skills. She encouraged painting and drawing, as she herself was both an amateur artist and a professional teacher. My mother also taught me about being kind to others, or at least to try to have sympathy for those in need. Much of her experience was as a special ed teacher, helping those with the greatest need. Her death hit me pretty hard, especially since I had no idea how sick she was until she was put into hospice care and given a couple weeks to live. But, I was able to say goodbye, which is a gift not many are given.
-
-These two events gave me a whole new purpose in life. Suddenly, I felt a real need to make the most of my situation. Life is short, and I had been granted a lot of opportunities that not many get. I had a world class education, an ability to learn complex concepts, a strong work ethic, and perhaps most importantly (and thanks to my mom), a creative mind. I dove into developing my algorithm completely and started to make some big breakthroughs. But, I quickly realized that if I really wanted to make this work, I’d need to work on it full-time. 
-
-{% include post_picwrap.html pos="right" src="/images/openai.jpg" %}
-So with my new perspective on life, I quit my job, and dove in headfirst. I negotiated a contract with a proprietary trading firm (though I would wait to sign until I was ready to start live trading), and entered the terms into my OpenAI environment. A year or so later, and I was right at the brink of making something workable. In back testing, my algorithm was making tons of money, but it was streaky… too streaky. Some months would make massive gains, others massive losses, but it was net profitable, and close to beating the market, which was a benchmark nobody had yet hit, at least long term. But, the problem was working with leveraged funds, which I would need to use to make up for the money lost to commissions. If my algorithm started off on one of its losing streaks, which was unlikely, but still a very real possibility, I’d quickly be wiped out. I had to figure out a way to make this work, or this would be my second great failure.
-
-{% include post_picwrap.html pos="left" src="/images/alpaca.jpg" %}
-Enter [Alpaca](https://alpaca.markets/), a Silicon Valley startup specifically targeting people like me; namely, those developing their own proprietary algorithms to trade stocks. Their commission-free set-up was a total game changer, and now suddenly my back testing was showing real promise. I’m currently finalizing my algorithm and entering live testing, with the expectation of being able to trade with real money by the end of Q3 2019. 
-
-Now that I had my issues with my trading system more or less sorted out, I felt pretty good. But, all of sudden found myself with something I hadn’t had in years; spare time. I decided to do two things. First, I needed to get myself back in shape. I’ve always prioritized physical fitness, at least since my late twenties when my youthful metabolism started to fade and I found myself gaining weight and getting winded climbing just a few flights of stairs. But, I’d been reading a lot about how physical fitness can also increase cognitive function, and my mind has always been my greatest resource. I dove full into Muay Thai.
-
-{% include post_picwrap.html pos="right" src="/images/thai.jpg" %}
-I’ve been into martial arts for most of my adult life. I spent several years floating from one form to the next. I tried Jeet Kune Do (Bruce Lee’s creation), Jow Ga Kung Fu, Jujitsu, MMA, Panantukan (Filipino boxing), Kali, and traditional western boxing. But my ultimate favorite, and the one I keep coming back to, has always been Muay Thai. It’s pure striking… one of the best cardio workouts you can find, and it’s all about nuance. You can either pay as much or as little attention as you want during a given class; either trying to tighten up your form, or just zoning out and going for a nice workout. It’s simple, but it takes years, if not a lifetime to master, and unlike the more combat oriented martial arts like Krav Maga, it’s a sport so you can spar with it with little physical risk. I mean it’s not risk free… I actually broke my nose not too long ago sparring, but you’re not going to come out of a sparring match with an experienced partner with a broken knee or missing eye. And when you finally reach a certain level of skill, sparring becomes a complete Zen experience… almost like being in a martial arts movie. There’s a flow to it and a kind of feeling of Zen that makes me almost giddy. I can’t remember ever having as much fun doing anything else in my life. Things like video games just seem so boring in comparison.
-
-{% include post_picwrap.html pos="left" src="/images/youtube.jpg" %}
-The second thing I decided to do was to create a YouTube series. Even though I’d finally succeeded with making an algorithm that can trade stocks, I could hardly share that code. If that code got in the wrong hands (especially my trained weights file), it could easily be used by a well-funded nefarious trader to identify my moves and milk me dry. But I do want to share some of the biggest lessons I learned in writing it to put a hand back, so to speak, to those still learning the ropes. I’d received so much from this Open Source movement that not doing that just felt wrong somehow. So, I decided I would create a series that uses several of the same principles I used in my algorithm to solve another problem; namely, predicting the track of hurricanes. I figured this would be a win / win. I could help fill in some of the gaps I found in the other online courses I’d audited while also helping to save lives by advancing the science of forecasting these storms, even if it is just by a small amount.
-
-And that catches us up to today. I’ve had a pretty exciting career, and as I continue to learn, I’m hoping I can use this new YouTube station and GitHub site to help those who follow in my path. My intention is to keep producing these videos for as long as I have time to do so. Please do check them out.
+This brings us to today. While I'm constantly making improvements to my stock trading platform, it doesn't take nearly as much time as it used to. I have free time again, and so I'm open to exploring opportunities.
 
 
 
 
+</details>
