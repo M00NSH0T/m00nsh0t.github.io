@@ -1,11 +1,15 @@
 ---
 key: 1
 title: Slokie LLC
-excerpt: This is the culmination of several smaller projects I've been working on for the past few years. I layer multiple computer vision and machine learning algorithms on top of each other to build personalized children's books.
+excerpt: The story behind Slokie’s personalized children’s books, launched in 2022, and the software that brought them to life.
 permalink: /slokie/
 image: nightlight-logo.jpg
 background-image: slokie-tall.png
 ---
+
+<hr />
+
+**The first chapter: personalized children’s books.** This page preserves the story of Slokie’s original book business, launched in May 2022. I’m now preparing a new chapter focused on [school bus operations]({{ '/#work' | prepend: site.baseurl }}). I also hope to rebuild the book software on an independent platform and reopen ordering in the future; no reopening date has been announced.
 
 <hr />
 

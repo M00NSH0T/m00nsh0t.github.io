@@ -15,7 +15,7 @@ I enjoy the whole process: figuring out what needs to change, building a useful 
 
 I’m preparing to relaunch [Slokie](https://slokie.com) with a focus on **school bus operations**. It brings together interests that have followed me across several roles: transportation planning, scheduling, resource allocation, and the practical use of software to improve daily work.
 
-Slokie has been a home for my entrepreneurial projects before. This next chapter starts with school buses, while this site will remain a place to share other work as it develops.
+Slokie began with personalized children’s books and grew to include other AI products. School bus operations are the focus of its next chapter. I also hope to revisit the book software and bring ordering back through an independent platform. That remains a future project, with no reopening date announced.
 
 ## Experience that shapes my work
 
@@ -33,7 +33,9 @@ Projects have included transportation planning, population forecasting, and mode
 
 **Slokie, LLC · Founder & Machine Learning Engineer · 2017–2023**
 
-I designed, built, and deployed Slokie’s software using Python and a serverless architecture on Google Cloud. The work ranged from personalized media and meal-planning products to experiments in reinforcement learning for portfolio management, computer vision for martial arts coaching, and hurricane forecasting.
+I designed, built, and deployed Slokie’s software using Python and a serverless architecture on Google Cloud. Its personalized children’s books placed a child’s own photos into illustrated stories, using computer vision to remove backgrounds and match the artwork. I built the image-processing and book-production software, along with an AI preview tool so families could see the result before ordering. [Read the story behind the books]({{ '/slokie/' | prepend: site.baseurl }}).
+
+Other work included the Slokie Chef meal-planning product and experiments in reinforcement learning for portfolio management, computer vision for martial arts coaching, and hurricane forecasting.
 
 Running the business meant taking responsibility for the product as a whole: system design, programming, deployment, marketing, and operations. It also meant testing ideas and deciding which ones deserved more work.
 
@@ -54,6 +56,8 @@ I built forecasting and analysis tools to assess program changes, developed rout
 **Varna Energy Solutions · Founder & Energy Consultant · 2007–2010**
 
 I founded an energy consulting and contracting business, using diagnostic testing and building models to help homeowners identify cost-effective improvements. I managed employees and contractors, and built web-based tools to share field information and support contractor bidding. It was a direct education in the relationship between a technical recommendation and the work needed to deliver it.
+
+<figure class="career-mark"><img src="{{ '/images/visitech-restored.png' | prepend: site.baseurl }}" width="1226" height="1283" alt="VisiTech logo with a red V and engineering drafting lines" loading="lazy"></figure>
 
 ### A foundation in physical systems
 
