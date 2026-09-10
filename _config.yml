@@ -13,10 +13,10 @@
 # Site settings
 title: Kyle Archie
 description: Kyle Archie — engineer, inventor, and builder. Currently preparing to relaunch Slokie with a focus on school bus operations.
-url: "https://www.kylearchie.com"
+url: "https://kylearchie.com"
 owner:
   name: Kyle Archie # or company name
-  url: "https://www.kylearchie.com" # your URL
+  url: "https://kylearchie.com" # your URL
 #first_published: 2019 # if migrating another site, the year of your first publish
                       # Must be a 4-digit integer year (math is used on it)
 #url: "http://example.com" # the base hostname & protocol for this site
@@ -25,12 +25,12 @@ baseurl: "" # the subpath of your site, e.g. /blog
             # And list multiple sitemaps if there are other subdirectories you want indexed
             # besides this blog.
 lang: en-us # used in HTML lang attributes
-
+google-analytics: G-YH200QF0H4
 # on landing page
 # - set the greeting only if you want to display the first green section
 greeting:
-  title: Check me out on YouTube and GitHub Today 
-  text: I was raised as an inventor and trained as an engineer at Cornell. I've spent most of my professional career in various consulting roles... from designing nuclear submarines and working on complex wargame style software simulations for the U.S. Navy to helping state governments and major utilities around the country leverage new technologies to save energy. For the last year and a half, I've been developing a machine learning system to manage my personal stock portfolio, and now I've decided to switch gears a bit and put out a YouTube series applying a lot of the knowledge I've picked up along the course of my career to solving various big "moonshot" problems.
+  title: Check me out on GitHub Today
+  text: I was raised as an inventor and trained as an engineer at Cornell. I've spent most of my professional career in various consulting roles... from designing nuclear submarines and working on complex wargame style software simulations for the U.S. Navy to helping state governments and major utilities around the country leverage new technologies to save energy. For the past few years, I've been working on my personalized children's book platform, Slokie. I'm currently looking for my next big move. I've included a couple portfolio projects below. Please check them out.
 # - displayed at the bottom
 closing-head: Work with me
 closing-para: Interested in Slokie, school bus operations, or a project we might work on together? Get in touch.
@@ -38,9 +38,9 @@ closing-para: Interested in Slokie, school bus operations, or a project we might
 # on all pages (and the first three you list display with greeting, if included)
 social:
   #twitter: https://twitter.com/_username_
-  youtube-square:  https://www.youtube.com/channel/UCPmLClJE0GmnZ4e7sW_Fu7A
-  github: https://github.com/M00NSH0T
-  linkedin-square: https://linkedin.com/in/kyle-archie-b204a611/
+  #youtube-square:  https://www.youtube.com/channel/UCPmLClJE0GmnZ4e7sW_Fu7A
+  github: https://github.com/M00NSH0T/Hurricanes/tree/master/2021%20update
+  linkedin-square: https://linkedin.com/in/kyle-archie/
   #facebook-official: https://facebook.com/_username_
   #google-plus-square: https://plus.google.com/u/0/+_username_
   #email: /contact/ # you can configure and use this contact page or use your email addy
@@ -109,7 +109,7 @@ permalink: /:categories/:title.html
 markdown: kramdown
 #sass:
 #  style: compressed
-exclude: ['site.bat','compose.rb','README.md']
+exclude: ['site.bat','compose.rb','README.md','_pages/old_pages']
 include: ['_pages','.htaccess']
 defaults:
   - scope:
