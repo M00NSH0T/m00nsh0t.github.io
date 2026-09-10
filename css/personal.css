@@ -428,6 +428,7 @@ h1{
   .profile-contact { align-items: flex-start; flex-direction: column; }
 }
 /* Project imagery and brand marks */
+.slokie-banner { display: block; width: 100%; height: auto; margin-bottom: 28px; }
 .slokie-mark { display: block; width: 172px; max-width: 100%; margin-top: 30px; }
 .slokie-mark img { display: block; width: 100%; height: auto; border-radius: 22%; }
 .background-marks { display: grid; gap: 26px; margin-top: 32px; max-width: 220px; }
