@@ -2344,21 +2344,3 @@ $baseurl: '{{ site.baseurl }}/images';
 {% if site.custom_extensions == 'yes' %}
 {% include _my/custom.scss %}
 {% endif %}
-
-/* Interactive Slokie Chef portfolio demo. */
-.chef-live-demo {
-  margin: 1.5em 0;
-  border: 1px solid rgba(128, 128, 128, 0.3);
-  border-radius: 8px;
-  overflow: hidden;
-  background: #f8f6ef;
-}
-.chef-live-demo iframe {
-  display: block;
-  width: 100%;
-  height: 950px;
-  border: 0;
-}
-@media screen and (max-width: 736px) {
-  .chef-live-demo iframe { height: 820px; }
-}
