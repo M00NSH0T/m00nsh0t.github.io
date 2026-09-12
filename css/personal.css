@@ -428,6 +428,13 @@ h1{
   .profile-contact { align-items: flex-start; flex-direction: column; }
 }
 /* Project imagery and brand marks */
+.chef-feature { display: grid; grid-template-columns: 1fr 1fr; margin-bottom: 32px; border: 1px solid var(--line); background: #fff; }
+.chef-feature-art { display: flex; align-items: center; background: #14232a; }
+.chef-feature-art img { display: block; width: 100%; height: auto; }
+.chef-feature-copy { padding: 32px; }
+.chef-feature-copy h3 { font-size: 30px; margin: 12px 0 18px; }
+.chef-feature-copy p { color: var(--muted); margin-bottom: 18px; }
+@media (max-width: 750px) { .chef-feature { grid-template-columns: 1fr; } .chef-feature-copy { padding: 24px; } }
 .visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
 .slokie-banner { display: block; width: 100%; height: auto; margin-bottom: 28px; }
 .slokie-mark { display: block; width: 172px; max-width: 100%; margin-top: 30px; }
