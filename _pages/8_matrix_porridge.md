@@ -1,31 +1,44 @@
 ---
 key: 2
 title: Slokie AI Chef
-excerpt: Combining classical optimization algorithms with ChatGPT to create the optimal mealplan.
+excerpt: A practical whole-day meal planner that brings restaurant orders, easy home meals, and transparent nutrition calculations together.
 permalink: /matrix/
 image: matrix.jpg
 background-image: matrix.jpg
 ---
 
-<hr />
+## Good food. A day that works.
 
-This project began way back in 2010, but picked up steam again during the early days of COVID when many COVID-19 survivors reported losing their sense of smell and / or taste. While for most this returns over time, others continue to struggle with this issue months later. Way back in 2010, I was in my final days running my first company, right before Conservation Services Group recruited me. I was working long hours and had very little time to eat regular meals. A friend of mine and I were joking at the time that sometimes it'd be nice to just have an actually healthy meal to just eat in a hurry... one that didn't care at all about taste. 
+Slokie AI Chef is a meal-planning experiment built around a simple lesson: getting a whole day to work is more practical than asking every individual meal to be perfectly balanced.
 
-I immediately thought back to the movie, "The Matrix" and the famous ["tasty wheat scene"](https://www.youtube.com/watch?v=v1EcrD5IyxM). Basically, in this dystopian future where the atmosphere had been ruined and nothing grew above ground, food had to be synthesized. The result was a gelatinous goop... "a single cell protein combined with synthetic aminos, vitamins, and minerals. Everything the body needs." (The Matrix, 1999)
+The current app starts with food you actually want to eat. Add a restaurant order, a quick meal at home, a snack, or a drink, then ask it to fill the remaining meals. Adjust the portions and daily targets, and inspect the ingredients behind the numbers.
 
-Now there are a million products out there that claim to be healthy meals on the go for you, but looking at the nutrition labels on these, I never really found anything that quite delivered what I wanted. All focused too much on making something "edible." But those days, I was looking for something you'd down like a shot of bad whiskey. Something that got the job done, but didn't necessarily taste good. Not a bar filled with chocolate and peanut butter.
+### Try the live planner
 
-So back to these COVID-19 survivors. Losing their sense of taste is clearly not something anyone would ask for. But perhaps there's some lemonade they can make from these lemons. 
+[Open Slokie AI Chef in its own window](https://slokie-recipes-web-142395921602.us-east1.run.app/){:target="_blank" rel="noopener"}
 
-My 2020 goal fo the project aimed to find the optimal list of ingredients necessary to create the perfect meal for people who can't taste. It didn't matter if the ingredients made sense to a chef, just as long as they solve the equation and meet the dietary constraints of a typical adult.
+<div class="chef-live-demo">
+  <iframe src="https://slokie-recipes-web-142395921602.us-east1.run.app/" title="Slokie AI Chef — interactive whole-day meal planner" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+</div>
 
-You can see where that project ended on my GitHub page by [clicking here.](https://github.com/M00NSH0T/Matrix_Porridge)
+*The embedded app is live. Saving a day is optional and stays in your browser. Some browsers restrict saving inside embeds; use the separate window if needed. Optional AI preparation tips send the plan to Google's AI service and cache the generated guidance on the server.*
 
-## Enter ChatGPT
+### What the current version does
 
-In 2023, ChatGPT took the world by storm. Its ability to take well crafted instructions and respond back with everything from rhyming poems to fairly well-written code was a huge leap forward for Machine Learning. Specific to this project, however, I came to realize that ChatGPT might have been the 'missing ingredient' to my Matrix Porridge project. If I gave ChatGPT a list of ingredients, could it craft a meal that actually made sense and tasted good? I started experimenting and realized that there were certainly limits, but there was some real potential here.
+- Combines quick home meals, restaurant estimates, drinks, and individual USDA foods in one editable day.
+- Searches a refreshed catalog of 5,752 USDA reference foods, including oat milk, with links to the original records.
+- Suggests practical portions from a small quick-meal collection while keeping the items already chosen.
+- Checks calories, protein, fiber, and saturated fat independently of the language model, with a separate sodium callout and an optional sodium limit for suggestions.
+- Uses ranges for uncertain restaurant calories and keeps missing nutrients visibly unknown.
+- Offers optional preparation tips from a low-cost AI model.
 
-After a month or two of work, I figured out how I can leverage the best aspects of both my older Matrix Porridge project along with ChatGPT to create something really functional. As anyone who's watched the original Iron Chef series can attest, there are limits to what you can do with certain ingredients, especially if you are forced to combine them with a specific list of others in a single meal. But, if you instead focus on creating a full day's worth of snacks, main courses and side dishes, the disparate list of ingredients that I can generate from my classical optimization approach becomes much more usable.
+This is an early working version. The meal collection is intentionally small, restaurant estimates are not verified nutrition labels, and the checks do not cover all vitamins and minerals. Targets are editable examples, not personalized medical advice. The goal is useful, inspectable planning that can improve as the food collection and feedback grow.
 
-So, I build a backend database on GCP that contains tens of thousands of locally optimized ingredient lists, and then created a couple APIs that a web app that I built can use to create optimized meal plans. [Check it out here!](https://slokie.com/pages/the-slokie-chef)
+### From Matrix Porridge to meals people want to eat
+
+The idea began around 2010 with a question about fast, nutritionally complete food, inspired by the “tasty wheat” scene in *The Matrix*. I revisited it in 2020, exploring optimization algorithms that could select ingredients subject to dietary constraints. The [original Matrix Porridge code](https://github.com/M00NSH0T/Matrix_Porridge) documents that earlier approach.
+
+In 2023, I added language models to turn optimized ingredient lists into meal ideas and built a Google Cloud backend containing tens of thousands of ingredient combinations. That work exposed the more useful unit of planning: a day of meals and snacks, with room for different foods to contribute different things.
+
+The September 2026 reboot builds on that lesson. It separates the food arithmetic from AI-generated advice and puts everyday choices first: taste, convenience, portions, and the uncertainty of eating out. The [original recipe library](https://slokie-recipes-web-142395921602.us-east1.run.app/library) remains available as part of the project's history.
 
