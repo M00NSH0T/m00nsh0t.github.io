@@ -1,0 +1,215 @@
+{
+  "status": "complete",
+  "run_id": "1789234548162340800",
+  "synthetic": true,
+  "start": "2026-01-05 14:30:00+00:00",
+  "end": "2027-07-09 19:55:00+00:00",
+  "sessions": 379,
+  "physical_bars": 29490,
+  "decisions": 29482,
+  "history": [
+    {
+      "decisions": 2048,
+      "date": "2026-02-11 16:45:00+00:00",
+      "wealth": 100403.17142313546,
+      "reward_sum": 0.004031714231354652,
+      "observed_tax_years": 1
+    },
+    {
+      "decisions": 4096,
+      "date": "2026-03-20 17:25:00+00:00",
+      "wealth": 100806.92636986301,
+      "reward_sum": 0.008069263698630424,
+      "observed_tax_years": 1
+    },
+    {
+      "decisions": 6144,
+      "date": "2026-04-28 19:05:00+00:00",
+      "wealth": 101232.94387366819,
+      "reward_sum": 0.012329438736682477,
+      "observed_tax_years": 1
+    },
+    {
+      "decisions": 8192,
+      "date": "2026-06-05 14:15:00+00:00",
+      "wealth": 101645.1040715373,
+      "reward_sum": 0.016451040715373746,
+      "observed_tax_years": 1
+    },
+    {
+      "decisions": 10240,
+      "date": "2026-07-15 15:55:00+00:00",
+      "wealth": 102082.0256849315,
+      "reward_sum": 0.020820256849316113,
+      "observed_tax_years": 1
+    },
+    {
+      "decisions": 12288,
+      "date": "2026-08-20 17:35:00+00:00",
+      "wealth": 102475.33085996956,
+      "reward_sum": 0.024753308599696926,
+      "observed_tax_years": 1
+    },
+    {
+      "decisions": 14336,
+      "date": "2026-09-28 19:15:00+00:00",
+      "wealth": 102901.34836377473,
+      "reward_sum": 0.029013483637748867,
+      "observed_tax_years": 1
+    },
+    {
+      "decisions": 16384,
+      "date": "2026-11-04 15:25:00+00:00",
+      "wealth": 103303.05878995433,
+      "reward_sum": 0.03303058789954194,
+      "observed_tax_years": 1
+    },
+    {
+      "decisions": 18432,
+      "date": "2026-12-11 20:05:00+00:00",
+      "wealth": 103708.63108828006,
+      "reward_sum": 0.03708631088279248,
+      "observed_tax_years": 1
+    },
+    {
+      "decisions": 20480,
+      "date": "2027-01-22 18:15:00+00:00",
+      "wealth": 103978.69710806698,
+      "reward_sum": 0.039786971080658116,
+      "observed_tax_years": 2
+    },
+    {
+      "decisions": 22528,
+      "date": "2027-03-02 19:55:00+00:00",
+      "wealth": 103978.69710806698,
+      "reward_sum": 0.039786971080658116,
+      "observed_tax_years": 2
+    },
+    {
+      "decisions": 24576,
+      "date": "2027-04-09 14:05:00+00:00",
+      "wealth": 103978.69710806698,
+      "reward_sum": 0.039786971080658116,
+      "observed_tax_years": 2
+    },
+    {
+      "decisions": 26624,
+      "date": "2027-05-17 15:45:00+00:00",
+      "wealth": 103978.69710806698,
+      "reward_sum": 0.039786971080658116,
+      "observed_tax_years": 2
+    },
+    {
+      "decisions": 28672,
+      "date": "2027-06-24 17:25:00+00:00",
+      "wealth": 103978.69710806698,
+      "reward_sum": 0.039786971080658116,
+      "observed_tax_years": 2
+    },
+    {
+      "decisions": 29482,
+      "date": "2027-07-09 19:55:00+00:00",
+      "wealth": 102840.64469286577,
+      "reward_sum": 0.02840644692864604,
+      "observed_tax_years": 2
+    }
+  ],
+  "scenario": "Future tax and fee schedules explicitly frozen to 2026; artificial prices.",
+  "automatic_tax_payments": false,
+  "learned_policy": false,
+  "elapsed_seconds": 49.918682499999996,
+  "reward_sum": 0.02840644692864604,
+  "expected_reward": 0.028406446928657677,
+  "final_wealth": 102840.64469286577,
+  "term": "long",
+  "orders": 2,
+  "tax": {
+    "as_of": "2027-07-09",
+    "years": [
+      {
+        "year": 2026,
+        "scenario": "Bounded 2026 MFJ standard-deduction scenario",
+        "activity": {
+          "short": 0.0,
+          "long": 0.0,
+          "ordinary": 0,
+          "qualified": 0
+        },
+        "actual_opening_short": 0.0,
+        "actual_opening_long": 0.0,
+        "baseline_opening_short": 0.0,
+        "baseline_opening_long": 0.0,
+        "actual": {
+          "federal": 49468.0,
+          "niit": 0.0,
+          "state": 16752.6,
+          "city": 10781.502,
+          "total": 77002.10200000001,
+          "carry_short": 0.0,
+          "carry_long": 0.0,
+          "agi": 300000.0
+        },
+        "baseline": {
+          "federal": 49468.0,
+          "niit": 0.0,
+          "state": 16752.6,
+          "city": 10781.502,
+          "total": 77002.10200000001,
+          "carry_short": 0.0,
+          "carry_long": 0.0,
+          "agi": 300000.0
+        },
+        "pending_loss": 0,
+        "accrued_investment_tax": 0.0,
+        "net_tax_payments": 0,
+        "net_tax_due": 0.0
+      },
+      {
+        "year": 2027,
+        "scenario": "2026 rules frozen in nominal dollars; hypothetical scenario, not actual future-year law",
+        "activity": {
+          "short": 0.0,
+          "long": 3977.157108066969,
+          "ordinary": 0,
+          "qualified": 0
+        },
+        "actual_opening_short": 0.0,
+        "actual_opening_long": 0.0,
+        "baseline_opening_short": 0.0,
+        "baseline_opening_long": 0.0,
+        "actual": {
+          "federal": 50064.57356621005,
+          "niit": 151.13197010654483,
+          "state": 16987.25226937595,
+          "city": 10935.656609508675,
+          "total": 78138.61441520121,
+          "carry_short": 0.0,
+          "carry_long": 0.0,
+          "agi": 303977.15710806695
+        },
+        "baseline": {
+          "federal": 49468.0,
+          "niit": 0.0,
+          "state": 16752.6,
+          "city": 10781.502,
+          "total": 77002.10200000001,
+          "carry_short": 0.0,
+          "carry_long": 0.0,
+          "agi": 300000.0
+        },
+        "pending_loss": 0,
+        "accrued_investment_tax": 1136.5124152011995,
+        "net_tax_payments": 0,
+        "net_tax_due": 1136.5124152011995
+      }
+    ],
+    "accrued_investment_tax": 1136.5124152011995,
+    "net_tax_payments": 0,
+    "net_tax_due": 1136.5124152011995,
+    "actual_next_short_loss": 0.0,
+    "actual_next_long_loss": 0.0,
+    "baseline_next_short_loss": 0.0,
+    "baseline_next_long_loss": 0.0
+  },
+  "fingerprint": "bb95089c3c8cad8b17b15241a57fbe01630096d0ddd2e43f2e986814d55e74ac"
+}

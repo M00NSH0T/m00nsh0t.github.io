@@ -1,0 +1,345 @@
+{
+  "status": "complete",
+  "run_id": "1789214003394286200",
+  "purpose": "Supervised synthetic representation diagnostic; not RL or market performance.",
+  "results": [
+    {
+      "seed": 42,
+      "episodes": 64,
+      "correct": 64,
+      "hold_cases": 30,
+      "correct_holds": 30,
+      "close_cases": 34,
+      "correct_closes": 34,
+      "ablated_correct": 30,
+      "prediction_rmse_percentage_points": 0.6801344752311707,
+      "mean_ending_wealth": 102210.06660134565,
+      "oracle_mean_ending_wealth": 102210.06660134565,
+      "history": [
+        {
+          "update": 50,
+          "loss": 4.7214274406433105,
+          "gradient_norm": 5.427058696746826
+        },
+        {
+          "update": 100,
+          "loss": 3.730607748031616,
+          "gradient_norm": 2.2640297412872314
+        },
+        {
+          "update": 150,
+          "loss": 2.8997058868408203,
+          "gradient_norm": 4.329094409942627
+        },
+        {
+          "update": 200,
+          "loss": 1.454088568687439,
+          "gradient_norm": 5.141732692718506
+        },
+        {
+          "update": 250,
+          "loss": 0.6361455917358398,
+          "gradient_norm": 3.147981643676758
+        },
+        {
+          "update": 300,
+          "loss": 0.6123543381690979,
+          "gradient_norm": 0.6802114844322205
+        },
+        {
+          "update": 350,
+          "loss": 0.5720515847206116,
+          "gradient_norm": 3.6339666843414307
+        },
+        {
+          "update": 400,
+          "loss": 0.3902852237224579,
+          "gradient_norm": 2.804049253463745
+        },
+        {
+          "update": 450,
+          "loss": 0.4220676124095917,
+          "gradient_norm": 2.6640286445617676
+        },
+        {
+          "update": 500,
+          "loss": 0.49124768376350403,
+          "gradient_norm": 1.651950478553772
+        },
+        {
+          "update": 550,
+          "loss": 0.6052584648132324,
+          "gradient_norm": 8.069612503051758
+        },
+        {
+          "update": 600,
+          "loss": 0.41335684061050415,
+          "gradient_norm": 3.2855374813079834
+        },
+        {
+          "update": 650,
+          "loss": 0.4208856225013733,
+          "gradient_norm": 4.693332195281982
+        },
+        {
+          "update": 700,
+          "loss": 0.4269731640815735,
+          "gradient_norm": 3.7883777618408203
+        },
+        {
+          "update": 750,
+          "loss": 0.3583409786224365,
+          "gradient_norm": 4.394089698791504
+        },
+        {
+          "update": 800,
+          "loss": 0.6018984913825989,
+          "gradient_norm": 3.946960210800171
+        },
+        {
+          "update": 850,
+          "loss": 0.5531918406486511,
+          "gradient_norm": 3.6194040775299072
+        },
+        {
+          "update": 900,
+          "loss": 0.4465494751930237,
+          "gradient_norm": 3.617656946182251
+        },
+        {
+          "update": 950,
+          "loss": 0.41058602929115295,
+          "gradient_norm": 1.9900124073028564
+        },
+        {
+          "update": 1000,
+          "loss": 0.4892677068710327,
+          "gradient_norm": 2.785811424255371
+        }
+      ]
+    },
+    {
+      "seed": 43,
+      "episodes": 64,
+      "correct": 64,
+      "hold_cases": 30,
+      "correct_holds": 30,
+      "close_cases": 34,
+      "correct_closes": 34,
+      "ablated_correct": 30,
+      "prediction_rmse_percentage_points": 0.640489399433136,
+      "mean_ending_wealth": 102210.06660134565,
+      "oracle_mean_ending_wealth": 102210.06660134565,
+      "history": [
+        {
+          "update": 50,
+          "loss": 3.985506057739258,
+          "gradient_norm": 2.6880805492401123
+        },
+        {
+          "update": 100,
+          "loss": 3.565871238708496,
+          "gradient_norm": 3.2114553451538086
+        },
+        {
+          "update": 150,
+          "loss": 3.3809382915496826,
+          "gradient_norm": 11.388978958129883
+        },
+        {
+          "update": 200,
+          "loss": 1.1528904438018799,
+          "gradient_norm": 3.00323748588562
+        },
+        {
+          "update": 250,
+          "loss": 0.49448657035827637,
+          "gradient_norm": 5.347531795501709
+        },
+        {
+          "update": 300,
+          "loss": 0.7285746932029724,
+          "gradient_norm": 7.618637561798096
+        },
+        {
+          "update": 350,
+          "loss": 0.4726100265979767,
+          "gradient_norm": 3.556863307952881
+        },
+        {
+          "update": 400,
+          "loss": 0.4989781081676483,
+          "gradient_norm": 3.2478280067443848
+        },
+        {
+          "update": 450,
+          "loss": 0.4145745635032654,
+          "gradient_norm": 1.357893466949463
+        },
+        {
+          "update": 500,
+          "loss": 0.510307788848877,
+          "gradient_norm": 5.218356132507324
+        },
+        {
+          "update": 550,
+          "loss": 0.4155829846858978,
+          "gradient_norm": 6.533483505249023
+        },
+        {
+          "update": 600,
+          "loss": 0.37978166341781616,
+          "gradient_norm": 2.1144025325775146
+        },
+        {
+          "update": 650,
+          "loss": 0.4236728250980377,
+          "gradient_norm": 0.9028779864311218
+        },
+        {
+          "update": 700,
+          "loss": 0.5029327869415283,
+          "gradient_norm": 6.452210903167725
+        },
+        {
+          "update": 750,
+          "loss": 0.5787047743797302,
+          "gradient_norm": 4.281223297119141
+        },
+        {
+          "update": 800,
+          "loss": 0.47474581003189087,
+          "gradient_norm": 5.402437686920166
+        },
+        {
+          "update": 850,
+          "loss": 0.5862099528312683,
+          "gradient_norm": 1.1708557605743408
+        },
+        {
+          "update": 900,
+          "loss": 0.44207775592803955,
+          "gradient_norm": 3.4119389057159424
+        },
+        {
+          "update": 950,
+          "loss": 0.46582892537117004,
+          "gradient_norm": 10.099305152893066
+        },
+        {
+          "update": 1000,
+          "loss": 0.4085221588611603,
+          "gradient_norm": 2.716182231903076
+        }
+      ]
+    }
+  ],
+  "scenarios_built": 32,
+  "updated_at": "2026-09-12T11:54:31.753507+00:00",
+  "seed": 43,
+  "update": 1000,
+  "history": [
+    {
+      "update": 50,
+      "loss": 3.985506057739258,
+      "gradient_norm": 2.6880805492401123
+    },
+    {
+      "update": 100,
+      "loss": 3.565871238708496,
+      "gradient_norm": 3.2114553451538086
+    },
+    {
+      "update": 150,
+      "loss": 3.3809382915496826,
+      "gradient_norm": 11.388978958129883
+    },
+    {
+      "update": 200,
+      "loss": 1.1528904438018799,
+      "gradient_norm": 3.00323748588562
+    },
+    {
+      "update": 250,
+      "loss": 0.49448657035827637,
+      "gradient_norm": 5.347531795501709
+    },
+    {
+      "update": 300,
+      "loss": 0.7285746932029724,
+      "gradient_norm": 7.618637561798096
+    },
+    {
+      "update": 350,
+      "loss": 0.4726100265979767,
+      "gradient_norm": 3.556863307952881
+    },
+    {
+      "update": 400,
+      "loss": 0.4989781081676483,
+      "gradient_norm": 3.2478280067443848
+    },
+    {
+      "update": 450,
+      "loss": 0.4145745635032654,
+      "gradient_norm": 1.357893466949463
+    },
+    {
+      "update": 500,
+      "loss": 0.510307788848877,
+      "gradient_norm": 5.218356132507324
+    },
+    {
+      "update": 550,
+      "loss": 0.4155829846858978,
+      "gradient_norm": 6.533483505249023
+    },
+    {
+      "update": 600,
+      "loss": 0.37978166341781616,
+      "gradient_norm": 2.1144025325775146
+    },
+    {
+      "update": 650,
+      "loss": 0.4236728250980377,
+      "gradient_norm": 0.9028779864311218
+    },
+    {
+      "update": 700,
+      "loss": 0.5029327869415283,
+      "gradient_norm": 6.452210903167725
+    },
+    {
+      "update": 750,
+      "loss": 0.5787047743797302,
+      "gradient_norm": 4.281223297119141
+    },
+    {
+      "update": 800,
+      "loss": 0.47474581003189087,
+      "gradient_norm": 5.402437686920166
+    },
+    {
+      "update": 850,
+      "loss": 0.5862099528312683,
+      "gradient_norm": 1.1708557605743408
+    },
+    {
+      "update": 900,
+      "loss": 0.44207775592803955,
+      "gradient_norm": 3.4119389057159424
+    },
+    {
+      "update": 950,
+      "loss": 0.46582892537117004,
+      "gradient_norm": 10.099305152893066
+    },
+    {
+      "update": 1000,
+      "loss": 0.4085221588611603,
+      "gradient_norm": 2.716182231903076
+    }
+  ],
+  "training_scenarios": 256,
+  "optimizer_updates_per_seed": 1000
+}

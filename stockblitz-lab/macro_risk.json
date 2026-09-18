@@ -1,0 +1,312 @@
+{
+  "status": "complete",
+  "source": "outputs\\compound_screen\\1789302808212808000",
+  "mode": "retrospective_sensitivity",
+  "macro_provenance": {
+    "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DGS2%2CDGS10%2CDTWEXBGS",
+    "retrieved_at": "2026-09-13T00:40:42.647637+00:00",
+    "sha256": "9b19ffeeb24a890fe9fc57a3cbc4a9e0400723ec421c60ee71b700682f0bd68d",
+    "mode": "retrospective",
+    "series": [
+      "DGS2",
+      "DGS10",
+      "DTWEXBGS"
+    ]
+  },
+  "folds": [
+    {
+      "start": "2022-01-03",
+      "train_rows": 21452,
+      "test_rows": 1922
+    },
+    {
+      "start": "2022-04-01",
+      "train_rows": 23281,
+      "test_rows": 1922
+    },
+    {
+      "start": "2022-07-01",
+      "train_rows": 23281,
+      "test_rows": 1984
+    },
+    {
+      "start": "2022-10-03",
+      "train_rows": 23281,
+      "test_rows": 1953
+    },
+    {
+      "start": "2023-01-03",
+      "train_rows": 23281,
+      "test_rows": 1922
+    },
+    {
+      "start": "2023-04-03",
+      "train_rows": 23281,
+      "test_rows": 1922
+    },
+    {
+      "start": "2023-07-03",
+      "train_rows": 23281,
+      "test_rows": 1953
+    },
+    {
+      "start": "2023-10-02",
+      "train_rows": 23281,
+      "test_rows": 1953
+    },
+    {
+      "start": "2024-01-02",
+      "train_rows": 23281,
+      "test_rows": 1891
+    },
+    {
+      "start": "2024-04-01",
+      "train_rows": 23281,
+      "test_rows": 1953
+    },
+    {
+      "start": "2024-07-01",
+      "train_rows": 23281,
+      "test_rows": 1984
+    },
+    {
+      "start": "2024-10-01",
+      "train_rows": 23281,
+      "test_rows": 1984
+    },
+    {
+      "start": "2025-01-02",
+      "train_rows": 23281,
+      "test_rows": 1860
+    },
+    {
+      "start": "2025-04-01",
+      "train_rows": 23281,
+      "test_rows": 1922
+    },
+    {
+      "start": "2025-07-01",
+      "train_rows": 23281,
+      "test_rows": 1984
+    },
+    {
+      "start": "2025-10-01",
+      "train_rows": 23281,
+      "test_rows": 1984
+    },
+    {
+      "start": "2026-01-02",
+      "train_rows": 23281,
+      "test_rows": 1891
+    },
+    {
+      "start": "2026-04-01",
+      "train_rows": 23281,
+      "test_rows": 1922
+    },
+    {
+      "start": "2026-07-01",
+      "train_rows": 23281,
+      "test_rows": 1395
+    }
+  ],
+  "results": [
+    {
+      "target": "downside",
+      "arm": "macro_3",
+      "rows": 36301,
+      "mse_change_percent": 17.446314505744343,
+      "interval20": [
+        8.021254378651488,
+        28.879357535021594
+      ],
+      "interval60": [
+        5.396924297278577,
+        31.63762178744882
+      ]
+    },
+    {
+      "target": "downside",
+      "arm": "interactions_3",
+      "rows": 36301,
+      "mse_change_percent": 16.551223011016525,
+      "interval20": [
+        7.80820212471789,
+        26.48299343525422
+      ],
+      "interval60": [
+        5.213510269715792,
+        28.891241052028633
+      ]
+    },
+    {
+      "target": "downside",
+      "arm": "macro_10",
+      "rows": 36301,
+      "mse_change_percent": 5.533502523456346,
+      "interval20": [
+        2.872547865223604,
+        8.98786851837692
+      ],
+      "interval60": [
+        2.5290594522769005,
+        10.486014588367063
+      ]
+    },
+    {
+      "target": "downside",
+      "arm": "interactions_10",
+      "rows": 36301,
+      "mse_change_percent": 8.606442530215276,
+      "interval20": [
+        4.777695930526795,
+        13.397623313886106
+      ],
+      "interval60": [
+        3.8844365988149527,
+        16.283223473573898
+      ]
+    },
+    {
+      "target": "return",
+      "arm": "macro_3",
+      "rows": 36301,
+      "mse_change_percent": 5.60975989722674,
+      "interval20": [
+        1.9481198271170281,
+        9.963277032034497
+      ],
+      "interval60": [
+        2.238771689843277,
+        10.892013820359312
+      ]
+    },
+    {
+      "target": "return",
+      "arm": "interactions_3",
+      "rows": 36301,
+      "mse_change_percent": 5.861065499814422,
+      "interval20": [
+        2.2739241943568005,
+        10.050691173093687
+      ],
+      "interval60": [
+        2.5375987780796594,
+        10.671478328912313
+      ]
+    },
+    {
+      "target": "return",
+      "arm": "macro_10",
+      "rows": 36301,
+      "mse_change_percent": 3.5666173543209556,
+      "interval20": [
+        0.9902922998751423,
+        6.870175459090864
+      ],
+      "interval60": [
+        1.219481363743013,
+        7.255251001204103
+      ]
+    },
+    {
+      "target": "return",
+      "arm": "interactions_10",
+      "rows": 36301,
+      "mse_change_percent": 4.615102295338991,
+      "interval20": [
+        2.0570312124246586,
+        8.08454899545861
+      ],
+      "interval60": [
+        2.178227788634746,
+        8.248550724143438
+      ]
+    },
+    {
+      "target": "volatility",
+      "arm": "macro_3",
+      "rows": 36301,
+      "mse_change_percent": 16.3952733193798,
+      "interval20": [
+        6.637531417747912,
+        28.00154409646503
+      ],
+      "interval60": [
+        3.439326133669504,
+        33.12809294840296
+      ]
+    },
+    {
+      "target": "volatility",
+      "arm": "interactions_3",
+      "rows": 36301,
+      "mse_change_percent": 15.8420606762943,
+      "interval20": [
+        6.976378940188231,
+        26.05966821681388
+      ],
+      "interval60": [
+        4.21090180982414,
+        29.81756327828235
+      ]
+    },
+    {
+      "target": "volatility",
+      "arm": "macro_10",
+      "rows": 36301,
+      "mse_change_percent": 3.89543299592936,
+      "interval20": [
+        1.5721372733296723,
+        6.998817070396499
+      ],
+      "interval60": [
+        1.210971382480468,
+        8.086455001194226
+      ]
+    },
+    {
+      "target": "volatility",
+      "arm": "interactions_10",
+      "rows": 36301,
+      "mse_change_percent": 7.793958016771074,
+      "interval20": [
+        4.514925657763891,
+        12.275994729324566
+      ],
+      "interval60": [
+        3.243235915210123,
+        14.212443800653531
+      ]
+    }
+  ],
+  "ridge_alpha": 10,
+  "delays": [
+    3,
+    10
+  ],
+  "interactions": [
+    "vol20 * two_year_change20",
+    "vol20 * dollar_return20",
+    "return20 * slope",
+    "return5 * two_year_change20"
+  ],
+  "limitations": [
+    "Previously explored years; not an untouched final test",
+    "Fixed selected stocks, vendor all-adjustment and asof symbol mapping; survivorship and adjustment audit incomplete",
+    "Five-session price-derived targets; no trades, taxes, commissions or execution simulation",
+    "Pooled rows and overlapping labels are dependent; no rowwise significance claim",
+    "Current-revision FRED values, not original announcement vintages",
+    "3/10-calendar-day delays are assumptions, not availability certification",
+    "Fixed four interactions; no claim they measure company-specific fundamental exposure",
+    "Follow-up on reused dates, conditional block ranges, not independent confirmation"
+  ],
+  "source_hashes": {
+    "T:\\StockBlitzV1\\scripts\\screen_macro_risk.py": "fe71f9f2b93f19a6e45ef23f8a41ff70c61f0999082487436950d914339bfa38",
+    "T:\\StockBlitzV1\\scripts\\test_macro_forecasts.py": "b73724bcf6c1a8cf85a76ebc46916c88953111450af2aa251e42204eb1a60fc2",
+    "T:\\StockBlitzV1\\stockblitz\\compound_features.py": "19dc761830a2f6cc80c2f8b9a5882352e56950769dd64e1d3c981ed832e0efa0",
+    "T:\\StockBlitzV1\\outputs\\macro_forecast\\fred_current_revision.csv": "9b19ffeeb24a890fe9fc57a3cbc4a9e0400723ec421c60ee71b700682f0bd68d",
+    "outputs\\compound_screen\\1789302808212808000\\report.json": "ed206a77a5efcbe8e833942664c9d9c856761c4080a0a3e616dbf1a6e98b7a0b"
+  },
+  "run_id": "1789312970235315000"
+}

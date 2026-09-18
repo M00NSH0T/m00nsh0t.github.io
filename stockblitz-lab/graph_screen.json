@@ -1,0 +1,317 @@
+{
+  "status": "complete",
+  "source": "outputs\\compound_screen\\1789302808212808000",
+  "folds": [
+    {
+      "start": "2022-01-03",
+      "train_rows": 21452,
+      "test_rows": 1922,
+      "original_train_rows": 21452,
+      "original_test_rows": 1922,
+      "latest_training_label": "2021-12-31 00:00:00"
+    },
+    {
+      "start": "2022-04-01",
+      "train_rows": 23281,
+      "test_rows": 1922,
+      "original_train_rows": 23281,
+      "original_test_rows": 1922,
+      "latest_training_label": "2022-03-31 00:00:00"
+    },
+    {
+      "start": "2022-07-01",
+      "train_rows": 23281,
+      "test_rows": 1984,
+      "original_train_rows": 23281,
+      "original_test_rows": 1984,
+      "latest_training_label": "2022-06-30 00:00:00"
+    },
+    {
+      "start": "2022-10-03",
+      "train_rows": 23281,
+      "test_rows": 1953,
+      "original_train_rows": 23281,
+      "original_test_rows": 1953,
+      "latest_training_label": "2022-09-30 00:00:00"
+    },
+    {
+      "start": "2023-01-03",
+      "train_rows": 23281,
+      "test_rows": 1922,
+      "original_train_rows": 23281,
+      "original_test_rows": 1922,
+      "latest_training_label": "2022-12-30 00:00:00"
+    },
+    {
+      "start": "2023-04-03",
+      "train_rows": 23281,
+      "test_rows": 1922,
+      "original_train_rows": 23281,
+      "original_test_rows": 1922,
+      "latest_training_label": "2023-03-31 00:00:00"
+    },
+    {
+      "start": "2023-07-03",
+      "train_rows": 23281,
+      "test_rows": 1953,
+      "original_train_rows": 23281,
+      "original_test_rows": 1953,
+      "latest_training_label": "2023-06-30 00:00:00"
+    },
+    {
+      "start": "2023-10-02",
+      "train_rows": 23281,
+      "test_rows": 1953,
+      "original_train_rows": 23281,
+      "original_test_rows": 1953,
+      "latest_training_label": "2023-09-29 00:00:00"
+    },
+    {
+      "start": "2024-01-02",
+      "train_rows": 23281,
+      "test_rows": 1891,
+      "original_train_rows": 23281,
+      "original_test_rows": 1891,
+      "latest_training_label": "2023-12-29 00:00:00"
+    },
+    {
+      "start": "2024-04-01",
+      "train_rows": 23281,
+      "test_rows": 1953,
+      "original_train_rows": 23281,
+      "original_test_rows": 1953,
+      "latest_training_label": "2024-03-28 00:00:00"
+    },
+    {
+      "start": "2024-07-01",
+      "train_rows": 23281,
+      "test_rows": 1984,
+      "original_train_rows": 23281,
+      "original_test_rows": 1984,
+      "latest_training_label": "2024-06-28 00:00:00"
+    },
+    {
+      "start": "2024-10-01",
+      "train_rows": 23281,
+      "test_rows": 1984,
+      "original_train_rows": 23281,
+      "original_test_rows": 1984,
+      "latest_training_label": "2024-09-30 00:00:00"
+    },
+    {
+      "start": "2025-01-02",
+      "train_rows": 23281,
+      "test_rows": 1860,
+      "original_train_rows": 23281,
+      "original_test_rows": 1860,
+      "latest_training_label": "2024-12-31 00:00:00"
+    },
+    {
+      "start": "2025-04-01",
+      "train_rows": 23281,
+      "test_rows": 1922,
+      "original_train_rows": 23281,
+      "original_test_rows": 1922,
+      "latest_training_label": "2025-03-31 00:00:00"
+    },
+    {
+      "start": "2025-07-01",
+      "train_rows": 23281,
+      "test_rows": 1984,
+      "original_train_rows": 23281,
+      "original_test_rows": 1984,
+      "latest_training_label": "2025-06-30 00:00:00"
+    },
+    {
+      "start": "2025-10-01",
+      "train_rows": 23281,
+      "test_rows": 1984,
+      "original_train_rows": 23281,
+      "original_test_rows": 1984,
+      "latest_training_label": "2025-09-30 00:00:00"
+    },
+    {
+      "start": "2026-01-02",
+      "train_rows": 23281,
+      "test_rows": 1891,
+      "original_train_rows": 23281,
+      "original_test_rows": 1891,
+      "latest_training_label": "2025-12-31 00:00:00"
+    },
+    {
+      "start": "2026-04-01",
+      "train_rows": 23281,
+      "test_rows": 1922,
+      "original_train_rows": 23281,
+      "original_test_rows": 1922,
+      "latest_training_label": "2026-03-31 00:00:00"
+    },
+    {
+      "start": "2026-07-01",
+      "train_rows": 23281,
+      "test_rows": 1395,
+      "original_train_rows": 23281,
+      "original_test_rows": 1395,
+      "latest_training_label": "2026-06-30 00:00:00"
+    }
+  ],
+  "results": [
+    {
+      "target": "downside",
+      "arm": "neighbors",
+      "rows": 36301,
+      "mse_change_percent": -0.4765799386930336,
+      "interval20": [
+        -1.0811519320140375,
+        0.1724983554487236
+      ],
+      "interval60": [
+        -1.112715372159597,
+        -0.009321846997540083
+      ]
+    },
+    {
+      "target": "downside",
+      "arm": "lagged_neighbors",
+      "rows": 36301,
+      "mse_change_percent": -0.28997616221024813,
+      "interval20": [
+        -0.9324412512966426,
+        0.3472138183072492
+      ],
+      "interval60": [
+        -0.9870222175487461,
+        0.16592409568785435
+      ]
+    },
+    {
+      "target": "downside",
+      "arm": "shuffled_neighbors",
+      "rows": 36301,
+      "mse_change_percent": 0.018649776839385623,
+      "interval20": [
+        -0.5842665806256303,
+        0.5928319225730909
+      ],
+      "interval60": [
+        -0.574932776970953,
+        0.573295576167969
+      ]
+    },
+    {
+      "target": "return",
+      "arm": "neighbors",
+      "rows": 36301,
+      "mse_change_percent": 0.18834931113076436,
+      "interval20": [
+        -0.03254250236703865,
+        0.4255183554661701
+      ],
+      "interval60": [
+        -0.03450588770110091,
+        0.41904523182685777
+      ]
+    },
+    {
+      "target": "return",
+      "arm": "lagged_neighbors",
+      "rows": 36301,
+      "mse_change_percent": 0.18341637233350028,
+      "interval20": [
+        -0.11157530193691922,
+        0.4673558800265475
+      ],
+      "interval60": [
+        -0.13150969049820133,
+        0.41072252488466504
+      ]
+    },
+    {
+      "target": "return",
+      "arm": "shuffled_neighbors",
+      "rows": 36301,
+      "mse_change_percent": 0.15564140326096432,
+      "interval20": [
+        -0.03249581530984396,
+        0.3988415679410545
+      ],
+      "interval60": [
+        0.021850572956928493,
+        0.3169532050980689
+      ]
+    },
+    {
+      "target": "volatility",
+      "arm": "neighbors",
+      "rows": 36301,
+      "mse_change_percent": -0.870602974965573,
+      "interval20": [
+        -1.8172976816157398,
+        0.0615488523354195
+      ],
+      "interval60": [
+        -1.7444213079720694,
+        -0.10468573455611373
+      ]
+    },
+    {
+      "target": "volatility",
+      "arm": "lagged_neighbors",
+      "rows": 36301,
+      "mse_change_percent": -0.7437348909224317,
+      "interval20": [
+        -1.6822410061473816,
+        0.15465264886332042
+      ],
+      "interval60": [
+        -1.6450395107255664,
+        -0.06281232703918782
+      ]
+    },
+    {
+      "target": "volatility",
+      "arm": "shuffled_neighbors",
+      "rows": 36301,
+      "mse_change_percent": -0.08539411478003522,
+      "interval20": [
+        -0.9811599976348362,
+        0.8209931262242698
+      ],
+      "interval60": [
+        -0.8155249269514661,
+        0.8265239750763442
+      ]
+    }
+  ],
+  "definition": "Signed absolute-normalized top-5 train-fitted return correlations; recipient rows/source columns",
+  "models": [
+    "base",
+    "neighbors",
+    "lagged_neighbors",
+    "shuffled_neighbors"
+  ],
+  "ridge_alpha": 10,
+  "shuffle_seed": 42,
+  "features": [
+    "return_1",
+    "return_5",
+    "return_20",
+    "vol_20"
+  ],
+  "limitations": [
+    "Previously explored years; not an untouched final test",
+    "Fixed selected stocks, vendor all-adjustment and asof symbol mapping; survivorship and adjustment audit incomplete",
+    "Five-session price-derived targets; no trades, taxes, commissions or execution simulation",
+    "Pooled rows and overlapping labels are dependent; no rowwise significance claim",
+    "Same exploratory dates; no new independent holdout",
+    "Static statistical correlations, not competitor/supply-chain relationships",
+    "Linear message-feature diagnostic, not current neural graph or GNN training",
+    "One fixed shuffled-graph control; conditional block intervals exclude selection uncertainty"
+  ],
+  "source_hashes": {
+    "T:\\StockBlitzV1\\scripts\\screen_graph_features.py": "2a23c289fb0764f48ece2f14327d58c79d9c463e86d055bdea7c5b834dc946cd",
+    "T:\\StockBlitzV1\\stockblitz\\graph_screen.py": "5a1c84023dd30819c91d39a9b0f09bec1fccb715750bff097f5f35b712526bb5",
+    "T:\\StockBlitzV1\\stockblitz\\compound_features.py": "19dc761830a2f6cc80c2f8b9a5882352e56950769dd64e1d3c981ed832e0efa0",
+    "outputs\\compound_screen\\1789302808212808000\\report.json": "ed206a77a5efcbe8e833942664c9d9c856761c4080a0a3e616dbf1a6e98b7a0b"
+  }
+}

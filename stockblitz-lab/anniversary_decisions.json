@@ -1,0 +1,96 @@
+{
+  "status": "complete",
+  "synthetic": true,
+  "learned_policy": false,
+  "comparisons": [
+    {
+      "drop": 0.0,
+      "account": "taxable",
+      "acquired": "2026-01-05",
+      "results": {
+        "close_now": {
+          "wealth": 102495.37443040001,
+          "tax": 1502.0855695999926,
+          "term": "short",
+          "orders": 1,
+          "reward": -0.015036255695999862
+        },
+        "wait_until_jan6": {
+          "wealth": 102855.14583040001,
+          "tax": 1142.3141695999948,
+          "term": "long",
+          "orders": 1,
+          "reward": -0.011438541695999884
+        }
+      },
+      "waiting_advantage": 359.7713999999978
+    },
+    {
+      "drop": 0.03,
+      "account": "taxable",
+      "acquired": "2026-01-05",
+      "results": {
+        "close_now": {
+          "wealth": 102495.37443040001,
+          "tax": 1502.0855695999926,
+          "term": "short",
+          "orders": 1,
+          "reward": -0.015036255695999862
+        },
+        "wait_until_jan6": {
+          "wealth": 102340.9073152,
+          "tax": 936.5726847999904,
+          "term": "long",
+          "orders": 1,
+          "reward": -0.016580926847999944
+        }
+      },
+      "waiting_advantage": -154.46711520000827
+    },
+    {
+      "drop": 0.0,
+      "account": "ira",
+      "acquired": "2026-01-05",
+      "results": {
+        "close_now": {
+          "wealth": 103997.46,
+          "tax": 0.0,
+          "term": "short",
+          "orders": 1,
+          "reward": -1.5399999999935973e-05
+        },
+        "wait_until_jan6": {
+          "wealth": 103997.46,
+          "tax": 0.0,
+          "term": "long",
+          "orders": 1,
+          "reward": -1.5399999999935973e-05
+        }
+      },
+      "waiting_advantage": 0.0
+    },
+    {
+      "drop": 0.0,
+      "account": "taxable",
+      "acquired": "2026-02-05",
+      "results": {
+        "close_now": {
+          "wealth": 102495.37443040001,
+          "tax": 1502.0855695999926,
+          "term": "short",
+          "orders": 1,
+          "reward": -0.015036255695999862
+        },
+        "wait_until_jan6": {
+          "wealth": 102495.37443040001,
+          "tax": 1502.0855695999926,
+          "term": "short",
+          "orders": 1,
+          "reward": -0.015036255695999862
+        }
+      },
+      "waiting_advantage": 0.0
+    }
+  ],
+  "assumptions": "Artificial prices and explicit warning; both choices finish in cash. 2027 tax and fees frozen to 2026."
+}

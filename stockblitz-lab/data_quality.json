@@ -1,0 +1,777 @@
+{
+  "status": "review_required",
+  "generated_at": "2026-09-17T11:16:16.298342+00:00",
+  "source_reports": {
+    "daily": {
+      "report": "daily_trade_observations_20260914.json",
+      "sha256": "e73f7eca024bdf0c1fd5a188bf92f611f332673f1decc3258be41cda3e085811"
+    },
+    "boundaries": {
+      "report": "session_boundaries_20260914.json",
+      "sha256": "e08eca344a57209de30273511dc2e7f7a1e925f0b41fc742fd807ad608e3d6e6"
+    },
+    "identity": {
+      "report": "security_identity_sources_20260914.json",
+      "sha256": "fb583168823f47aa09b97aad25ee82701f7ee76006c30b3e0b273ba79f1f8c47"
+    },
+    "sec": {
+      "report": "sec_decimal_audit.json",
+      "sha256": "dc6447e138ea82c09fcd0022866d1421ab940831d2721bdc1f0c0c8455253706"
+    },
+    "sec_historical": {
+      "report": "sec_historical_decimal_audit_20260914.json",
+      "sha256": "57b45b4428e703db3ba21bca14fc74fc254badfda48d26bba1745343c292569f"
+    },
+    "fundamentals": {
+      "report": "sec_balance_sheet_coverage_20260914.json",
+      "sha256": "c58614688326b99eff010277f378788f829de408e976f97db98d8f74920ae268"
+    }
+  },
+  "daily": {
+    "symbols": 583,
+    "nonpositive_volume_rows": 5069,
+    "symbols_with_nonpositive_volume": 13
+  },
+  "volume": {
+    "buckets": [
+      {
+        "id": "opening_minute",
+        "matched_minutes": 12,
+        "exact_volume_minutes": 0,
+        "absolute_volume_difference": 23008636.0,
+        "share_of_difference": 0.12324721993282697
+      },
+      {
+        "id": "closing_minute",
+        "matched_minutes": 12,
+        "exact_volume_minutes": 0,
+        "absolute_volume_difference": 161330157.0,
+        "share_of_difference": 0.8641752314903198
+      },
+      {
+        "id": "regular_interior",
+        "matched_minutes": 4668,
+        "exact_volume_minutes": 3722,
+        "absolute_volume_difference": 2324042.0,
+        "share_of_difference": 0.01244887856486265
+      },
+      {
+        "id": "extended_other",
+        "matched_minutes": 1875,
+        "exact_volume_minutes": 1824,
+        "absolute_volume_difference": 24021.0,
+        "share_of_difference": 0.0001286700119905603
+      }
+    ],
+    "days": [
+      "2018-03-01",
+      "2018-06-18",
+      "2018-09-21",
+      "2018-11-30"
+    ],
+    "symbols": [
+      "AAPL",
+      "MSFT",
+      "NVDA"
+    ],
+    "boundary_share": 0.9874224514231468
+  },
+  "identity": {
+    "same_normalized_name": 34,
+    "different_name_requires_review": 32,
+    "missing_legacy_name": 23
+  },
+  "sec": {
+    "checked_fact_snapshots": 90,
+    "precision_collisions": 0
+  },
+  "fundamentals": {
+    "issuer_count": 90,
+    "periods": [
+      {
+        "date": "2005-12-30",
+        "issuers_with_assets": 0,
+        "same_filing_all_five": 0,
+        "assets_period_older_than_550_days": 0
+      },
+      {
+        "date": "2010-12-31",
+        "issuers_with_assets": 69,
+        "same_filing_all_five": 34,
+        "assets_period_older_than_550_days": 0
+      },
+      {
+        "date": "2015-12-31",
+        "issuers_with_assets": 86,
+        "same_filing_all_five": 42,
+        "assets_period_older_than_550_days": 0
+      },
+      {
+        "date": "2020-12-31",
+        "issuers_with_assets": 88,
+        "same_filing_all_five": 43,
+        "assets_period_older_than_550_days": 0
+      },
+      {
+        "date": "2024-12-31",
+        "issuers_with_assets": 90,
+        "same_filing_all_five": 44,
+        "assets_period_older_than_550_days": 1
+      },
+      {
+        "date": "2026-09-10",
+        "issuers_with_assets": 90,
+        "same_filing_all_five": 44,
+        "assets_period_older_than_550_days": 1
+      }
+    ]
+  },
+  "profitability": [
+    {
+      "id": "quarter_modern",
+      "report": "duration_quarter_features_20260914.json",
+      "status": "available",
+      "sha256": "5ea4820936f6958a6c2add154d1778ae3f19441f704e90a56ebdc40214863e59",
+      "duration_class": "quarter",
+      "revenue_concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+      "issuer_count": 90,
+      "periods": [
+        {
+          "date": "2010-12-31",
+          "attempted": 90,
+          "errors": 0,
+          "features": {
+            "net_margin": {
+              "valid": 0,
+              "masked_reasons": {
+                "missing_concept:RevenueFromContractWithCustomerExcludingAssessedTax": 63,
+                "no_income_anchor": 26,
+                "period_stale": 1
+              },
+              "finite_valid_range": null
+            },
+            "operating_margin": {
+              "valid": 0,
+              "masked_reasons": {
+                "missing_concept:RevenueFromContractWithCustomerExcludingAssessedTax": 63,
+                "no_income_anchor": 26,
+                "period_stale": 1
+              },
+              "finite_valid_range": null
+            }
+          }
+        },
+        {
+          "date": "2015-12-31",
+          "attempted": 90,
+          "errors": 0,
+          "features": {
+            "net_margin": {
+              "valid": 0,
+              "masked_reasons": {
+                "missing_concept:RevenueFromContractWithCustomerExcludingAssessedTax": 80,
+                "no_income_anchor": 5,
+                "period_stale": 5
+              },
+              "finite_valid_range": null
+            },
+            "operating_margin": {
+              "valid": 0,
+              "masked_reasons": {
+                "missing_concept:RevenueFromContractWithCustomerExcludingAssessedTax": 80,
+                "no_income_anchor": 5,
+                "period_stale": 5
+              },
+              "finite_valid_range": null
+            }
+          }
+        },
+        {
+          "date": "2020-12-31",
+          "attempted": 90,
+          "errors": 0,
+          "features": {
+            "net_margin": {
+              "valid": 48,
+              "masked_reasons": {
+                "missing_concept:RevenueFromContractWithCustomerExcludingAssessedTax": 32,
+                "no_income_anchor": 2,
+                "period_stale": 8
+              },
+              "finite_valid_range": [
+                -0.7560668137409392,
+                9.315485227140021
+              ]
+            },
+            "operating_margin": {
+              "valid": 36,
+              "masked_reasons": {
+                "missing_concept:OperatingIncomeLoss": 12,
+                "missing_concept:RevenueFromContractWithCustomerExcludingAssessedTax": 32,
+                "no_income_anchor": 2,
+                "period_stale": 8
+              },
+              "finite_valid_range": [
+                -0.904821935077214,
+                0.620012404382882
+              ]
+            }
+          }
+        },
+        {
+          "date": "2024-12-31",
+          "attempted": 90,
+          "errors": 0,
+          "features": {
+            "net_margin": {
+              "valid": 49,
+              "masked_reasons": {
+                "missing_concept:RevenueFromContractWithCustomerExcludingAssessedTax": 32,
+                "no_income_anchor": 1,
+                "period_stale": 8
+              },
+              "finite_valid_range": [
+                -1.252559470039145,
+                5.135593220338983
+              ]
+            },
+            "operating_margin": {
+              "valid": 41,
+              "masked_reasons": {
+                "missing_concept:OperatingIncomeLoss": 8,
+                "missing_concept:RevenueFromContractWithCustomerExcludingAssessedTax": 32,
+                "no_income_anchor": 1,
+                "period_stale": 8
+              },
+              "finite_valid_range": [
+                -0.6817976513098465,
+                9.220338983050848
+              ]
+            }
+          }
+        },
+        {
+          "date": "2026-09-10",
+          "attempted": 90,
+          "errors": 0,
+          "features": {
+            "net_margin": {
+              "valid": 50,
+              "masked_reasons": {
+                "missing_concept:RevenueFromContractWithCustomerExcludingAssessedTax": 34,
+                "period_stale": 6
+              },
+              "finite_valid_range": [
+                -0.6840897817460317,
+                2.292682926829268
+              ]
+            },
+            "operating_margin": {
+              "valid": 41,
+              "masked_reasons": {
+                "missing_concept:OperatingIncomeLoss": 9,
+                "missing_concept:RevenueFromContractWithCustomerExcludingAssessedTax": 34,
+                "period_stale": 6
+              },
+              "finite_valid_range": [
+                -0.16509717129197676,
+                11.463414634146341
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "annual_modern",
+      "report": "duration_annual_features_20260914.json",
+      "status": "available",
+      "sha256": "ba439b36bbf659fd6fe15c9a4b950856e51c99cb4b2eff39359594ff171ef852",
+      "duration_class": "annual",
+      "revenue_concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+      "issuer_count": 90,
+      "periods": [
+        {
+          "date": "2010-12-31",
+          "attempted": 90,
+          "errors": 0,
+          "features": {
+            "net_margin": {
+              "valid": 0,
+              "masked_reasons": {
+                "missing_concept:RevenueFromContractWithCustomerExcludingAssessedTax": 47,
+                "no_income_anchor": 43
+              },
+              "finite_valid_range": null
+            },
+            "operating_margin": {
+              "valid": 0,
+              "masked_reasons": {
+                "missing_concept:RevenueFromContractWithCustomerExcludingAssessedTax": 47,
+                "no_income_anchor": 43
+              },
+              "finite_valid_range": null
+            }
+          }
+        },
+        {
+          "date": "2015-12-31",
+          "attempted": 90,
+          "errors": 0,
+          "features": {
+            "net_margin": {
+              "valid": 0,
+              "masked_reasons": {
+                "missing_concept:RevenueFromContractWithCustomerExcludingAssessedTax": 77,
+                "no_income_anchor": 7,
+                "period_stale": 6
+              },
+              "finite_valid_range": null
+            },
+            "operating_margin": {
+              "valid": 0,
+              "masked_reasons": {
+                "missing_concept:RevenueFromContractWithCustomerExcludingAssessedTax": 77,
+                "no_income_anchor": 7,
+                "period_stale": 6
+              },
+              "finite_valid_range": null
+            }
+          }
+        },
+        {
+          "date": "2020-12-31",
+          "attempted": 90,
+          "errors": 0,
+          "features": {
+            "net_margin": {
+              "valid": 48,
+              "masked_reasons": {
+                "missing_concept:RevenueFromContractWithCustomerExcludingAssessedTax": 29,
+                "no_income_anchor": 3,
+                "period_stale": 10
+              },
+              "finite_valid_range": [
+                -0.12390924956369982,
+                12.185172463663315
+              ]
+            },
+            "operating_margin": {
+              "valid": 37,
+              "masked_reasons": {
+                "missing_concept:OperatingIncomeLoss": 11,
+                "missing_concept:RevenueFromContractWithCustomerExcludingAssessedTax": 29,
+                "no_income_anchor": 3,
+                "period_stale": 10
+              },
+              "finite_valid_range": [
+                0.017370452684524505,
+                0.40339403973509935
+              ]
+            }
+          }
+        },
+        {
+          "date": "2024-12-31",
+          "attempted": 90,
+          "errors": 0,
+          "features": {
+            "net_margin": {
+              "valid": 49,
+              "masked_reasons": {
+                "missing_concept:RevenueFromContractWithCustomerExcludingAssessedTax": 31,
+                "no_income_anchor": 2,
+                "period_stale": 8
+              },
+              "finite_valid_range": [
+                -0.2577708703374778,
+                2.8244308052421716
+              ]
+            },
+            "operating_margin": {
+              "valid": 40,
+              "masked_reasons": {
+                "missing_concept:OperatingIncomeLoss": 9,
+                "missing_concept:RevenueFromContractWithCustomerExcludingAssessedTax": 31,
+                "no_income_anchor": 2,
+                "period_stale": 8
+              },
+              "finite_valid_range": [
+                -0.23734458259325045,
+                0.6567666870789957
+              ]
+            }
+          }
+        },
+        {
+          "date": "2026-09-10",
+          "attempted": 90,
+          "errors": 0,
+          "features": {
+            "net_margin": {
+              "valid": 32,
+              "masked_reasons": {
+                "missing_concept:RevenueFromContractWithCustomerExcludingAssessedTax": 54,
+                "period_stale": 4
+              },
+              "finite_valid_range": [
+                -0.08511205976520811,
+                0.9820820437442421
+              ]
+            },
+            "operating_margin": {
+              "valid": 26,
+              "masked_reasons": {
+                "missing_concept:OperatingIncomeLoss": 6,
+                "missing_concept:RevenueFromContractWithCustomerExcludingAssessedTax": 54,
+                "period_stale": 4
+              },
+              "finite_valid_range": [
+                -0.04188976973870925,
+                0.59985
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "quarter_revenues",
+      "report": "duration_quarter_revenues_features_20260914.json",
+      "status": "available",
+      "sha256": "a62032561c5d91a3beb0371e1734e8c79ccd6412f628d66955924fe1af2105cb",
+      "duration_class": "quarter",
+      "revenue_concept": "Revenues",
+      "issuer_count": 90,
+      "periods": [
+        {
+          "date": "2010-12-31",
+          "attempted": 90,
+          "errors": 0,
+          "features": {
+            "net_margin": {
+              "valid": 29,
+              "masked_reasons": {
+                "missing_concept:Revenues": 34,
+                "no_income_anchor": 26,
+                "period_stale": 1
+              },
+              "finite_valid_range": [
+                -0.2733707865168539,
+                0.8882277943051424
+              ]
+            },
+            "operating_margin": {
+              "valid": 18,
+              "masked_reasons": {
+                "missing_concept:OperatingIncomeLoss": 11,
+                "missing_concept:Revenues": 34,
+                "no_income_anchor": 26,
+                "period_stale": 1
+              },
+              "finite_valid_range": [
+                0.027288320598783722,
+                0.5603745687530803
+              ]
+            }
+          }
+        },
+        {
+          "date": "2015-12-31",
+          "attempted": 90,
+          "errors": 0,
+          "features": {
+            "net_margin": {
+              "valid": 38,
+              "masked_reasons": {
+                "missing_concept:Revenues": 42,
+                "no_income_anchor": 5,
+                "period_stale": 5
+              },
+              "finite_valid_range": [
+                -0.9738961399611219,
+                0.5463289385201638
+              ]
+            },
+            "operating_margin": {
+              "valid": 26,
+              "masked_reasons": {
+                "missing_concept:OperatingIncomeLoss": 12,
+                "missing_concept:Revenues": 42,
+                "no_income_anchor": 5,
+                "period_stale": 5
+              },
+              "finite_valid_range": [
+                -1.5118022771452375,
+                0.6429789653212052
+              ]
+            }
+          }
+        },
+        {
+          "date": "2020-12-31",
+          "attempted": 90,
+          "errors": 0,
+          "features": {
+            "net_margin": {
+              "valid": 40,
+              "masked_reasons": {
+                "missing_concept:Revenues": 40,
+                "no_income_anchor": 2,
+                "period_stale": 8
+              },
+              "finite_valid_range": [
+                -0.08622305529522024,
+                0.3600499954694937
+              ]
+            },
+            "operating_margin": {
+              "valid": 24,
+              "masked_reasons": {
+                "missing_concept:OperatingIncomeLoss": 16,
+                "missing_concept:Revenues": 40,
+                "no_income_anchor": 2,
+                "period_stale": 8
+              },
+              "finite_valid_range": [
+                0.008950345694531741,
+                0.6544661358926819
+              ]
+            }
+          }
+        },
+        {
+          "date": "2024-12-31",
+          "attempted": 90,
+          "errors": 0,
+          "features": {
+            "net_margin": {
+              "valid": 41,
+              "masked_reasons": {
+                "missing_concept:Revenues": 40,
+                "no_income_anchor": 1,
+                "period_stale": 8
+              },
+              "finite_valid_range": [
+                -0.0415384146527291,
+                0.550396214582977
+              ]
+            },
+            "operating_margin": {
+              "valid": 25,
+              "masked_reasons": {
+                "missing_concept:OperatingIncomeLoss": 16,
+                "missing_concept:Revenues": 40,
+                "no_income_anchor": 1,
+                "period_stale": 8
+              },
+              "finite_valid_range": [
+                0.011968734733756717,
+                0.6791006252031432
+              ]
+            }
+          }
+        },
+        {
+          "date": "2026-09-10",
+          "attempted": 90,
+          "errors": 0,
+          "features": {
+            "net_margin": {
+              "valid": 38,
+              "masked_reasons": {
+                "missing_concept:Revenues": 46,
+                "period_stale": 6
+              },
+              "finite_valid_range": [
+                -0.31868579105421213,
+                0.9365337740826071
+              ]
+            },
+            "operating_margin": {
+              "valid": 26,
+              "masked_reasons": {
+                "missing_concept:OperatingIncomeLoss": 12,
+                "missing_concept:Revenues": 46,
+                "period_stale": 6
+              },
+              "finite_valid_range": [
+                -0.16493910479899707,
+                0.6790502293987964
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "annual_revenues",
+      "report": "duration_annual_revenues_features_20260914.json",
+      "status": "available",
+      "sha256": "96123a10cbdd02fae7327989f444d72895cbd4c2841998aa4b5b06fe2c799b45",
+      "duration_class": "annual",
+      "revenue_concept": "Revenues",
+      "issuer_count": 90,
+      "periods": [
+        {
+          "date": "2010-12-31",
+          "attempted": 90,
+          "errors": 0,
+          "features": {
+            "net_margin": {
+              "valid": 26,
+              "masked_reasons": {
+                "missing_concept:Revenues": 21,
+                "no_income_anchor": 43
+              },
+              "finite_valid_range": [
+                -0.3092950717404866,
+                0.36776193428394294
+              ]
+            },
+            "operating_margin": {
+              "valid": 18,
+              "masked_reasons": {
+                "missing_concept:OperatingIncomeLoss": 8,
+                "missing_concept:Revenues": 21,
+                "no_income_anchor": 43
+              },
+              "finite_valid_range": [
+                -0.036656761245837124,
+                0.5690018598884067
+              ]
+            }
+          }
+        },
+        {
+          "date": "2015-12-31",
+          "attempted": 90,
+          "errors": 0,
+          "features": {
+            "net_margin": {
+              "valid": 40,
+              "masked_reasons": {
+                "missing_concept:Revenues": 37,
+                "no_income_anchor": 7,
+                "period_stale": 6
+              },
+              "finite_valid_range": [
+                -0.09193473146829184,
+                0.8945002493742338
+              ]
+            },
+            "operating_margin": {
+              "valid": 27,
+              "masked_reasons": {
+                "missing_concept:OperatingIncomeLoss": 13,
+                "missing_concept:Revenues": 37,
+                "no_income_anchor": 7,
+                "period_stale": 6
+              },
+              "finite_valid_range": [
+                -0.0583703002417492,
+                0.6530259365994237
+              ]
+            }
+          }
+        },
+        {
+          "date": "2020-12-31",
+          "attempted": 90,
+          "errors": 0,
+          "features": {
+            "net_margin": {
+              "valid": 40,
+              "masked_reasons": {
+                "missing_concept:Revenues": 37,
+                "no_income_anchor": 3,
+                "period_stale": 10
+              },
+              "finite_valid_range": [
+                -0.10608879916375906,
+                0.49739082669596263
+              ]
+            },
+            "operating_margin": {
+              "valid": 27,
+              "masked_reasons": {
+                "missing_concept:OperatingIncomeLoss": 13,
+                "missing_concept:Revenues": 37,
+                "no_income_anchor": 3,
+                "period_stale": 10
+              },
+              "finite_valid_range": [
+                -0.02689570085568613,
+                0.6445573560377186
+              ]
+            }
+          }
+        },
+        {
+          "date": "2024-12-31",
+          "attempted": 90,
+          "errors": 0,
+          "features": {
+            "net_margin": {
+              "valid": 39,
+              "masked_reasons": {
+                "missing_concept:Revenues": 41,
+                "no_income_anchor": 2,
+                "period_stale": 8
+              },
+              "finite_valid_range": [
+                -0.6178754747129833,
+                0.4884934834706674
+              ]
+            },
+            "operating_margin": {
+              "valid": 25,
+              "masked_reasons": {
+                "missing_concept:OperatingIncomeLoss": 14,
+                "missing_concept:Revenues": 41,
+                "no_income_anchor": 2,
+                "period_stale": 8
+              },
+              "finite_valid_range": [
+                0.009499806126405583,
+                0.6614910932475083
+              ]
+            }
+          }
+        },
+        {
+          "date": "2026-09-10",
+          "attempted": 90,
+          "errors": 0,
+          "features": {
+            "net_margin": {
+              "valid": 27,
+              "masked_reasons": {
+                "missing_concept:Revenues": 59,
+                "period_stale": 4
+              },
+              "finite_valid_range": [
+                -0.0032896858672515,
+                0.9791428011187137
+              ]
+            },
+            "operating_margin": {
+              "valid": 19,
+              "masked_reasons": {
+                "missing_concept:OperatingIncomeLoss": 8,
+                "missing_concept:Revenues": 59,
+                "period_stale": 4
+              },
+              "finite_valid_range": [
+                -0.024382377604334645,
+                0.6775006641068366
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "historical_identity_joins_enabled": false,
+  "legacy_data_overwritten": false
+}

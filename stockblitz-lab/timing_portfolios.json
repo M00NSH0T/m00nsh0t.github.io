@@ -1,0 +1,899 @@
+{
+  "run_id": "1789317706193337600",
+  "status": "complete",
+  "trials": [
+    {
+      "timing": "fixed",
+      "seed": 42,
+      "mode": "greedy",
+      "configuration": "original",
+      "episodes": 32,
+      "policy_physical_steps": 2240,
+      "hold_physical_steps": 2240,
+      "adverse": 8,
+      "exits": 6,
+      "favorable": 15,
+      "retained": 15,
+      "flat": 9,
+      "flat_no_orders": 9,
+      "mean_orders": 9.34375,
+      "mean_excess_wealth_bps": 287.7831596673483,
+      "groups": {
+        "adverse": {
+          "episodes": 8,
+          "mean_excess_wealth_bps": 98.88536556186159,
+          "mean_orders": 0.75,
+          "mean_execution_cost": 0.7725
+        },
+        "favorable": {
+          "episodes": 15,
+          "mean_excess_wealth_bps": 561.1985456573503,
+          "mean_orders": 19.533333333333335,
+          "mean_execution_cost": 19.778666666666666
+        },
+        "flat": {
+          "episodes": 9,
+          "mean_excess_wealth_bps": 0.0,
+          "mean_orders": 0.0,
+          "mean_execution_cost": 0.0
+        }
+      }
+    },
+    {
+      "timing": "fixed",
+      "seed": 42,
+      "mode": "greedy",
+      "configuration": "small_positions",
+      "episodes": 32,
+      "policy_physical_steps": 2240,
+      "hold_physical_steps": 2240,
+      "adverse": 8,
+      "exits": 6,
+      "favorable": 15,
+      "retained": 15,
+      "flat": 9,
+      "flat_no_orders": 9,
+      "mean_orders": 9.1875,
+      "mean_excess_wealth_bps": 347.8393590485988,
+      "groups": {
+        "adverse": {
+          "episodes": 8,
+          "mean_excess_wealth_bps": 32.91178752060095,
+          "mean_orders": 0.75,
+          "mean_execution_cost": 0.7575000000000001
+        },
+        "favorable": {
+          "episodes": 15,
+          "mean_excess_wealth_bps": 724.5043459593568,
+          "mean_orders": 19.2,
+          "mean_execution_cost": 19.50066666666667
+        },
+        "flat": {
+          "episodes": 9,
+          "mean_excess_wealth_bps": 0.0,
+          "mean_orders": 0.0,
+          "mean_execution_cost": 0.0
+        }
+      }
+    },
+    {
+      "timing": "fixed",
+      "seed": 42,
+      "mode": "sampled",
+      "configuration": "original",
+      "episodes": 32,
+      "policy_physical_steps": 2240,
+      "hold_physical_steps": 2240,
+      "adverse": 8,
+      "exits": 8,
+      "favorable": 15,
+      "retained": 14,
+      "flat": 9,
+      "flat_no_orders": 2,
+      "mean_orders": 22.0,
+      "mean_excess_wealth_bps": 230.25309154127348,
+      "groups": {
+        "adverse": {
+          "episodes": 8,
+          "mean_excess_wealth_bps": 125.49342175023293,
+          "mean_orders": 13.0,
+          "mean_execution_cost": 13.32875
+        },
+        "favorable": {
+          "episodes": 15,
+          "mean_excess_wealth_bps": 424.37250560263067,
+          "mean_orders": 39.06666666666667,
+          "mean_execution_cost": 42.07533333333333
+        },
+        "flat": {
+          "episodes": 9,
+          "mean_excess_wealth_bps": -0.15955874673033493,
+          "mean_orders": 1.5555555555555556,
+          "mean_execution_cost": 1.5955555555555554
+        }
+      }
+    },
+    {
+      "timing": "fixed",
+      "seed": 42,
+      "mode": "sampled",
+      "configuration": "small_positions",
+      "episodes": 32,
+      "policy_physical_steps": 2240,
+      "hold_physical_steps": 2240,
+      "adverse": 8,
+      "exits": 7,
+      "favorable": 15,
+      "retained": 15,
+      "flat": 9,
+      "flat_no_orders": 1,
+      "mean_orders": 22.0,
+      "mean_excess_wealth_bps": 261.99841789545474,
+      "groups": {
+        "adverse": {
+          "episodes": 8,
+          "mean_excess_wealth_bps": 39.75290468971842,
+          "mean_orders": 13.0,
+          "mean_execution_cost": 13.16125
+        },
+        "favorable": {
+          "episodes": 15,
+          "mean_excess_wealth_bps": 537.8560782291713,
+          "mean_orders": 38.733333333333334,
+          "mean_execution_cost": 42.12533333333334
+        },
+        "flat": {
+          "episodes": 9,
+          "mean_excess_wealth_bps": -0.21278203341854318,
+          "mean_orders": 2.111111111111111,
+          "mean_execution_cost": 2.1277777777777778
+        }
+      }
+    },
+    {
+      "timing": "fixed",
+      "seed": 42,
+      "mode": "greedy",
+      "configuration": "unequal_positions",
+      "episodes": 32,
+      "policy_physical_steps": 2240,
+      "hold_physical_steps": 2240,
+      "adverse": 8,
+      "exits": 6,
+      "favorable": 15,
+      "retained": 15,
+      "flat": 9,
+      "flat_no_orders": 9,
+      "mean_orders": 9.21875,
+      "mean_excess_wealth_bps": 283.09016133298417,
+      "groups": {
+        "adverse": {
+          "episodes": 8,
+          "mean_excess_wealth_bps": 152.5400737642743,
+          "mean_orders": 0.75,
+          "mean_execution_cost": 1.0325
+        },
+        "favorable": {
+          "episodes": 15,
+          "mean_excess_wealth_bps": 522.5709715027532,
+          "mean_orders": 19.266666666666666,
+          "mean_execution_cost": 19.514000000000003
+        },
+        "flat": {
+          "episodes": 9,
+          "mean_excess_wealth_bps": 0.0,
+          "mean_orders": 0.0,
+          "mean_execution_cost": 0.0
+        }
+      }
+    },
+    {
+      "timing": "fixed",
+      "seed": 43,
+      "mode": "greedy",
+      "configuration": "original",
+      "episodes": 32,
+      "policy_physical_steps": 2240,
+      "hold_physical_steps": 2240,
+      "adverse": 8,
+      "exits": 8,
+      "favorable": 15,
+      "retained": 15,
+      "flat": 9,
+      "flat_no_orders": 9,
+      "mean_orders": 1.625,
+      "mean_excess_wealth_bps": 203.18798151592222,
+      "groups": {
+        "adverse": {
+          "episodes": 8,
+          "mean_excess_wealth_bps": 126.72332134822506,
+          "mean_orders": 1.0,
+          "mean_execution_cost": 1.03
+        },
+        "favorable": {
+          "episodes": 15,
+          "mean_excess_wealth_bps": 365.881922514914,
+          "mean_orders": 2.933333333333333,
+          "mean_execution_cost": 3.1073333333333335
+        },
+        "flat": {
+          "episodes": 9,
+          "mean_excess_wealth_bps": 0.0,
+          "mean_orders": 0.0,
+          "mean_execution_cost": 0.0
+        }
+      }
+    },
+    {
+      "timing": "fixed",
+      "seed": 42,
+      "mode": "sampled",
+      "configuration": "unequal_positions",
+      "episodes": 32,
+      "policy_physical_steps": 2240,
+      "hold_physical_steps": 2240,
+      "adverse": 8,
+      "exits": 8,
+      "favorable": 15,
+      "retained": 15,
+      "flat": 9,
+      "flat_no_orders": 2,
+      "mean_orders": 21.8125,
+      "mean_excess_wealth_bps": 239.8520064582828,
+      "groups": {
+        "adverse": {
+          "episodes": 8,
+          "mean_excess_wealth_bps": 206.97971061150622,
+          "mean_orders": 13.375,
+          "mean_execution_cost": 13.91
+        },
+        "favorable": {
+          "episodes": 15,
+          "mean_excess_wealth_bps": 401.394036763573,
+          "mean_orders": 38.53333333333333,
+          "mean_execution_cost": 42.24666666666666
+        },
+        "flat": {
+          "episodes": 9,
+          "mean_excess_wealth_bps": -0.16489218673290815,
+          "mean_orders": 1.4444444444444444,
+          "mean_execution_cost": 1.6488888888888888
+        }
+      }
+    },
+    {
+      "timing": "fixed",
+      "seed": 43,
+      "mode": "sampled",
+      "configuration": "original",
+      "episodes": 32,
+      "policy_physical_steps": 2240,
+      "hold_physical_steps": 2240,
+      "adverse": 8,
+      "exits": 7,
+      "favorable": 15,
+      "retained": 14,
+      "flat": 9,
+      "flat_no_orders": 0,
+      "mean_orders": 18.25,
+      "mean_excess_wealth_bps": 187.06340010729377,
+      "groups": {
+        "adverse": {
+          "episodes": 8,
+          "mean_excess_wealth_bps": 121.96358699435143,
+          "mean_orders": 10.5,
+          "mean_execution_cost": 10.743749999999999
+        },
+        "favorable": {
+          "episodes": 15,
+          "mean_excess_wealth_bps": 334.25887858266776,
+          "mean_orders": 31.0,
+          "mean_execution_cost": 34.08866666666667
+        },
+        "flat": {
+          "episodes": 9,
+          "mean_excess_wealth_bps": -0.39589680682507716,
+          "mean_orders": 3.888888888888889,
+          "mean_execution_cost": 3.9588888888888882
+        }
+      }
+    },
+    {
+      "timing": "fixed",
+      "seed": 43,
+      "mode": "greedy",
+      "configuration": "small_positions",
+      "episodes": 32,
+      "policy_physical_steps": 2240,
+      "hold_physical_steps": 2240,
+      "adverse": 8,
+      "exits": 8,
+      "favorable": 15,
+      "retained": 15,
+      "flat": 9,
+      "flat_no_orders": 9,
+      "mean_orders": 1.96875,
+      "mean_excess_wealth_bps": 239.23126991333794,
+      "groups": {
+        "adverse": {
+          "episodes": 8,
+          "mean_excess_wealth_bps": 42.17443911604883,
+          "mean_orders": 1.0,
+          "mean_execution_cost": 1.01
+        },
+        "favorable": {
+          "episodes": 15,
+          "mean_excess_wealth_bps": 487.8670082865617,
+          "mean_orders": 3.6666666666666665,
+          "mean_execution_cost": 3.8986666666666667
+        },
+        "flat": {
+          "episodes": 9,
+          "mean_excess_wealth_bps": 0.0,
+          "mean_orders": 0.0,
+          "mean_execution_cost": 0.0
+        }
+      }
+    },
+    {
+      "timing": "fixed",
+      "seed": 43,
+      "mode": "greedy",
+      "configuration": "unequal_positions",
+      "episodes": 32,
+      "policy_physical_steps": 2240,
+      "hold_physical_steps": 2240,
+      "adverse": 8,
+      "exits": 8,
+      "favorable": 15,
+      "retained": 15,
+      "flat": 9,
+      "flat_no_orders": 9,
+      "mean_orders": 1.5,
+      "mean_excess_wealth_bps": 217.62570603478864,
+      "groups": {
+        "adverse": {
+          "episodes": 8,
+          "mean_excess_wealth_bps": 208.22848558700588,
+          "mean_orders": 1.0,
+          "mean_execution_cost": 1.4225
+        },
+        "favorable": {
+          "episodes": 15,
+          "mean_excess_wealth_bps": 353.21298056114597,
+          "mean_orders": 2.6666666666666665,
+          "mean_execution_cost": 2.8406666666666665
+        },
+        "flat": {
+          "episodes": 9,
+          "mean_excess_wealth_bps": 0.0,
+          "mean_orders": 0.0,
+          "mean_execution_cost": 0.0
+        }
+      }
+    },
+    {
+      "timing": "fixed",
+      "seed": 43,
+      "mode": "sampled",
+      "configuration": "small_positions",
+      "episodes": 32,
+      "policy_physical_steps": 2240,
+      "hold_physical_steps": 2240,
+      "adverse": 8,
+      "exits": 7,
+      "favorable": 15,
+      "retained": 15,
+      "flat": 9,
+      "flat_no_orders": 0,
+      "mean_orders": 18.25,
+      "mean_excess_wealth_bps": 184.69396489294166,
+      "groups": {
+        "adverse": {
+          "episodes": 8,
+          "mean_excess_wealth_bps": 37.371203892157496,
+          "mean_orders": 10.875,
+          "mean_execution_cost": 11.158750000000001
+        },
+        "favorable": {
+          "episodes": 15,
+          "mean_excess_wealth_bps": 374.292420561209,
+          "mean_orders": 31.066666666666666,
+          "mean_execution_cost": 34.019999999999996
+        },
+        "flat": {
+          "episodes": 9,
+          "mean_excess_wealth_bps": -0.3498958868068449,
+          "mean_orders": 3.4444444444444446,
+          "mean_execution_cost": 3.498888888888889
+        }
+      }
+    },
+    {
+      "timing": "fixed",
+      "seed": 43,
+      "mode": "sampled",
+      "configuration": "unequal_positions",
+      "episodes": 32,
+      "policy_physical_steps": 2240,
+      "hold_physical_steps": 2240,
+      "adverse": 8,
+      "exits": 7,
+      "favorable": 15,
+      "retained": 12,
+      "flat": 9,
+      "flat_no_orders": 0,
+      "mean_orders": 18.5,
+      "mean_excess_wealth_bps": 155.65516478180444,
+      "groups": {
+        "adverse": {
+          "episodes": 8,
+          "mean_excess_wealth_bps": 203.4841265406385,
+          "mean_orders": 10.375,
+          "mean_execution_cost": 10.9825
+        },
+        "favorable": {
+          "episodes": 15,
+          "mean_excess_wealth_bps": 223.80255597428095,
+          "mean_orders": 31.466666666666665,
+          "mean_execution_cost": 35.181333333333335
+        },
+        "flat": {
+          "episodes": 9,
+          "mean_excess_wealth_bps": -0.4384532135087858,
+          "mean_orders": 4.111111111111111,
+          "mean_execution_cost": 4.384444444444444
+        }
+      }
+    },
+    {
+      "timing": "variable",
+      "seed": 42,
+      "mode": "greedy",
+      "configuration": "original",
+      "episodes": 32,
+      "policy_physical_steps": 2240,
+      "hold_physical_steps": 2240,
+      "adverse": 8,
+      "exits": 8,
+      "favorable": 15,
+      "retained": 15,
+      "flat": 9,
+      "flat_no_orders": 9,
+      "mean_orders": 14.375,
+      "mean_excess_wealth_bps": 294.2431073731142,
+      "groups": {
+        "adverse": {
+          "episodes": 8,
+          "mean_excess_wealth_bps": 126.72332134822506,
+          "mean_orders": 1.0,
+          "mean_execution_cost": 1.03
+        },
+        "favorable": {
+          "episodes": 15,
+          "mean_excess_wealth_bps": 560.1328576769235,
+          "mean_orders": 30.133333333333333,
+          "mean_execution_cost": 30.435333333333332
+        },
+        "flat": {
+          "episodes": 9,
+          "mean_excess_wealth_bps": 0.0,
+          "mean_orders": 0.0,
+          "mean_execution_cost": 0.0
+        }
+      }
+    },
+    {
+      "timing": "variable",
+      "seed": 42,
+      "mode": "greedy",
+      "configuration": "small_positions",
+      "episodes": 32,
+      "policy_physical_steps": 2240,
+      "hold_physical_steps": 2240,
+      "adverse": 8,
+      "exits": 8,
+      "favorable": 15,
+      "retained": 15,
+      "flat": 9,
+      "flat_no_orders": 9,
+      "mean_orders": 14.4375,
+      "mean_excess_wealth_bps": 349.63357401850226,
+      "groups": {
+        "adverse": {
+          "episodes": 8,
+          "mean_excess_wealth_bps": 42.17443911604883,
+          "mean_orders": 1.0,
+          "mean_execution_cost": 1.01
+        },
+        "favorable": {
+          "episodes": 15,
+          "mean_excess_wealth_bps": 723.3919237109122,
+          "mean_orders": 30.266666666666666,
+          "mean_execution_cost": 30.624666666666666
+        },
+        "flat": {
+          "episodes": 9,
+          "mean_excess_wealth_bps": 0.0,
+          "mean_orders": 0.0,
+          "mean_execution_cost": 0.0
+        }
+      }
+    },
+    {
+      "timing": "variable",
+      "seed": 42,
+      "mode": "sampled",
+      "configuration": "original",
+      "episodes": 32,
+      "policy_physical_steps": 2240,
+      "hold_physical_steps": 2240,
+      "adverse": 8,
+      "exits": 4,
+      "favorable": 15,
+      "retained": 14,
+      "flat": 9,
+      "flat_no_orders": 0,
+      "mean_orders": 29.25,
+      "mean_excess_wealth_bps": 240.97339755062592,
+      "groups": {
+        "adverse": {
+          "episodes": 8,
+          "mean_excess_wealth_bps": 77.6054646555474,
+          "mean_orders": 25.875,
+          "mean_execution_cost": 26.51875
+        },
+        "favorable": {
+          "episodes": 15,
+          "mean_excess_wealth_bps": 472.9176715718025,
+          "mean_orders": 46.333333333333336,
+          "mean_execution_cost": 49.06799999999999
+        },
+        "flat": {
+          "episodes": 9,
+          "mean_excess_wealth_bps": -0.38445213348750223,
+          "mean_orders": 3.7777777777777777,
+          "mean_execution_cost": 3.8444444444444446
+        }
+      }
+    },
+    {
+      "timing": "variable",
+      "seed": 42,
+      "mode": "sampled",
+      "configuration": "small_positions",
+      "episodes": 32,
+      "policy_physical_steps": 2240,
+      "hold_physical_steps": 2240,
+      "adverse": 8,
+      "exits": 5,
+      "favorable": 15,
+      "retained": 15,
+      "flat": 9,
+      "flat_no_orders": 0,
+      "mean_orders": 29.15625,
+      "mean_excess_wealth_bps": 261.2553736162581,
+      "groups": {
+        "adverse": {
+          "episodes": 8,
+          "mean_excess_wealth_bps": -3.1789531281541468,
+          "mean_orders": 26.25,
+          "mean_execution_cost": 26.737500000000004
+        },
+        "favorable": {
+          "episodes": 15,
+          "mean_excess_wealth_bps": 559.2556430244524,
+          "mean_orders": 46.06666666666667,
+          "mean_execution_cost": 48.737333333333325
+        },
+        "flat": {
+          "episodes": 9,
+          "mean_excess_wealth_bps": -0.359007180143577,
+          "mean_orders": 3.5555555555555554,
+          "mean_execution_cost": 3.5900000000000003
+        }
+      }
+    },
+    {
+      "timing": "variable",
+      "seed": 42,
+      "mode": "greedy",
+      "configuration": "unequal_positions",
+      "episodes": 32,
+      "policy_physical_steps": 2240,
+      "hold_physical_steps": 2240,
+      "adverse": 8,
+      "exits": 8,
+      "favorable": 15,
+      "retained": 15,
+      "flat": 9,
+      "flat_no_orders": 9,
+      "mean_orders": 14.3125,
+      "mean_excess_wealth_bps": 296.504785389089,
+      "groups": {
+        "adverse": {
+          "episodes": 8,
+          "mean_excess_wealth_bps": 208.22848558700588,
+          "mean_orders": 1.0,
+          "mean_execution_cost": 1.4225
+        },
+        "favorable": {
+          "episodes": 15,
+          "mean_excess_wealth_bps": 521.4883498503202,
+          "mean_orders": 30.0,
+          "mean_execution_cost": 30.34
+        },
+        "flat": {
+          "episodes": 9,
+          "mean_excess_wealth_bps": 0.0,
+          "mean_orders": 0.0,
+          "mean_execution_cost": 0.0
+        }
+      }
+    },
+    {
+      "timing": "variable",
+      "seed": 43,
+      "mode": "greedy",
+      "configuration": "original",
+      "episodes": 32,
+      "policy_physical_steps": 2240,
+      "hold_physical_steps": 2240,
+      "adverse": 8,
+      "exits": 8,
+      "favorable": 15,
+      "retained": 15,
+      "flat": 9,
+      "flat_no_orders": 9,
+      "mean_orders": 6.65625,
+      "mean_excess_wealth_bps": 295.4828933905276,
+      "groups": {
+        "adverse": {
+          "episodes": 8,
+          "mean_excess_wealth_bps": 126.72332134822506,
+          "mean_orders": 1.0,
+          "mean_execution_cost": 1.03
+        },
+        "favorable": {
+          "episodes": 15,
+          "mean_excess_wealth_bps": 562.7777345140723,
+          "mean_orders": 13.666666666666666,
+          "mean_execution_cost": 13.882000000000001
+        },
+        "flat": {
+          "episodes": 9,
+          "mean_excess_wealth_bps": 0.0,
+          "mean_orders": 0.0,
+          "mean_execution_cost": 0.0
+        }
+      }
+    },
+    {
+      "timing": "variable",
+      "seed": 42,
+      "mode": "sampled",
+      "configuration": "unequal_positions",
+      "episodes": 32,
+      "policy_physical_steps": 2240,
+      "hold_physical_steps": 2240,
+      "adverse": 8,
+      "exits": 4,
+      "favorable": 15,
+      "retained": 15,
+      "flat": 9,
+      "flat_no_orders": 0,
+      "mean_orders": 28.875,
+      "mean_excess_wealth_bps": 244.12259478604273,
+      "groups": {
+        "adverse": {
+          "episodes": 8,
+          "mean_excess_wealth_bps": 159.07675321681475,
+          "mean_orders": 26.375,
+          "mean_execution_cost": 27.25
+        },
+        "favorable": {
+          "episodes": 15,
+          "mean_excess_wealth_bps": 436.2040054960234,
+          "mean_orders": 45.2,
+          "mean_execution_cost": 48.477999999999994
+        },
+        "flat": {
+          "episodes": 9,
+          "mean_excess_wealth_bps": -0.4167861135001512,
+          "mean_orders": 3.888888888888889,
+          "mean_execution_cost": 4.167777777777777
+        }
+      }
+    },
+    {
+      "timing": "variable",
+      "seed": 43,
+      "mode": "sampled",
+      "configuration": "original",
+      "episodes": 32,
+      "policy_physical_steps": 2240,
+      "hold_physical_steps": 2240,
+      "adverse": 8,
+      "exits": 5,
+      "favorable": 15,
+      "retained": 14,
+      "flat": 9,
+      "flat_no_orders": 0,
+      "mean_orders": 32.90625,
+      "mean_excess_wealth_bps": 149.72936719081446,
+      "groups": {
+        "adverse": {
+          "episodes": 8,
+          "mean_excess_wealth_bps": 111.51883781443854,
+          "mean_orders": 18.25,
+          "mean_execution_cost": 18.6475
+        },
+        "favorable": {
+          "episodes": 15,
+          "mean_excess_wealth_bps": 260.5220146942674,
+          "mean_orders": 54.8,
+          "mean_execution_cost": 59.196666666666665
+        },
+        "flat": {
+          "episodes": 9,
+          "mean_excess_wealth_bps": -0.9601303137174243,
+          "mean_orders": 9.444444444444445,
+          "mean_execution_cost": 9.601111111111111
+        }
+      }
+    },
+    {
+      "timing": "variable",
+      "seed": 43,
+      "mode": "greedy",
+      "configuration": "small_positions",
+      "episodes": 32,
+      "policy_physical_steps": 2240,
+      "hold_physical_steps": 2240,
+      "adverse": 8,
+      "exits": 8,
+      "favorable": 15,
+      "retained": 15,
+      "flat": 9,
+      "flat_no_orders": 9,
+      "mean_orders": 6.6875,
+      "mean_excess_wealth_bps": 350.08695384398663,
+      "groups": {
+        "adverse": {
+          "episodes": 8,
+          "mean_excess_wealth_bps": 42.17443911604883,
+          "mean_orders": 1.0,
+          "mean_execution_cost": 1.01
+        },
+        "favorable": {
+          "episodes": 15,
+          "mean_excess_wealth_bps": 724.3591340052789,
+          "mean_orders": 13.733333333333333,
+          "mean_execution_cost": 14.005333333333331
+        },
+        "flat": {
+          "episodes": 9,
+          "mean_excess_wealth_bps": 0.0,
+          "mean_orders": 0.0,
+          "mean_execution_cost": 0.0
+        }
+      }
+    },
+    {
+      "timing": "variable",
+      "seed": 43,
+      "mode": "greedy",
+      "configuration": "unequal_positions",
+      "episodes": 32,
+      "policy_physical_steps": 2240,
+      "hold_physical_steps": 2240,
+      "adverse": 8,
+      "exits": 8,
+      "favorable": 15,
+      "retained": 15,
+      "flat": 9,
+      "flat_no_orders": 9,
+      "mean_orders": 6.625,
+      "mean_excess_wealth_bps": 297.20273318280294,
+      "groups": {
+        "adverse": {
+          "episodes": 8,
+          "mean_excess_wealth_bps": 208.22848558700588,
+          "mean_orders": 1.0,
+          "mean_execution_cost": 1.4225
+        },
+        "favorable": {
+          "episodes": 15,
+          "mean_excess_wealth_bps": 522.9773051435765,
+          "mean_orders": 13.6,
+          "mean_execution_cost": 13.818666666666665
+        },
+        "flat": {
+          "episodes": 9,
+          "mean_excess_wealth_bps": 0.0,
+          "mean_orders": 0.0,
+          "mean_execution_cost": 0.0
+        }
+      }
+    },
+    {
+      "timing": "variable",
+      "seed": 43,
+      "mode": "sampled",
+      "configuration": "small_positions",
+      "episodes": 32,
+      "policy_physical_steps": 2240,
+      "hold_physical_steps": 2240,
+      "adverse": 8,
+      "exits": 5,
+      "favorable": 15,
+      "retained": 14,
+      "flat": 9,
+      "flat_no_orders": 0,
+      "mean_orders": 32.5,
+      "mean_excess_wealth_bps": 161.9977126897916,
+      "groups": {
+        "adverse": {
+          "episodes": 8,
+          "mean_excess_wealth_bps": 27.051457212294608,
+          "mean_orders": 17.5,
+          "mean_execution_cost": 17.8125
+        },
+        "favorable": {
+          "episodes": 15,
+          "mean_excess_wealth_bps": 331.72048761455267,
+          "mean_orders": 54.53333333333333,
+          "mean_execution_cost": 59.153999999999996
+        },
+        "flat": {
+          "episodes": 9,
+          "mean_excess_wealth_bps": -0.9213517603685213,
+          "mean_orders": 9.11111111111111,
+          "mean_execution_cost": 9.213333333333333
+        }
+      }
+    },
+    {
+      "timing": "variable",
+      "seed": 43,
+      "mode": "sampled",
+      "configuration": "unequal_positions",
+      "episodes": 32,
+      "policy_physical_steps": 2240,
+      "hold_physical_steps": 2240,
+      "adverse": 8,
+      "exits": 5,
+      "favorable": 15,
+      "retained": 12,
+      "flat": 9,
+      "flat_no_orders": 0,
+      "mean_orders": 32.625,
+      "mean_excess_wealth_bps": 162.2628046425611,
+      "groups": {
+        "adverse": {
+          "episodes": 8,
+          "mean_excess_wealth_bps": 193.01475186821537,
+          "mean_orders": 18.375,
+          "mean_execution_cost": 19.1325
+        },
+        "favorable": {
+          "episodes": 15,
+          "mean_excess_wealth_bps": 243.7985271559805,
+          "mean_orders": 54.266666666666666,
+          "mean_execution_cost": 58.82866666666666
+        },
+        "flat": {
+          "episodes": 9,
+          "mean_excess_wealth_bps": -0.9651304137195537,
+          "mean_orders": 9.222222222222221,
+          "mean_execution_cost": 9.651111111111112
+        }
+      }
+    }
+  ],
+  "source_checkpoints_unchanged": true,
+  "policy_episodes": 768,
+  "policy_steps": 53760,
+  "hold_steps": 53760,
+  "interpretation": "Frozen synthetic IRA policies on new draws of existing templates. No retraining, model selection, language generalization or market-alpha evidence."
+}

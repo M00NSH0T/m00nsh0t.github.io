@@ -1,0 +1,129 @@
+{
+  "status": "complete",
+  "arguments": {
+    "steps": 8192,
+    "workers": [
+      1,
+      4,
+      8,
+      16
+    ],
+    "seeds": [
+      42,
+      43
+    ],
+    "devices": [
+      "cpu",
+      "cuda"
+    ],
+    "seconds": 60.0,
+    "contenders": true,
+    "check_only": false
+  },
+  "trials": [
+    {
+      "device": "cpu",
+      "workers": 1,
+      "seed": 42,
+      "measured_steps": 18432,
+      "warmup_steps": 2048,
+      "rollout_steps_per_worker": 2048,
+      "startup_seconds": 0.008291000000000714,
+      "elapsed_seconds": 61.09699,
+      "requested_seconds": 60.0,
+      "steps_per_second": 301.68425645846054,
+      "optimization_seconds": 6.574826400000035,
+      "rollout_and_overhead_seconds": 54.52216359999996,
+      "optimizer_updates": 288,
+      "finite_parameters": true,
+      "evaluation": {
+        "episodes": 20,
+        "mean_wealth": 100589.32903687516,
+        "mean_orders": 1.0,
+        "adverse": 8,
+        "timely_exits": 0,
+        "continuation_holds": 12
+      }
+    },
+    {
+      "device": "cuda",
+      "workers": 16,
+      "seed": 42,
+      "measured_steps": 102400,
+      "warmup_steps": 2048,
+      "rollout_steps_per_worker": 128,
+      "startup_seconds": 3.824367499999994,
+      "elapsed_seconds": 61.19653820000002,
+      "requested_seconds": 60.0,
+      "steps_per_second": 1673.2972650403935,
+      "optimization_seconds": 16.966772400000053,
+      "rollout_and_overhead_seconds": 44.22976579999997,
+      "optimizer_updates": 1600,
+      "finite_parameters": true,
+      "evaluation": {
+        "episodes": 20,
+        "mean_wealth": 100589.32903687516,
+        "mean_orders": 1.0,
+        "adverse": 8,
+        "timely_exits": 0,
+        "continuation_holds": 12
+      }
+    },
+    {
+      "device": "cuda",
+      "workers": 16,
+      "seed": 43,
+      "measured_steps": 100352,
+      "warmup_steps": 2048,
+      "rollout_steps_per_worker": 128,
+      "startup_seconds": 3.896116699999993,
+      "elapsed_seconds": 60.247766299999995,
+      "requested_seconds": 60.0,
+      "steps_per_second": 1665.655113258531,
+      "optimization_seconds": 16.605130400000178,
+      "rollout_and_overhead_seconds": 43.64263589999982,
+      "optimizer_updates": 1568,
+      "finite_parameters": true,
+      "evaluation": {
+        "episodes": 20,
+        "mean_wealth": 94469.90215459347,
+        "mean_orders": 70.0,
+        "adverse": 8,
+        "timely_exits": 0,
+        "continuation_holds": 3
+      }
+    },
+    {
+      "device": "cpu",
+      "workers": 1,
+      "seed": 43,
+      "measured_steps": 16384,
+      "warmup_steps": 2048,
+      "rollout_steps_per_worker": 2048,
+      "startup_seconds": 0.008281400000015537,
+      "elapsed_seconds": 63.88480999999999,
+      "requested_seconds": 60.0,
+      "steps_per_second": 256.4615907913008,
+      "optimization_seconds": 7.114798799999875,
+      "rollout_and_overhead_seconds": 56.77001120000011,
+      "optimizer_updates": 256,
+      "finite_parameters": true,
+      "evaluation": {
+        "episodes": 20,
+        "mean_wealth": 100589.32903687516,
+        "mean_orders": 1.0,
+        "adverse": 8,
+        "timely_exits": 0,
+        "continuation_holds": 12
+      }
+    }
+  ],
+  "torch": "2.8.0+cu128",
+  "source_sha256": "8f80f9ce2213741dc306e29af34331e1cd207133ef9d09add2590433486cfaa9",
+  "disclaimer": "Synthetic throughput and short learning diagnostics; not a market strategy test",
+  "worker_parity": {
+    "passed": true,
+    "parallel_transitions": 290
+  },
+  "run_id": "1789227157173514800"
+}

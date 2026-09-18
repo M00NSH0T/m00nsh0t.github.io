@@ -1,0 +1,471 @@
+{
+  "status": "complete",
+  "run_id": "resume",
+  "study_id": "w28_long_horizon_training_diagnostic",
+  "source_study_id": "w28_long_horizon_training_diagnostic",
+  "algorithm": "Synchronous V-trace actor-critic",
+  "synthetic": true,
+  "ordinary_actors": true,
+  "w27_keep_ordinary": true,
+  "s1_executed": false,
+  "not_market_alpha": true,
+  "no_convergence_claim": true,
+  "certified": false,
+  "w29_started": false,
+  "rung": {
+    "optimizer_updates": 2,
+    "workers": 2,
+    "rollout_bars": 16,
+    "seeds": [
+      42
+    ],
+    "learning_rate": 0.0001,
+    "eval_episodes": 2,
+    "helpers": [
+      0
+    ],
+    "exploration": "holding",
+    "gamma": 1.0,
+    "spend": "always_inner_smoke",
+    "name": "rung0_smoke"
+  },
+  "horizons": {
+    "episode_horizon": {
+      "calendar_days": 368.0,
+      "span_seconds": 31795200.0,
+      "decision_bars": 10,
+      "spans_more_than_one_year": true
+    },
+    "recurrent_memory_length": {
+      "bars": 8,
+      "kind": "windowed_lstm_recompute",
+      "unbounded_recurrent_policy_state": false
+    },
+    "rollout_truncation": {
+      "bars": 16,
+      "bootstrap_required": false
+    },
+    "discount_gae_credit_horizon": {
+      "algorithm": "vtrace_not_gae",
+      "gae_lambda": null,
+      "gamma": 1.0,
+      "bar_seconds": 300.0,
+      "year_gap_discount": 1.0,
+      "half_life_bars": null,
+      "practical_backup_bars": 16,
+      "gamma_one_elapsed_time_undifferentiated": true
+    },
+    "holding_period_decision_lag": 8,
+    "lookback": 8,
+    "fixture_bar_count": 18,
+    "unique_market_bars": 18,
+    "net_arch": [
+      64
+    ],
+    "do_not_increase_model_size": true,
+    "predeclared_temporal_abstraction": "holding_explorers_helpers=2 exists on the ordinary trainer; W27 kept ordinary actors, so W28 does not activate that abstraction or increase model size"
+  },
+  "credit_horizon": {
+    "discount_units": "five_minute_bar",
+    "gamma": 1.0,
+    "year_scale_discount": 1.0,
+    "five_minute_bar_year_scale_discount": 1.0,
+    "rollout_bars": 16,
+    "holding_period_lag": 8,
+    "rollout_covers_holding_period_lag": true,
+    "ordinary_actors": true,
+    "net_arch": [
+      64
+    ],
+    "w29_started": false,
+    "helpers": 0,
+    "exploration": "holding",
+    "lookback": 8,
+    "decision_bars": 10,
+    "algorithm": "vtrace_not_gae",
+    "gae_lambda": null,
+    "gamma_one_elapsed_time_undifferentiated": true,
+    "uses_five_minute_gamma_that_zeros_a_year": false,
+    "do_not_increase_model_size": true,
+    "not_market_alpha": true,
+    "certified": false,
+    "w28_horizons": {
+      "episode_horizon": {
+        "calendar_days": 368.0,
+        "span_seconds": 31795200.0,
+        "decision_bars": 10,
+        "spans_more_than_one_year": true
+      },
+      "recurrent_memory_length": {
+        "bars": 8,
+        "kind": "windowed_lstm_recompute",
+        "unbounded_recurrent_policy_state": false
+      },
+      "rollout_truncation": {
+        "bars": 16,
+        "bootstrap_required": false
+      },
+      "discount_gae_credit_horizon": {
+        "algorithm": "vtrace_not_gae",
+        "gae_lambda": null,
+        "gamma": 1.0,
+        "bar_seconds": 300.0,
+        "year_gap_discount": 1.0,
+        "half_life_bars": null,
+        "practical_backup_bars": 16,
+        "gamma_one_elapsed_time_undifferentiated": true
+      },
+      "holding_period_decision_lag": 8,
+      "lookback": 8,
+      "fixture_bar_count": 18,
+      "unique_market_bars": 18,
+      "net_arch": [
+        64
+      ],
+      "do_not_increase_model_size": true,
+      "predeclared_temporal_abstraction": "holding_explorers_helpers=2 exists on the ordinary trainer; W27 kept ordinary actors, so W28 does not activate that abstraction or increase model size"
+    }
+  },
+  "net_arch": [
+    64
+  ],
+  "do_not_increase_model_size": true,
+  "learning_rate": 0.0001,
+  "device": "cpu",
+  "settings": {
+    "rollout_bars": 16,
+    "workers": 2,
+    "optimizer_updates": 1,
+    "gamma": 1.0,
+    "helpers": [
+      0
+    ],
+    "exploration": "holding",
+    "lookback": 8,
+    "gradient_cap": 0.5,
+    "discount_units": "five_minute_bar"
+  },
+  "trials": [
+    {
+      "seed": 42,
+      "helpers": 0,
+      "status": "complete",
+      "steps": 32,
+      "history": [
+        {
+          "steps": 32,
+          "actor_loss": 0.2926323413848877,
+          "value_loss": 1.1424758667999413e-06,
+          "gradient_norm": 0.34944677352905273,
+          "completed_episode_window": 2,
+          "mean_elapsed_seconds": 3925575.0,
+          "mean_importance_weight": 1.0,
+          "minimum_importance_weight": 0.9999997615814209,
+          "maximum_importance_weight": 1.000000238418579,
+          "rho_clip_fraction": 0.0,
+          "importance_clip_fraction": 0.0,
+          "ess": 32.000003814697266,
+          "ess_fraction": 1.0000001192092896,
+          "n": 32,
+          "mean_policy_lag": 8.940696716308594e-08,
+          "max_policy_lag": 2.384185791015625e-07,
+          "gradient_norm_pre_clip": 0.34944677352905273,
+          "gradient_norm_post_clip": 0.34944677352905273,
+          "gradient_clip_fraction": 0.0,
+          "parameter_update_l2": 0.004702655598521233,
+          "learning_rate": 0.0001,
+          "value_mean": 0.00039559102947350766,
+          "value_std": 0.0003340391627733479,
+          "value_abs_max": 0.000892986252438277,
+          "approx_kl": 0.00031037628650665283,
+          "entropy": 1.789629340171814,
+          "advantage_mean": 0.00025093992917391006,
+          "advantage_std": 0.0014906309429274938,
+          "advantage_min": -0.0009713362087495625,
+          "advantage_max": 0.0055107357911765575,
+          "advantage_frac_positive": 0.46875,
+          "prob_saturation_frac": 0.0,
+          "nonfinite": 0,
+          "optimizer_steps_total": 3,
+          "episode_reward_mean": 0.0036688584211709546,
+          "segment_id": "w28-main",
+          "segment_reason": "exact_actor_rng_unsupported"
+        }
+      ],
+      "nonfinite": false,
+      "untrained_evaluation": {
+        "episodes": 1,
+        "mean_wealth": 100000.0,
+        "mean_reward": 0.0,
+        "rows": [
+          {
+            "seed": 99000,
+            "wealth": 100000.0,
+            "reward_sum": 0.0,
+            "cash_only": true,
+            "reconciled": true
+          }
+        ],
+        "policy": "untrained",
+        "steps": 0
+      },
+      "inner_validation": [
+        {
+          "episodes": 1,
+          "mean_wealth": 100000.0,
+          "mean_reward": 0.0,
+          "rows": [
+            {
+              "seed": 99000,
+              "wealth": 100000.0,
+              "reward_sum": 0.0,
+              "cash_only": true,
+              "reconciled": true
+            }
+          ],
+          "policy": "untrained",
+          "steps": 0
+        },
+        {
+          "episodes": 1,
+          "mean_wealth": 100000.0,
+          "mean_reward": 0.0,
+          "rows": [
+            {
+              "seed": 99000,
+              "wealth": 100000.0,
+              "reward_sum": 0.0,
+              "cash_only": true,
+              "reconciled": true
+            }
+          ],
+          "policy": "trained",
+          "steps": 32
+        }
+      ],
+      "checkpoints": [
+        "C:\\Users\\kylea\\AppData\\Local\\Temp\\tmpnoutfun0\\resume\\policy_42_32.pt"
+      ],
+      "segment_id": "w28-main",
+      "segment_reason": "exact_actor_rng_unsupported",
+      "training_seconds": 0.2425196000000005,
+      "evaluation": {
+        "episodes": 1,
+        "mean_wealth": 100000.0,
+        "mean_reward": 0.0,
+        "rows": [
+          {
+            "seed": 99000,
+            "wealth": 100000.0,
+            "reward_sum": 0.0,
+            "cash_only": true,
+            "reconciled": true
+          }
+        ],
+        "policy": "trained",
+        "steps": 32
+      },
+      "curves": {
+        "points": [
+          {
+            "episodes": 1,
+            "mean_wealth": 100000.0,
+            "mean_reward": 0.0,
+            "rows": [
+              {
+                "seed": 99000,
+                "wealth": 100000.0,
+                "reward_sum": 0.0,
+                "cash_only": true,
+                "reconciled": true
+              }
+            ],
+            "policy": "untrained",
+            "steps": 0
+          },
+          {
+            "episodes": 1,
+            "mean_wealth": 100000.0,
+            "mean_reward": 0.0,
+            "rows": [
+              {
+                "seed": 99000,
+                "wealth": 100000.0,
+                "reward_sum": 0.0,
+                "cash_only": true,
+                "reconciled": true
+              }
+            ],
+            "policy": "trained",
+            "steps": 32
+          }
+        ],
+        "n": 2,
+        "untrained_mean_wealth": 100000.0,
+        "last_trained_mean_wealth": 100000.0,
+        "wealth_moved": false,
+        "no_convergence_claim": true,
+        "not_market_alpha": true
+      },
+      "budget": {
+        "optimizer_updates": 1,
+        "completed_episodes": 2,
+        "total_market_transitions": 32,
+        "unique_market_transitions": 10,
+        "replayed_history_transitions": 22,
+        "replayed_history_is_not_independent_market_data": true,
+        "wall_seconds": 0.2425196000000005,
+        "fixture_bars": 18
+      },
+      "lr_gate": {
+        "justified": false,
+        "reason": "inner_diagnostics_do_not_justify_smaller_lr",
+        "selected_lr": 0.0001
+      },
+      "telemetry_audit": {
+        "rows": 2,
+        "ok": true,
+        "issues": [],
+        "gaps": [],
+        "availability": {
+          "actor_loss": 0.5,
+          "advantage_frac_positive": 0.5,
+          "advantage_max": 0.5,
+          "advantage_mean": 0.5,
+          "advantage_min": 0.5,
+          "advantage_std": 0.5,
+          "approx_kl": 0.5,
+          "completed_episode_window": 0.5,
+          "entropy": 0.5,
+          "episode_reward_mean": 0.5,
+          "ess": 0.5,
+          "ess_fraction": 0.5,
+          "gradient_clip_fraction": 0.5,
+          "gradient_norm": 0.5,
+          "gradient_norm_post_clip": 0.5,
+          "gradient_norm_pre_clip": 0.5,
+          "importance_clip_fraction": 0.5,
+          "inner_validation_wealth": 0.5,
+          "learning_rate": 0.5,
+          "max_policy_lag": 0.5,
+          "maximum_importance_weight": 0.5,
+          "mean_elapsed_seconds": 0.5,
+          "mean_importance_weight": 0.5,
+          "mean_policy_lag": 0.5,
+          "minimum_importance_weight": 0.5,
+          "n": 0.5,
+          "nonfinite": 0.5,
+          "optimizer_steps_total": 1.0,
+          "parameter_update_l2": 0.5,
+          "prob_saturation_frac": 0.5,
+          "rho_clip_fraction": 0.5,
+          "safety/gradient_norm_max": 1.0,
+          "safety/optimizer_steps_total": 1.0,
+          "train/approx_kl": 1.0,
+          "value_abs_max": 0.5,
+          "value_loss": 0.5,
+          "value_mean": 0.5,
+          "value_std": 0.5
+        },
+        "resume_steps": null,
+        "resume_duplicate_indices": []
+      },
+      "resume_audit": {
+        "rows": 1,
+        "ok": true,
+        "issues": [],
+        "gaps": [],
+        "availability": {
+          "actor_loss": 1.0,
+          "advantage_frac_positive": 1.0,
+          "advantage_max": 1.0,
+          "advantage_mean": 1.0,
+          "advantage_min": 1.0,
+          "advantage_std": 1.0,
+          "approx_kl": 1.0,
+          "completed_episode_window": 1.0,
+          "entropy": 1.0,
+          "episode_reward_mean": 1.0,
+          "ess": 1.0,
+          "ess_fraction": 1.0,
+          "gradient_clip_fraction": 1.0,
+          "gradient_norm": 1.0,
+          "gradient_norm_post_clip": 1.0,
+          "gradient_norm_pre_clip": 1.0,
+          "importance_clip_fraction": 1.0,
+          "learning_rate": 1.0,
+          "max_policy_lag": 1.0,
+          "maximum_importance_weight": 1.0,
+          "mean_elapsed_seconds": 1.0,
+          "mean_importance_weight": 1.0,
+          "mean_policy_lag": 1.0,
+          "minimum_importance_weight": 1.0,
+          "n": 1.0,
+          "nonfinite": 1.0,
+          "optimizer_steps_total": 1.0,
+          "parameter_update_l2": 1.0,
+          "prob_saturation_frac": 1.0,
+          "rho_clip_fraction": 1.0,
+          "safety/gradient_norm_max": 1.0,
+          "safety/optimizer_steps_total": 1.0,
+          "train/approx_kl": 1.0,
+          "value_abs_max": 1.0,
+          "value_loss": 1.0,
+          "value_mean": 1.0,
+          "value_std": 1.0
+        },
+        "resume_steps": null,
+        "resume_duplicate_indices": [],
+        "segment_id": "w28-main",
+        "segment_reason": "exact_actor_rng_unsupported",
+        "restored_optimizer": true,
+        "prior_steps": 64
+      }
+    }
+  ],
+  "declared_experiment": null,
+  "w19_declaration": "not_supplied",
+  "credit": {
+    "status": "mechanical_compact_only",
+    "summary": "Full compact-episode rollouts can back up V-trace on this sparse fixture; that is not year-scale credit in a dense 5-minute calendar.",
+    "reasons": [
+      "windowed_lstm_not_episode_memory",
+      "gamma_one_elapsed_time_undifferentiated"
+    ],
+    "compact_episode_rollout_covers_fixture": true,
+    "do_not_increase_model_size": true,
+    "retain_checkpoints": true,
+    "predeclared_temporal_abstraction": "holding_explorers_helpers=2 exists on the ordinary trainer; W27 kept ordinary actors, so W28 does not activate that abstraction or increase model size",
+    "not_market_alpha": true,
+    "no_convergence_claim": true,
+    "spend_rung1": false,
+    "spend_rung2": false
+  },
+  "smaller_lr": {
+    "justified": false,
+    "reason": "inner_diagnostics_do_not_justify_smaller_lr",
+    "selected_lr": 0.0001
+  },
+  "rungs_run": [
+    "rung0_smoke"
+  ],
+  "rungs_not_run": [
+    "rung1_inner",
+    "rung2_extended"
+  ],
+  "learning_rates_run": [
+    0.0001
+  ],
+  "learning_rates_not_run": [
+    3e-05
+  ],
+  "limitations": [
+    "Not asynchronous IMPALA/APPO; synchronous ordinary actors with V-trace correction.",
+    "Windowed LSTM lookback is not unbounded recurrent memory.",
+    "gamma=1 does not distinguish overnight vs 5-minute elapsed discounts except at terminals.",
+    "Replayed synthetic bars are not new independent market data.",
+    "No convergence claim from a short run or one reward curve. Not market alpha.",
+    "W27 kept ordinary actors; patient mixture was not restarted. S1 remains unexecuted.",
+    "Full compact-episode rollouts can back up V-trace on this sparse fixture; that is not year-scale credit in a dense 5-minute calendar."
+  ]
+}

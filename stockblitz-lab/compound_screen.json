@@ -1,0 +1,926 @@
+{
+  "status": "complete",
+  "kind": "exploratory_adjusted_daily_forecast_screen",
+  "created_at": "2026-09-13T12:33:28.212808+00:00",
+  "completed_at": "2026-09-13T12:33:36.384335+00:00",
+  "evaluation": "2022 onward; quarterly refits; trailing 756 sessions; labels mature strictly before fit",
+  "selection": "45 pair products; choose 16 per target using training-only absolute correlation",
+  "targets": [
+    "return",
+    "volatility",
+    "downside"
+  ],
+  "limitations": [
+    "Previously explored years; not an untouched final test",
+    "Fixed selected stocks, vendor all-adjustment and asof symbol mapping; survivorship and adjustment audit incomplete",
+    "Five-session price-derived targets; no trades, taxes, commissions or execution simulation",
+    "Pooled rows and overlapping labels are dependent; no rowwise significance claim",
+    "No macro/news/graph inputs in this first comparison"
+  ],
+  "results": [
+    {
+      "target": "downside",
+      "period": "all",
+      "arm": "training_mean",
+      "rows": 36301,
+      "mse": 7.976586667546458e-05,
+      "mae": 0.006086408794696778
+    },
+    {
+      "target": "downside",
+      "period": "all",
+      "arm": "stock_training_mean",
+      "rows": 36301,
+      "mse": 7.317099109241778e-05,
+      "mae": 0.005782867331926262
+    },
+    {
+      "target": "downside",
+      "period": "all",
+      "arm": "ridge_base",
+      "rows": 36301,
+      "mse": 7.041132488537823e-05,
+      "mae": 0.005688988574562587
+    },
+    {
+      "target": "downside",
+      "period": "all",
+      "arm": "ridge_compound",
+      "rows": 36301,
+      "mse": 7.144531489047507e-05,
+      "mae": 0.005721024606385852
+    },
+    {
+      "target": "downside",
+      "period": "all",
+      "arm": "tree_base",
+      "rows": 36301,
+      "mse": 7.188157600553788e-05,
+      "mae": 0.005714119337245611
+    },
+    {
+      "target": "downside",
+      "period": "all",
+      "arm": "tree_compound",
+      "rows": 36301,
+      "mse": 7.203040995293052e-05,
+      "mae": 0.005708808507227007
+    },
+    {
+      "target": "downside",
+      "period": "2022",
+      "arm": "training_mean",
+      "rows": 7781,
+      "mse": 9.17518004844721e-05,
+      "mae": 0.006791742229323512
+    },
+    {
+      "target": "downside",
+      "period": "2022",
+      "arm": "stock_training_mean",
+      "rows": 7781,
+      "mse": 8.333365890136616e-05,
+      "mae": 0.006431488186480168
+    },
+    {
+      "target": "downside",
+      "period": "2022",
+      "arm": "ridge_base",
+      "rows": 7781,
+      "mse": 8.067310183448657e-05,
+      "mae": 0.006443701789933721
+    },
+    {
+      "target": "downside",
+      "period": "2022",
+      "arm": "ridge_compound",
+      "rows": 7781,
+      "mse": 8.421041220378175e-05,
+      "mae": 0.006587939179741173
+    },
+    {
+      "target": "downside",
+      "period": "2022",
+      "arm": "tree_base",
+      "rows": 7781,
+      "mse": 8.74461188880193e-05,
+      "mae": 0.006637328577838333
+    },
+    {
+      "target": "downside",
+      "period": "2022",
+      "arm": "tree_compound",
+      "rows": 7781,
+      "mse": 8.840039858396337e-05,
+      "mae": 0.006645142849576748
+    },
+    {
+      "target": "downside",
+      "period": "2023",
+      "arm": "training_mean",
+      "rows": 7750,
+      "mse": 5.321821087182164e-05,
+      "mae": 0.005501831833772142
+    },
+    {
+      "target": "downside",
+      "period": "2023",
+      "arm": "stock_training_mean",
+      "rows": 7750,
+      "mse": 5.116466294744888e-05,
+      "mae": 0.005269513170150243
+    },
+    {
+      "target": "downside",
+      "period": "2023",
+      "arm": "ridge_base",
+      "rows": 7750,
+      "mse": 4.857312984823175e-05,
+      "mae": 0.004901669876559463
+    },
+    {
+      "target": "downside",
+      "period": "2023",
+      "arm": "ridge_compound",
+      "rows": 7750,
+      "mse": 4.852752010019544e-05,
+      "mae": 0.004908583916673087
+    },
+    {
+      "target": "downside",
+      "period": "2023",
+      "arm": "tree_base",
+      "rows": 7750,
+      "mse": 4.783758676945889e-05,
+      "mae": 0.004895410715371812
+    },
+    {
+      "target": "downside",
+      "period": "2023",
+      "arm": "tree_compound",
+      "rows": 7750,
+      "mse": 4.828164739783565e-05,
+      "mae": 0.0049002315835477836
+    },
+    {
+      "target": "downside",
+      "period": "2024",
+      "arm": "training_mean",
+      "rows": 7812,
+      "mse": 6.503237554724385e-05,
+      "mae": 0.005570749277302181
+    },
+    {
+      "target": "downside",
+      "period": "2024",
+      "arm": "stock_training_mean",
+      "rows": 7812,
+      "mse": 5.954351549275936e-05,
+      "mae": 0.005258709930848344
+    },
+    {
+      "target": "downside",
+      "period": "2024",
+      "arm": "ridge_base",
+      "rows": 7812,
+      "mse": 5.86784890847932e-05,
+      "mae": 0.005104614221578979
+    },
+    {
+      "target": "downside",
+      "period": "2024",
+      "arm": "ridge_compound",
+      "rows": 7812,
+      "mse": 5.945439266400312e-05,
+      "mae": 0.0051185743530297555
+    },
+    {
+      "target": "downside",
+      "period": "2024",
+      "arm": "tree_base",
+      "rows": 7812,
+      "mse": 5.8016569290701644e-05,
+      "mae": 0.005066075868812696
+    },
+    {
+      "target": "downside",
+      "period": "2024",
+      "arm": "tree_compound",
+      "rows": 7812,
+      "mse": 5.7992993742086927e-05,
+      "mae": 0.005065140056779842
+    },
+    {
+      "target": "downside",
+      "period": "2025",
+      "arm": "training_mean",
+      "rows": 7750,
+      "mse": 0.00010232307109151713,
+      "mae": 0.0064091771253408
+    },
+    {
+      "target": "downside",
+      "period": "2025",
+      "arm": "stock_training_mean",
+      "rows": 7750,
+      "mse": 9.521453696059872e-05,
+      "mae": 0.006093845471764567
+    },
+    {
+      "target": "downside",
+      "period": "2025",
+      "arm": "ridge_base",
+      "rows": 7750,
+      "mse": 9.285079384902428e-05,
+      "mae": 0.0062655240031856616
+    },
+    {
+      "target": "downside",
+      "period": "2025",
+      "arm": "ridge_compound",
+      "rows": 7750,
+      "mse": 9.344931787267038e-05,
+      "mae": 0.0062555043328600245
+    },
+    {
+      "target": "downside",
+      "period": "2025",
+      "arm": "tree_base",
+      "rows": 7750,
+      "mse": 9.291474155412865e-05,
+      "mae": 0.006202064084978212
+    },
+    {
+      "target": "downside",
+      "period": "2025",
+      "arm": "tree_compound",
+      "rows": 7750,
+      "mse": 9.230755668348399e-05,
+      "mae": 0.006164153537137209
+    },
+    {
+      "target": "downside",
+      "period": "2026",
+      "arm": "training_mean",
+      "rows": 5208,
+      "mse": 8.989671920610948e-05,
+      "mae": 0.006195692508162736
+    },
+    {
+      "target": "downside",
+      "period": "2026",
+      "arm": "stock_training_mean",
+      "rows": 5208,
+      "mse": 7.837331133208966e-05,
+      "mae": 0.005901187784682408
+    },
+    {
+      "target": "downside",
+      "period": "2026",
+      "arm": "ridge_base",
+      "rows": 5208,
+      "mse": 7.178424230142779e-05,
+      "mae": 0.0057516382009835795
+    },
+    {
+      "target": "downside",
+      "period": "2026",
+      "arm": "ridge_compound",
+      "rows": 5208,
+      "mse": 7.171984422054675e-05,
+      "mae": 0.0057431207179525125
+    },
+    {
+      "target": "downside",
+      "period": "2026",
+      "arm": "tree_base",
+      "rows": 5208,
+      "mse": 7.39053102347518e-05,
+      "mae": 0.00579907411814811
+    },
+    {
+      "target": "downside",
+      "period": "2026",
+      "arm": "tree_compound",
+      "rows": 5208,
+      "mse": 7.379508670816092e-05,
+      "mae": 0.005801025787138649
+    },
+    {
+      "target": "return",
+      "period": "all",
+      "arm": "training_mean",
+      "rows": 36301,
+      "mse": 0.0018062782500729907,
+      "mae": 0.03034207248576349
+    },
+    {
+      "target": "return",
+      "period": "all",
+      "arm": "stock_training_mean",
+      "rows": 36301,
+      "mse": 0.0018182804343717198,
+      "mae": 0.03045408663173167
+    },
+    {
+      "target": "return",
+      "period": "all",
+      "arm": "ridge_base",
+      "rows": 36301,
+      "mse": 0.001812582066662003,
+      "mae": 0.030389665370391637
+    },
+    {
+      "target": "return",
+      "period": "all",
+      "arm": "ridge_compound",
+      "rows": 36301,
+      "mse": 0.0018266778677521675,
+      "mae": 0.030522918945070962
+    },
+    {
+      "target": "return",
+      "period": "all",
+      "arm": "tree_base",
+      "rows": 36301,
+      "mse": 0.001814926109182403,
+      "mae": 0.030408675392584704
+    },
+    {
+      "target": "return",
+      "period": "all",
+      "arm": "tree_compound",
+      "rows": 36301,
+      "mse": 0.001814645828310572,
+      "mae": 0.030421374953783917
+    },
+    {
+      "target": "return",
+      "period": "2022",
+      "arm": "training_mean",
+      "rows": 7781,
+      "mse": 0.002266384699187452,
+      "mae": 0.0355734514356099
+    },
+    {
+      "target": "return",
+      "period": "2022",
+      "arm": "stock_training_mean",
+      "rows": 7781,
+      "mse": 0.002290091280595744,
+      "mae": 0.035731169437543155
+    },
+    {
+      "target": "return",
+      "period": "2022",
+      "arm": "ridge_base",
+      "rows": 7781,
+      "mse": 0.0022853955467297296,
+      "mae": 0.03563470562544189
+    },
+    {
+      "target": "return",
+      "period": "2022",
+      "arm": "ridge_compound",
+      "rows": 7781,
+      "mse": 0.002320001480521789,
+      "mae": 0.03587481248555544
+    },
+    {
+      "target": "return",
+      "period": "2022",
+      "arm": "tree_base",
+      "rows": 7781,
+      "mse": 0.002303573248881785,
+      "mae": 0.03583031039910125
+    },
+    {
+      "target": "return",
+      "period": "2022",
+      "arm": "tree_compound",
+      "rows": 7781,
+      "mse": 0.002299624269433836,
+      "mae": 0.035811125641335886
+    },
+    {
+      "target": "return",
+      "period": "2023",
+      "arm": "training_mean",
+      "rows": 7750,
+      "mse": 0.0012974580546164644,
+      "mae": 0.02648933256419348
+    },
+    {
+      "target": "return",
+      "period": "2023",
+      "arm": "stock_training_mean",
+      "rows": 7750,
+      "mse": 0.0013035702222834109,
+      "mae": 0.026595139827152538
+    },
+    {
+      "target": "return",
+      "period": "2023",
+      "arm": "ridge_base",
+      "rows": 7750,
+      "mse": 0.0012889995763574154,
+      "mae": 0.02641775515788259
+    },
+    {
+      "target": "return",
+      "period": "2023",
+      "arm": "ridge_compound",
+      "rows": 7750,
+      "mse": 0.00130377800173869,
+      "mae": 0.02660173906934934
+    },
+    {
+      "target": "return",
+      "period": "2023",
+      "arm": "tree_base",
+      "rows": 7750,
+      "mse": 0.0012904971805885977,
+      "mae": 0.026447980708369904
+    },
+    {
+      "target": "return",
+      "period": "2023",
+      "arm": "tree_compound",
+      "rows": 7750,
+      "mse": 0.001293641334525886,
+      "mae": 0.026471328773745494
+    },
+    {
+      "target": "return",
+      "period": "2024",
+      "arm": "training_mean",
+      "rows": 7812,
+      "mse": 0.0013575755621912304,
+      "mae": 0.0262671809381766
+    },
+    {
+      "target": "return",
+      "period": "2024",
+      "arm": "stock_training_mean",
+      "rows": 7812,
+      "mse": 0.0013499540796893129,
+      "mae": 0.026277555913455573
+    },
+    {
+      "target": "return",
+      "period": "2024",
+      "arm": "ridge_base",
+      "rows": 7812,
+      "mse": 0.0013636661687542215,
+      "mae": 0.026366123933258764
+    },
+    {
+      "target": "return",
+      "period": "2024",
+      "arm": "ridge_compound",
+      "rows": 7812,
+      "mse": 0.0013718518919137732,
+      "mae": 0.02644246579581554
+    },
+    {
+      "target": "return",
+      "period": "2024",
+      "arm": "tree_base",
+      "rows": 7812,
+      "mse": 0.001367603918496759,
+      "mae": 0.02639162733707284
+    },
+    {
+      "target": "return",
+      "period": "2024",
+      "arm": "tree_compound",
+      "rows": 7812,
+      "mse": 0.0013671367020518823,
+      "mae": 0.02637467850275747
+    },
+    {
+      "target": "return",
+      "period": "2025",
+      "arm": "training_mean",
+      "rows": 7750,
+      "mse": 0.0019928446841192713,
+      "mae": 0.03081884026037758
+    },
+    {
+      "target": "return",
+      "period": "2025",
+      "arm": "stock_training_mean",
+      "rows": 7750,
+      "mse": 0.0020047418134969733,
+      "mae": 0.03086598155449522
+    },
+    {
+      "target": "return",
+      "period": "2025",
+      "arm": "ridge_base",
+      "rows": 7750,
+      "mse": 0.001997352208688939,
+      "mae": 0.03080666691513933
+    },
+    {
+      "target": "return",
+      "period": "2025",
+      "arm": "ridge_compound",
+      "rows": 7750,
+      "mse": 0.00200834632531201,
+      "mae": 0.030908206191309726
+    },
+    {
+      "target": "return",
+      "period": "2025",
+      "arm": "tree_base",
+      "rows": 7750,
+      "mse": 0.0019812435509020112,
+      "mae": 0.03071578535405632
+    },
+    {
+      "target": "return",
+      "period": "2025",
+      "arm": "tree_compound",
+      "rows": 7750,
+      "mse": 0.001982715603852752,
+      "mae": 0.030777498077268768
+    },
+    {
+      "target": "return",
+      "period": "2026",
+      "arm": "training_mean",
+      "rows": 5208,
+      "mse": 0.0022714556249005813,
+      "mae": 0.03366224861861723
+    },
+    {
+      "target": "return",
+      "period": "2026",
+      "arm": "stock_training_mean",
+      "rows": 5208,
+      "mse": 0.0023043276201961255,
+      "mae": 0.03396421119840299
+    },
+    {
+      "target": "return",
+      "period": "2026",
+      "arm": "ridge_base",
+      "rows": 5208,
+      "mse": 0.0022837351014547095,
+      "mae": 0.03387868028158334
+    },
+    {
+      "target": "return",
+      "period": "2026",
+      "arm": "ridge_compound",
+      "rows": 5208,
+      "mse": 0.002279652696439723,
+      "mae": 0.0339093598517464
+    },
+    {
+      "target": "return",
+      "period": "2026",
+      "arm": "tree_base",
+      "rows": 5208,
+      "mse": 0.0022887512979132764,
+      "mae": 0.03377094863091291
+    },
+    {
+      "target": "return",
+      "period": "2026",
+      "arm": "tree_compound",
+      "rows": 5208,
+      "mse": 0.0022865291060241277,
+      "mae": 0.033786975234864375
+    },
+    {
+      "target": "volatility",
+      "period": "all",
+      "arm": "training_mean",
+      "rows": 36301,
+      "mse": 0.00010684881286851228,
+      "mae": 0.007005103108022543
+    },
+    {
+      "target": "volatility",
+      "period": "all",
+      "arm": "stock_training_mean",
+      "rows": 36301,
+      "mse": 8.765364928475164e-05,
+      "mae": 0.0062310055633319995
+    },
+    {
+      "target": "volatility",
+      "period": "all",
+      "arm": "ridge_base",
+      "rows": 36301,
+      "mse": 8.005919119686178e-05,
+      "mae": 0.0059010277624824276
+    },
+    {
+      "target": "volatility",
+      "period": "all",
+      "arm": "ridge_compound",
+      "rows": 36301,
+      "mse": 8.042697832175029e-05,
+      "mae": 0.0058949326584137336
+    },
+    {
+      "target": "volatility",
+      "period": "all",
+      "arm": "tree_base",
+      "rows": 36301,
+      "mse": 8.177397300789317e-05,
+      "mae": 0.005926846038096869
+    },
+    {
+      "target": "volatility",
+      "period": "all",
+      "arm": "tree_compound",
+      "rows": 36301,
+      "mse": 8.184108405790486e-05,
+      "mae": 0.005915982402461659
+    },
+    {
+      "target": "volatility",
+      "period": "2022",
+      "arm": "training_mean",
+      "rows": 7781,
+      "mse": 0.00010235165648725335,
+      "mae": 0.00728886841161827
+    },
+    {
+      "target": "volatility",
+      "period": "2022",
+      "arm": "stock_training_mean",
+      "rows": 7781,
+      "mse": 7.957268485306941e-05,
+      "mae": 0.006314736647849935
+    },
+    {
+      "target": "volatility",
+      "period": "2022",
+      "arm": "ridge_base",
+      "rows": 7781,
+      "mse": 7.647007498721181e-05,
+      "mae": 0.006334423185026978
+    },
+    {
+      "target": "volatility",
+      "period": "2022",
+      "arm": "ridge_compound",
+      "rows": 7781,
+      "mse": 7.777539085467966e-05,
+      "mae": 0.0063901300506910945
+    },
+    {
+      "target": "volatility",
+      "period": "2022",
+      "arm": "tree_base",
+      "rows": 7781,
+      "mse": 8.225701266654771e-05,
+      "mae": 0.006513764458846952
+    },
+    {
+      "target": "volatility",
+      "period": "2022",
+      "arm": "tree_compound",
+      "rows": 7781,
+      "mse": 8.365168537007153e-05,
+      "mae": 0.0065374282949450455
+    },
+    {
+      "target": "volatility",
+      "period": "2023",
+      "arm": "training_mean",
+      "rows": 7750,
+      "mse": 7.332860615719728e-05,
+      "mae": 0.006771366131704955
+    },
+    {
+      "target": "volatility",
+      "period": "2023",
+      "arm": "stock_training_mean",
+      "rows": 7750,
+      "mse": 6.415253128095837e-05,
+      "mae": 0.00610913755879901
+    },
+    {
+      "target": "volatility",
+      "period": "2023",
+      "arm": "ridge_base",
+      "rows": 7750,
+      "mse": 5.5186638135486764e-05,
+      "mae": 0.0051799506287884675
+    },
+    {
+      "target": "volatility",
+      "period": "2023",
+      "arm": "ridge_compound",
+      "rows": 7750,
+      "mse": 5.441201087722954e-05,
+      "mae": 0.005150836028111106
+    },
+    {
+      "target": "volatility",
+      "period": "2023",
+      "arm": "tree_base",
+      "rows": 7750,
+      "mse": 5.379924239150342e-05,
+      "mae": 0.005183814863549616
+    },
+    {
+      "target": "volatility",
+      "period": "2023",
+      "arm": "tree_compound",
+      "rows": 7750,
+      "mse": 5.413529574459708e-05,
+      "mae": 0.005170467784988086
+    },
+    {
+      "target": "volatility",
+      "period": "2024",
+      "arm": "training_mean",
+      "rows": 7812,
+      "mse": 8.296273999588283e-05,
+      "mae": 0.006464964423888431
+    },
+    {
+      "target": "volatility",
+      "period": "2024",
+      "arm": "stock_training_mean",
+      "rows": 7812,
+      "mse": 6.917033087779787e-05,
+      "mae": 0.00579851665614939
+    },
+    {
+      "target": "volatility",
+      "period": "2024",
+      "arm": "ridge_base",
+      "rows": 7812,
+      "mse": 6.540904075731901e-05,
+      "mae": 0.0052947072010319195
+    },
+    {
+      "target": "volatility",
+      "period": "2024",
+      "arm": "ridge_compound",
+      "rows": 7812,
+      "mse": 6.707953690742195e-05,
+      "mae": 0.005303208401234616
+    },
+    {
+      "target": "volatility",
+      "period": "2024",
+      "arm": "tree_base",
+      "rows": 7812,
+      "mse": 6.451614587489087e-05,
+      "mae": 0.005289041377614487
+    },
+    {
+      "target": "volatility",
+      "period": "2024",
+      "arm": "tree_compound",
+      "rows": 7812,
+      "mse": 6.465719391896414e-05,
+      "mae": 0.00528310111922026
+    },
+    {
+      "target": "volatility",
+      "period": "2025",
+      "arm": "training_mean",
+      "rows": 7750,
+      "mse": 0.00014647788957808478,
+      "mae": 0.007382546507818573
+    },
+    {
+      "target": "volatility",
+      "period": "2025",
+      "arm": "stock_training_mean",
+      "rows": 7750,
+      "mse": 0.00012665468140220584,
+      "mae": 0.00662263449716276
+    },
+    {
+      "target": "volatility",
+      "period": "2025",
+      "arm": "ridge_base",
+      "rows": 7750,
+      "mse": 0.00011690982263757533,
+      "mae": 0.006707940279802688
+    },
+    {
+      "target": "volatility",
+      "period": "2025",
+      "arm": "ridge_compound",
+      "rows": 7750,
+      "mse": 0.00011675082815603394,
+      "mae": 0.006661713870223669
+    },
+    {
+      "target": "volatility",
+      "period": "2025",
+      "arm": "tree_base",
+      "rows": 7750,
+      "mse": 0.00011823304154781587,
+      "mae": 0.0066169024522417935
+    },
+    {
+      "target": "volatility",
+      "period": "2025",
+      "arm": "tree_compound",
+      "rows": 7750,
+      "mse": 0.00011691587425696423,
+      "mae": 0.00655711847284808
+    },
+    {
+      "target": "volatility",
+      "period": "2026",
+      "arm": "training_mean",
+      "rows": 5208,
+      "mse": 0.00014030630760681118,
+      "mae": 0.007177503413556213
+    },
+    {
+      "target": "volatility",
+      "period": "2026",
+      "arm": "stock_training_mean",
+      "rows": 5208,
+      "mse": 0.00010438662418052164,
+      "mae": 0.006353210742329461
+    },
+    {
+      "target": "volatility",
+      "period": "2026",
+      "arm": "ridge_base",
+      "rows": 5208,
+      "mse": 8.957220598586353e-05,
+      "mae": 0.006035263979864994
+    },
+    {
+      "target": "volatility",
+      "period": "2026",
+      "arm": "ridge_compound",
+      "rows": 5208,
+      "mse": 8.90691395908262e-05,
+      "mae": 0.006008913741572622
+    },
+    {
+      "target": "volatility",
+      "period": "2026",
+      "arm": "tree_base",
+      "rows": 5208,
+      "mse": 9.431352659307812e-05,
+      "mae": 0.006085500448417528
+    },
+    {
+      "target": "volatility",
+      "period": "2026",
+      "arm": "tree_compound",
+      "rows": 5208,
+      "mse": 9.394601807112696e-05,
+      "mae": 0.0060921597901717256
+    }
+  ],
+  "symbols_observed": [
+    "AAPL",
+    "AEP",
+    "AMZN",
+    "BAC",
+    "COP",
+    "COST",
+    "CSCO",
+    "CVX",
+    "DE",
+    "DUK",
+    "GOOG",
+    "GS",
+    "HD",
+    "HON",
+    "INTC",
+    "JNJ",
+    "JPM",
+    "MCD",
+    "MRK",
+    "MSFT",
+    "NEE",
+    "NVDA",
+    "ORCL",
+    "PFE",
+    "SLB",
+    "SO",
+    "UNH",
+    "UPS",
+    "WFC",
+    "WMT",
+    "XOM"
+  ],
+  "missing_symbols": [
+    "CAT"
+  ],
+  "baseline_review": "Adds stock-specific historical means after initial pooled-mean screen; diagnostic follow-up, not independent confirmation",
+  "run_id": "1789302808212808000",
+  "requested_symbols": 32,
+  "folds": 19
+}

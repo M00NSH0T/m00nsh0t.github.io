@@ -1,0 +1,182 @@
+{
+  "status": "complete",
+  "synthetic": true,
+  "scope": "Input audit only; no generalization or policy-performance claim",
+  "price_multiplier": 10,
+  "price_ratio_invariance": {
+    "history": true,
+    "slow_context": true,
+    "relationships": true
+  },
+  "block_deltas": {
+    "action_mask": 1.0,
+    "history": 0.0,
+    "minute_history": 0.0,
+    "slow_context": 0.0,
+    "relationships": 0.0,
+    "market_state": 1.0800000429153442,
+    "news": 0.0,
+    "account": 0.0,
+    "lots": 0.0,
+    "pending_losses": 0.0,
+    "settlements": 0.0,
+    "dividends": 0.0,
+    "tax": 0.0,
+    "annual_tax": 0.0,
+    "tax_scenarios": 0.0
+  },
+  "raw_scalar_count": 55722,
+  "shapes": {
+    "action_mask": [
+      8
+    ],
+    "history": [
+      8,
+      1,
+      5
+    ],
+    "minute_history": [
+      40,
+      1,
+      4
+    ],
+    "slow_context": [
+      49,
+      1,
+      3
+    ],
+    "relationships": [
+      1,
+      1
+    ],
+    "market_state": [
+      1,
+      4
+    ],
+    "news": [
+      1,
+      7
+    ],
+    "account": [
+      1,
+      5
+    ],
+    "lots": [
+      2048,
+      8
+    ],
+    "pending_losses": [
+      2048,
+      8
+    ],
+    "settlements": [
+      2048,
+      4
+    ],
+    "dividends": [
+      2048,
+      7
+    ],
+    "tax": [
+      6
+    ],
+    "annual_tax": [
+      2,
+      16
+    ],
+    "tax_scenarios": [
+      2,
+      8
+    ]
+  },
+  "blocks": {
+    "action_mask": {
+      "max_abs": 1.0,
+      "nonzero": 4,
+      "total": 8
+    },
+    "history": {
+      "max_abs": 0.6631944179534912,
+      "nonzero": 16,
+      "total": 40
+    },
+    "minute_history": {
+      "max_abs": 0.0,
+      "nonzero": 0,
+      "total": 160
+    },
+    "slow_context": {
+      "max_abs": 365.0,
+      "nonzero": 95,
+      "total": 147
+    },
+    "relationships": {
+      "max_abs": 0.0,
+      "nonzero": 0,
+      "total": 1
+    },
+    "market_state": {
+      "max_abs": 0.5756467580795288,
+      "nonzero": 2,
+      "total": 4
+    },
+    "news": {
+      "max_abs": 0.0,
+      "nonzero": 0,
+      "total": 7
+    },
+    "account": {
+      "max_abs": 1.0,
+      "nonzero": 4,
+      "total": 5
+    },
+    "lots": {
+      "max_abs": 0.0,
+      "nonzero": 0,
+      "total": 16384
+    },
+    "pending_losses": {
+      "max_abs": 0.0,
+      "nonzero": 0,
+      "total": 16384
+    },
+    "settlements": {
+      "max_abs": 0.0,
+      "nonzero": 0,
+      "total": 8192
+    },
+    "dividends": {
+      "max_abs": 0.0,
+      "nonzero": 0,
+      "total": 14336
+    },
+    "tax": {
+      "max_abs": 0.5191256999969482,
+      "nonzero": 1,
+      "total": 6
+    },
+    "annual_tax": {
+      "max_abs": 1.0,
+      "nonzero": 5,
+      "total": 32
+    },
+    "tax_scenarios": {
+      "max_abs": 3.0,
+      "nonzero": 10,
+      "total": 16
+    }
+  },
+  "elapsed_age_units": "slow_context days; news age hours; lot age years",
+  "notes": [
+    "Raw market price divided by 1000 is not price-scale invariant.",
+    "Action-mask differences can be economically valid: commissions and whole shares are not scale invariant.",
+    "Zero minute input means unavailable; padded rows are not independent information.",
+    "No learned feature standardization or asset-order equivariance is implemented in the current encoder."
+  ],
+  "source_hashes": {
+    "scripts\\audit_feature_representation.py": "9b944fda790dd3096c87c211b5c0eb872ff218642bce054a6092ae2d8d027a58",
+    "stockblitz\\multi_year_env.py": "45b6820628da3c0175bd493c2f48b93eb25f2709b3d1ebda3634fb38f1ea5b15",
+    "stockblitz\\intraday_env_v2.py": "a8b833a4f0c803b74c6601d84684504dd5e44fa2ed1d97acd4bebe950531a12f",
+    "stockblitz\\temporal_policy_v2.py": "e0f430e0641bfe453e3f56f26996fd0f6f80b36faf443cb92eeddbb5a01b33da"
+  }
+}
