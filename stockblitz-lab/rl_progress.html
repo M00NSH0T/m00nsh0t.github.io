@@ -52,7 +52,7 @@
     <div class="charts">
       <article>
         <h2 id="reward-heading">Episode reward and MSE</h2>
-        <p class="muted">Dashed line is the latest rollout/episode reward. Solid teal is the Rolling 50-sample average of that reward. Amber (right axis) is the Rolling 50-sample critic MSE (2× logged value_loss, because the learner stores ½ mean squared TD error). The window expands until 50 trainer-update samples exist. Training history only; not a walk-forward score.</p>
+        <p class="muted">Dashed line is the latest rollout/episode reward. Solid teal is the Rolling 50-sample average of that reward. The dotted white line is reward = 0. Amber (right axis) is the Rolling 50-sample critic MSE (2× logged value_loss, because the learner stores ½ mean squared TD error). The window expands until 50 trainer-update samples exist. Training history only; not a walk-forward score.</p>
         <div id="reward-chart"></div>
       </article>
       <article>

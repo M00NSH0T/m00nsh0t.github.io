@@ -115,7 +115,7 @@
     return node;
   };
 
-  const chart = (host, points, series, label) => {
+  const chart = (host, points, series, label, options) => {
     host.replaceChildren();
     const prepared = attachRolling(points);
     const keys = series.filter((item) => prepared.some((row) => Number.isFinite(Number(row[item.key]))));
@@ -129,8 +129,13 @@
     }
     const leftKeys = keys.filter((item) => (item.axis || 'left') === 'left');
     const rightKeys = keys.filter((item) => item.axis === 'right');
-    const [leftLo, leftHi] = axisBounds(usable, leftKeys.length ? leftKeys : keys);
+    let [leftLo, leftHi] = axisBounds(usable, leftKeys.length ? leftKeys : keys);
     const [rightLo, rightHi] = rightKeys.length ? axisBounds(usable, rightKeys) : [0, 1];
+    const zeroLine = Boolean(options && options.zeroLine);
+    if (zeroLine) {
+      if (leftLo > 0) leftLo = 0;
+      if (leftHi < 0) leftHi = 0;
+    }
     const hasRight = rightKeys.length > 0;
     const x0 = 56;
     const xSpan = hasRight ? 578 : 634;
@@ -151,6 +156,18 @@
       const rightColor = rightKeys[0].color;
       addText(svg, 712, 22, rightColor, rightHi.toPrecision(3), 'end');
       addText(svg, 712, 176, rightColor, rightLo.toPrecision(3), 'end');
+    }
+    if (zeroLine && leftLo < 0 && leftHi > 0) {
+      const zeroY = y0 + ySpan * (1 - (0 - leftLo) / (leftHi - leftLo || 1));
+      const zero = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+      zero.setAttribute('d', 'M' + x0 + ' ' + zeroY.toFixed(1) + 'H' + (x0 + xSpan).toFixed(1));
+      zero.setAttribute('stroke', '#cbd5e1');
+      zero.setAttribute('stroke-width', '1');
+      zero.setAttribute('stroke-dasharray', '5 4');
+      zero.setAttribute('fill', 'none');
+      zero.setAttribute('data-zero', 'reward');
+      svg.appendChild(zero);
+      addText(svg, 8, zeroY + 4, '#cbd5e1', '0');
     }
     const end = usable[usable.length - 1];
     addText(svg, hasRight ? 430 : 560, 208, '#9ba9b9', fmt(end.steps) + ' steps');
@@ -257,7 +274,7 @@
       { key: 'reward', color: '#4d6b63', name: 'Episode reward', axis: 'left', width: '1.5', dash: '4 4' },
       { key: 'rolling_reward_50', color: '#7ad5c1', name: 'Rolling 50 reward', axis: 'left' },
       { key: 'rolling_mse_50', color: '#e5b276', name: 'Rolling 50 MSE', axis: 'right' },
-    ], 'reward-heading');
+    ], 'reward-heading', { zeroLine: true });
     chart(errorEl, payload.series, [
       { key: 'actor_loss', color: '#ed8d93', name: 'Policy error' },
       { key: 'value_loss', color: '#94b8e5', name: 'Value error' },
